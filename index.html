@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sportspring</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300|Open+Sans:700|PT+Sans+Narrow:400,700|Ubuntu+Condensed&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body class="body">
+    <div class="container">
+      <header class="header">
+        <a class="header__logo" href="#">
+          <img src="img/logo.png" width="" height="" alt="Логотип любительской футбольной лиги Санкт-Петербурга">
+        </a>
+        <h1 class="header__title">Любительская футбольная лига Санкт-Петербурга</h1>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" target="_blank">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#" target="_blank">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" target="_blank">
+              <span class="visually-hidden">Ютуб</span>
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--league">
+              <a href="#">О лиге</a>
+            </li>
+            <li class="navigation__item navigation__item--tournaments">
+              <a href="#">Турниры</a>
+            </li>
+            <li class="navigation__item navigation__item--teams">
+              <a href="#">Участники</a>
+            </li>
+            <li class="navigation__item navigation__item--news">
+              <a href="#">Новости</a>
+            </li>
+            <li class="navigation__item navigation__item--photo">
+              <a href="#">Фото</a>
+            </li>
+            <li class="navigation__item navigation__item--video">
+              <a href="#">Видео</a>
+            </li>
+            <li class="navigation__item navigation__item--request">
+              <a href="#">Заявиться на турнир</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="calendar">
+          <h2 class="visually-hidden">Календарь матчей</h2>
+          <div class="calendar__top">
+            <h3 class="calendar__title">Календарь</h3>
+            <ul class="calendar__tournaments-list">
+              <li class="calendar__tournaments-item">
+                <a href="#">Зимний кубок СПб (М)</a>
+              </li>
+              <li class="calendar__tournaments-item">
+                <a href="#">Зимний кубок СПб (Ж)</a>
+              </li>
+              <li class="calendar__tournaments-item">
+                <a href="#">Чемпионат Спб</a>
+              </li>
+              <li class="calendar__tournaments-item">
+                <a href="#">Зимний кубок СПб (М)</a>
+              </li>
+            </ul>
+            <form class="calendar__select">
+              <select class="calendar__select-item calendar__select-item--top-division" name="top-division" id="top-division">
+                <option value="top-division">Высший дивизион</option>
+                <option></option>
+              </select>
+              <select class="calendar__select-item calendar__select-item--death-group" name="death-group" id="death-group">
+                <option value="death-group">Группа «смерть»</option>
+                <option></option>
+              </select>
+            </form>
+          </div>
+          <div class="calendar__bottom">
+            <ul class="calendar__games-list">
+              <li class="calendar__games-item">
+                <div class="calendar__games-date-time">19.08/сб./20:00</div>
+                <table class="calendar__games-score">
+                  <tr>
+                    <td>Сити</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Кристалл</td>
+                    <td>7</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="calendar__games-item">
+                <div class="calendar__games-date-time">19.08/сб./20:00</div>
+                <table class="calendar__games-score">
+                  <tr>
+                    <td>Петроградец</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>Nano-Protech</td>
+                    <td>5</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="calendar__games__item">
+                <div class="calendar__games-date-time">19.08/сб./20:00</div>
+                <table class="calendar__games-score">
+                  <tr>
+                    <td>Ажио</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Студия 239</td>
+                    <td>7</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="calendar__games__item">
+                <div class="calendar__games-date-time">19.08/сб./20:00</div>
+                <table class="calendar__games-score">
+                  <tr>
+                    <td>Сервис Экспресс</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Farm Gunners</td>
+                    <td>7</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="calendar__games__item">
+                <div class="calendar__games-date-time">19.08/сб./20:00</div>
+                <table class="calendar__games-score">
+                  <tr>
+                    <td>SPb Lakes</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Коломяги</td>
+                    <td>-</td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+            <a class="calandar__tables" href="#">Таблицы</a>
+            <a class="calandar__results" href="#">Результаты</a>
+          </div>
+        </section>
+        <section class="slider">
+          <h2 class="visually-hidden">Дайджест актуальных новостей</h2>
+          <div class="slider__slide slider__slide--1">
+            <div class="slider__date">15 марта 2017</div>
+            <div class="slider__text">
+              <p>Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболу</p>
+            </div>
+          </div>
+          <div class="slider__slide slider__slide--2">
+            <div class="slider__date">Другая дата</div>
+            <div class="slider__text">
+              <p>Другой текст</p>
+            </div>
+          </div>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <p>
+                Чемпионат РФПЛ по киберфутболу: всё готово к финалу
+              </p>
+            </li>
+            <li class="slider__item slider__item--current">
+              <p>
+                Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России
+              </p>
+            </li>
+            <li class="slider__item">
+              <p>
+                Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
+              </p>
+            </li>
+            <li class="slider__item">
+              <p>
+                Чемпионат РФПЛ по киберфутболу: всё готово к финалу
+              </p>
+            </li>
+            <li class="slider__item">
+              <p>
+                Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России
+              </p>
+            </li>
+            <li class="slider__item">
+              <p>
+                Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="news">
+          <h2 class="visually-hidden">Новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <a class="news__picture" href="#">
+                <img src="#" width="" height="" alt="">
+              </a>
+              <div class="news__content">
+                <div class="news__date">28.09.2017</div>
+                <a class="news__title" href="#">
+                  <h3>Лев Воронин: «Гандболистки сборной России достойно поступили, решив перечислить 1,5 миллиона рублей премиальных паралимпийцам»</h3>
+                </a>
+                <p class="news__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч. Особенно, когда встречаются друг с другом команды, жаждущие первых очков на турнире.</p>
+              </div>
+            </li>
+            <li class="news__item">
+              <a class="news__picture" href="#">
+                <img src="#" width="" height="" alt="">
+              </a>
+              <div class="news__content">
+                <div class="news__date">28.09.2017</div>
+                <a class="news__title" href="#">
+                  <h3>Лев Воронин: «Гандболистки сборной России достойно поступили.</h3>
+                </a>
+                <p class="news__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч.</p>
+              </div>
+            </li>
+          </ul>
+          <a class="button button--news" href="#">Все новости</a>
+        </section>
+        <section class="photo">
+          <h2 class="visualli-hidden">Фото</h2>
+          <ul class="photo__list">
+            <li class="photo__item">
+              <a class="photo__picture">
+                <img src="#" width="" height="" alt="">
+              </a>
+              <div class="photo__content">
+                <a class="photo__title">
+                  <h3>Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футбол</h3>
+                </a>
+                <div class="photo__date">29.05.2017</div>
+                <div class="photo__number">53</div>
+              </div>
+            </li>
+            <li class="photo__item">
+              <a class="photo__picture">
+                <img src="#" width="" height="" alt="">
+              </a>
+              <div class="photo__content">
+                <a class="photo__title">
+                  <h3>Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футбол</h3>
+                </a>
+                <div class="photo__date">29.05.2017</div>
+                <div class="photo__number">53</div>
+              </div>
+            </li>
+            <li class="photo__item">
+              <a class="photo__picture">
+                <img src="#" width="" height="" alt="">
+              </a>
+              <div class="photo__content">
+                <a class="photo__title">
+                  <h3>Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футбол</h3>
+                </a>
+                <div class="photo__date">29.05.2017</div>
+                <div class="photo__number">53</div>
+              </div>
+            </li>
+          </ul>
+          <a class="button button--photo" href="#">Все фото</a>
+        </section>
+        <section class="video">
+          <h2 class="visually-hidden">Видео</h2>
+          <ul class="video__list">
+            <li class="video__item">
+              <a class="video__picture">
+                <img src="#" width="" height="" alt="">
+              </a>
+              <div class="video__content">
+                <a class="video__title">
+                  <h3>Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футбол</h3>
+                </a>
+                <div class="video__date">29.05.2017</div>
+              </div>
+            </li>
+            <li class="video__item">
+              <a class="video__picture">
+                <img src="#" width="" height="" alt="">
+              </a>
+              <div class="video__content">
+                <a class="video__title">
+                  <h3>Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футбол</h3>
+                </a>
+                <div class="video__date">29.05.2017</div>
+              </div>
+            </li>
+            <li class="video__item">
+              <a class="video__picture">
+                <img src="#" width="" height="" alt="">
+              </a>
+              <div class="video__content">
+                <a class="video__title">
+                  <h3>Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футбол</h3>
+                </a>
+                <div class="video__date">29.05.2017</div>
+              </div>
+            </li>
+          </ul>
+          <a class="button button--video" href="#">Все видео</a>
+        </section>
+        <section class="sidebar">
+          <h2 class="visually-hidden">Правая колонка с информацией</h2>
+          <form class="sidebar__select">
+            <select class="sidebar__select-item sidebar__select-item--championship-1" name="championship-1" id="championship-1">
+              <option value="championship-1">Чемпионат 1</option>
+            </select>
+            <select class="sidebar__select-item sidebar__select-item--top-division" name="top-division" id="top-division">
+              <option value="top-division">Топ-дивизион</option>
+            </select>
+            <select class="sidebar__select-item sidebar__select-item--A-group" name="A-group" id="A-group">
+              <option value="A-group">Группа А</option>
+            </select>
+          </form>
+          <table class="sidebar__table sidebar__table--league-table" border="2">
+            <tr>
+              <th colspan="4">Турнирная таблица</th>
+            </tr>
+            <tr>
+              <td>#</td>
+              <td>Команда</td>
+              <td>И</td>
+              <td>О</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Сервис Экспресс</td>
+              <td>19</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Луч Сокольники</td>
+              <td>18</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Луч Сокольники</td>
+              <td>11</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Луч Сокольники</td>
+              <td>10</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Сервис Экспресс</td>
+              <td>9</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Луч Сокольники</td>
+              <td>8</td>
+              <td>29</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Луч Сокольники</td>
+              <td>7</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Луч Сокольники</td>
+              <td>6</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Сервис Экспресс</td>
+              <td>5</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <a class="link link--sidebar link--league-table" href='#'>Вся таблица</a>
+              </td>
+            </tr>
+          </table>
+          <table class="sidebar__table sidebar__table--games-schedule" border="2">
+            <tr>
+              <th colspan="2">Расписание</th>
+            </tr>
+            <tr>
+              <td colspan="2">29 сентября</td>
+            </tr>
+            <tr>
+              <td>20:00</td>
+              <td> Барсы : Тосты</td>
+            </tr>
+            <tr>
+              <td>21:00</td>
+              <td>Лучики : Челси</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <a class="link link--sidebar link--games-schedule" href='#'>Все расписание</a>
+              </td>
+            </tr>
+          </table>
+          <table class="sidebar__table sidebar__table--statistics" border="2">
+            <tr>
+              <th colspan="4">Турнирная таблица</th>
+            </tr>
+            <tr>
+              <td>Бомбардиры</td>
+              <td>Ассистенты</td>
+              <td colspan="2">ЖК/КК</td>
+            </tr>
+            <tr>
+              <td rowspan="2"></td>
+              <td>Александр Иванов</td>
+              <td rowspan="2">29</td>
+              <td rowspan="2">29</td>
+            </tr>
+            <tr>
+              <td>Луч Сокольники</td>
+            </tr>
+            <tr>
+              <td rowspan="2"></td>
+              <td>Александр Иванов</td>
+              <td rowspan="2">17</td>
+              <td rowspan="2">17</td>
+            </tr>
+            <tr>
+              <td>Луч Сокольники</td>
+            </tr>
+            <tr>
+              <td rowspan="2"></td>
+              <td>Александр Иванов</td>
+              <td rowspan="2">12</td>
+              <td rowspan="2">12</td>
+            </tr>
+            <tr>
+              <td>Луч Сокольники</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <a class="link link--sidebar link--statistics" href='#'>Вся статистика</a>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section class="partners">
+          <h2 class="visually-hidden">Партнёры</h2>
+          <ul class="partners__list">
+            <li class="parnters__item">
+              <a href="#">
+                <img src="#" width="" height="" alt="Логотип Russia units" target="_blank">
+              </a>
+            </li>
+            <li class="parnters__item">
+              <a href="#">
+                <img src="#" width="" height="" alt="Логотип Российского Футбольного Союза" target="_blank">
+              </a>
+            </li>
+            <li class="parnters__item">
+              <a href="#">
+                <img src="#" width="" height="" alt="Логотип СДЮСШОР Зенит в Санкт-Петербурге" target="_blank">
+              </a>
+            </li>
+            <li class="parnters__item">
+              <a href="#">
+                <img src="#" width="" height="" alt="Логотип GR Sport" target="_blank">
+              </a>
+            </li>
+            <li class="parnters__item">
+              <a href="#">
+                <img src="#" width="" height="" alt="Логотип Ticketland.ru" target="_blank">
+              </a>
+            </li>
+            <li class="parnters__item">
+              <a href="#">
+                <img src="#" width="" height="" alt="Логотип Российской Футбольной Премьер-лиги " target="_blank">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__copyright">
+          <p>&#64; 2017. Любительская футбольная лига Санкт-Петербурга</p>
+          <p>
+            Сайт создан компанией <a href="#" target="_blank">Sportand.me</a>
+          </p>
+        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" target="_blank">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#" target="_blank">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" target="_blank">
+              <span class="visually-hidden">Ютуб</span>
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__login">
+          <a href="#">Войти</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
