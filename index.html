@@ -4,59 +4,61 @@
     <meta charset="utf-8">
     <title>Sportspring</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300|Open+Sans:700|PT+Sans+Narrow:400,700|Ubuntu+Condensed&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body">
     <div class="container">
       <header class="header">
         <a class="header__logo" href="#">
-          <img src="img/logo.png" width="" height="" alt="Логотип любительской футбольной лиги Санкт-Петербурга">
+          <!--<img src="#" width="" height="" alt="Логотип любительской футбольной лиги Санкт-Петербурга">-->
         </a>
-        <h1 class="header__title">Любительская футбольная лига Санкт-Петербурга</h1>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#" target="_blank">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg></svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#" target="_blank">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg></svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" target="_blank">
-              <span class="visually-hidden">Ютуб</span>
-              <svg></svg>
-            </a>
-          </li>
-        </ul>
+        <div class="header__top">
+          <h1 class="header__title">Любительская футбольная лига Санкт-Петербурга</h1>
+          <ul class="social">
+            <li class="social__item social__item--vk">
+              <a class="social__link social__link--vk" href="#" target="_blank">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item social__item--instagram">
+              <a class="social__link social__link--instagram" href="#" target="_blank">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item social__item--youtube">
+              <a class="social__link social__link--youtube" href="#" target="_blank">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--league">
-              <a href="#">О лиге</a>
+              <a class="navigation__item-link" href="#">О лиге</a>
             </li>
             <li class="navigation__item navigation__item--tournaments">
-              <a href="#">Турниры</a>
+              <a class="navigation__item-link" href="#">Турниры</a>
             </li>
             <li class="navigation__item navigation__item--teams">
-              <a href="#">Участники</a>
+              <a class="navigation__item-link" href="#">Участники</a>
             </li>
             <li class="navigation__item navigation__item--news">
-              <a href="#">Новости</a>
+              <a class="navigation__item-link" href="#">Новости</a>
             </li>
             <li class="navigation__item navigation__item--photo">
-              <a href="#">Фото</a>
+              <a class="navigation__item-link" href="#">Фото</a>
             </li>
             <li class="navigation__item navigation__item--video">
-              <a href="#">Видео</a>
+              <a class="navigation__item-link" href="#">Видео</a>
             </li>
             <li class="navigation__item navigation__item--request">
-              <a href="#">Заявиться на турнир</a>
+              <a class="navigation__item-link" href="#">Заявиться на турнир</a>
             </li>
           </ul>
         </nav>
+        <div class="header__line"></div>
       </header>
       <main>
         <section class="calendar">
@@ -509,22 +511,19 @@
           </p>
         </div>
         <ul class="social">
-          <li class="social__item">
+          <li class="social__item social__item--vk">
             <a class="social__link social__link--vk" href="#" target="_blank">
               <span class="visually-hidden">Вконтакте</span>
-              <svg></svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--instagram">
             <a class="social__link social__link--instagram" href="#" target="_blank">
               <span class="visually-hidden">Инстаграм</span>
-              <svg></svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--youtube">
             <a class="social__link social__link--youtube" href="#" target="_blank">
               <span class="visually-hidden">Ютуб</span>
-              <svg></svg>
             </a>
           </li>
         </ul>
