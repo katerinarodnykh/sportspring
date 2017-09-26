@@ -63,103 +63,136 @@
       <main>
         <section class="calendar">
           <h2 class="visually-hidden">Календарь матчей</h2>
-          <div class="calendar__top">
-            <h3 class="calendar__title">Календарь</h3>
-            <ul class="calendar__tournaments-list">
-              <li class="calendar__tournaments-item">
-                <a href="#">Зимний кубок СПб (М)</a>
-              </li>
-              <li class="calendar__tournaments-item">
-                <a href="#">Зимний кубок СПб (Ж)</a>
-              </li>
-              <li class="calendar__tournaments-item">
-                <a href="#">Чемпионат Спб</a>
-              </li>
-              <li class="calendar__tournaments-item">
-                <a href="#">Зимний кубок СПб (М)</a>
-              </li>
-            </ul>
-            <form class="calendar__select">
-              <select class="calendar__select-item calendar__select-item--top-division" name="top-division" id="top-division">
-                <option value="top-division">Высший дивизион</option>
-                <option></option>
-              </select>
-              <select class="calendar__select-item calendar__select-item--death-group" name="death-group" id="death-group">
-                <option value="death-group">Группа «смерть»</option>
-                <option></option>
-              </select>
-            </form>
+          <div class="calendar__top-wrapper">
+            <div class="calendar__top">
+              <h3 class="calendar__title">Календарь</h3>
+              <ul class="calendar__tournaments-list">
+                <li class="calendar__tournaments-item">
+                  <a class="arrow-back" href="#"></a>
+                </li>
+                <li class="calendar__tournaments-item">
+                  <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (М)</a>
+                </li>
+                <li class="calendar__tournaments-item">
+                  <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (Ж)</a>
+                </li>
+                <li class="calendar__tournaments-item">
+                  <a class="calendar__tournaments-item-link" href="#">Чемпионат Спб</a>
+                </li>
+                <li class="calendar__tournaments-item">
+                  <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (М)</a>
+                </li>
+                <li class="calendar__tournaments-item">
+                  <a class="arrow-forward" href="#"></a>
+                </li>
+              </ul>
+              <form class="calendar__select">
+                <select class="visually-hidden calendar__select-item calendar__select-item--top-division" name="top-division" id="top-division">
+                  <option value="top-division">Высший дивизион</option>
+                  <option></option>
+                </select>
+                <select class="visually-hidden calendar__select-item calendar__select-item--death-group" name="death-group" id="death-group">
+                  <option value="death-group">Группа «смерть»</option>
+                  <option></option>
+                </select>
+              </form>
+            </div>
           </div>
-          <div class="calendar__bottom">
-            <ul class="calendar__games-list">
-              <li class="calendar__games-item">
-                <div class="calendar__games-date-time">19.08/сб./20:00</div>
-                <table class="calendar__games-score">
-                  <tr>
-                    <td>Сити</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>Кристалл</td>
-                    <td>7</td>
-                  </tr>
-                </table>
-              </li>
-              <li class="calendar__games-item">
-                <div class="calendar__games-date-time">19.08/сб./20:00</div>
-                <table class="calendar__games-score">
-                  <tr>
-                    <td>Петроградец</td>
-                    <td>7</td>
-                  </tr>
-                  <tr>
-                    <td>Nano-Protech</td>
-                    <td>5</td>
-                  </tr>
-                </table>
-              </li>
-              <li class="calendar__games__item">
-                <div class="calendar__games-date-time">19.08/сб./20:00</div>
-                <table class="calendar__games-score">
-                  <tr>
-                    <td>Ажио</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>Студия 239</td>
-                    <td>7</td>
-                  </tr>
-                </table>
-              </li>
-              <li class="calendar__games__item">
-                <div class="calendar__games-date-time">19.08/сб./20:00</div>
-                <table class="calendar__games-score">
-                  <tr>
-                    <td>Сервис Экспресс</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>Farm Gunners</td>
-                    <td>7</td>
-                  </tr>
-                </table>
-              </li>
-              <li class="calendar__games__item">
-                <div class="calendar__games-date-time">19.08/сб./20:00</div>
-                <table class="calendar__games-score">
-                  <tr>
-                    <td>SPb Lakes</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>Коломяги</td>
-                    <td>-</td>
-                  </tr>
-                </table>
-              </li>
-            </ul>
-            <a class="calandar__tables" href="#">Таблицы</a>
-            <a class="calandar__results" href="#">Результаты</a>
+          <div class="calendar__bottom-wrapper">
+            <div class="calendar__bottom">
+              <ul class="calendar__games-list">
+                <li class="visually-hidden calendar__games-item">
+                  <a class="arrow-back" href="#"></a>
+                </li>
+                <li class="calendar__games-item">
+                  <table class="calendar__games-score">
+                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">Сити</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">3</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Кристалл</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">7</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="calendar__games-item">
+                  <table class="calendar__games-score">
+                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Петроградец</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">7</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Nano-Protech</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">5</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="calendar__games-item">
+                  <table class="calendar__games-score">
+                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Ажио</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">3</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2">(4-5)</td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">Студия 239</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">7</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="calendar__games-item">
+                  <table class="calendar__games-score">
+                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Сервис Экспресс</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">3</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Farm Gunners</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">7</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="calendar__games-item">
+                  <table class="calendar__games-score">
+                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">SPb Lakes</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">-</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Коломяги</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">-</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="visually-hidden calendar__games-item">
+                  <a class="arrow-forward" href="#"></a>
+                </li>
+              </ul>
+              <div class="calendar__tables-results">
+                <a class="calendar__tables" href="#">Таблицы</a>
+                <a class="calendar__results" href="#">Результаты</a>
+              </div>
+            </div>
           </div>
         </section>
         <section class="slider">

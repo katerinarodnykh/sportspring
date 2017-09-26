@@ -71,7 +71,7 @@ img {
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
-  width: 1217px;
+  width: 1216px;
   height: 117px;
 }
 
@@ -87,6 +87,7 @@ img {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   margin: 0;
@@ -121,11 +122,12 @@ img {
 
 .navigation__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0 auto;
   padding: 0;
   padding-left: 180px;
-  width: 1217px;
+  width: 1216px;
   min-height: 52px;
   list-style:none;
 }
@@ -147,10 +149,10 @@ img {
 
 .navigation__item-link {
   display: block;
-  padding: 5px 29px;
+  padding: 0px 29px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 52px;
   color: #ffffff;
   font-weight: 400;
   text-transform: uppercase;
@@ -158,11 +160,229 @@ img {
   transform: skewX(15deg);
 }
 
-.navigation__item--request .navigation__item-link{
+.navigation__item--request .navigation__item-link {
   padding-right: 30px;
 }
 
 .header__line {
   height: 5px;
   background-color: #d50028;
+}
+
+/*Раздел "календарь" на главной странице*/
+
+.calendar {
+  min-height: 179px;
+}
+
+.calendar__top-wrapper {
+  background-color: #0c2641;
+}
+
+.calendar__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1216px;
+  margin: 0 auto;
+  min-height: 57px;
+}
+
+.calendar__title {
+  margin: 0;
+  padding: 0 67px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.calendar__tournaments-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 715px;
+  list-style: none;
+}
+
+.calendar__tournaments-item {
+  flex-grow: 1;
+  min-height: 32px;
+  transform: skewX(-15deg);
+}
+
+.calendar__tournaments-item:hover {
+  background-color: rgba(26, 125, 171, 0.4);
+}
+
+.calendar__tournaments-item:active {
+  background-color: rgba(213, 0, 40, 0.7);
+}
+
+.calendar__tournaments-list::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 0 0 50px 0;
+  box-shadow: -1px -1px 0 1px rgba(26, 125, 171, 1);
+  transform: rotate(-45deg) scale(0.5);
+}
+
+.calendar__tournaments-list::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px 0 0 0;
+  box-shadow: 1px 1px 0 1px rgba(26, 125, 171, 1);
+  transform: rotate(-45deg) scale(0.5);
+}
+
+.calendar__tournaments-item-link {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  transform: skewX(15deg);
+}
+
+.calendar__select {
+  width: 260px;
+  min-height: 32px;
+  outline: 1px solid white;
+}
+
+.calendar__bottom-wrapper {
+  background-color: #e8e8e8;
+}
+
+.calendar__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1216px;
+  min-height: 122px;
+}
+
+.calendar__games-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 25px;
+  list-style: none;
+}
+
+.calendar__games-item {
+  padding-left: 20px;
+  padding-right: 12px;
+  width: 205px;
+  outline: 1pd solid white;
+}
+
+.calendar__games-item:first-child,
+.calendar__games-item:last-child {
+  background-color: inherit;
+}
+
+.calendar__games-item:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.calendar__games-score {
+  width: 100%;
+}
+
+.calendar__games-score-cell--data-time {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.calendar__games-score-cell--bold {
+  font-weight: 700;
+}
+
+.calendar__games-score-cell--team,
+.calendar__games-score-cell--goals {
+  padding-bottom: 12px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 16px;
+  color: #3f3f3f;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: top;
+}
+
+.calendar__games-score-cell--goals {
+  text-align: right;
+}
+
+.calendar__games-score-cell--bold {
+  font-weight: 700;
+}
+
+.calendar__games-score-cell--first-game {
+  padding-top: 17px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  color: #3f3f3f;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: right;
+  vertical-align: top;
+}
+
+.calendar__tables-results {
+  padding-top: 23px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 115px;
+  text-align: center;
+  background-color: #dcdcdc;
+}
+
+.calendar__tables,
+.calendar__results {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 42px;
+  color: #3f3f3f;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+}
+
+.calendar__tables:hover,
+.calendar__results:hover {
+  color: #d50028;
 }
