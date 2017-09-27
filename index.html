@@ -66,10 +66,13 @@
           <div class="calendar__top-wrapper">
             <div class="calendar__top">
               <h3 class="calendar__title">Календарь</h3>
+              <a class="arrow-back arrow-back--tournaments" href="#">
+                <span class="visually-hidden">Назад</span>
+                <svg height="20" width="20">
+                  <polyline points="8,0 0,10 8,20" fill="transparent"></polyline>
+                </svg>
+              </a>
               <ul class="calendar__tournaments-list">
-                <li class="calendar__tournaments-item">
-                  <a class="arrow-back" href="#"></a>
-                </li>
                 <li class="calendar__tournaments-item">
                   <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (М)</a>
                 </li>
@@ -83,15 +86,21 @@
                   <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (М)</a>
                 </li>
                 <li class="calendar__tournaments-item">
-                  <a class="arrow-forward" href="#"></a>
+                  <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (М)</a>
                 </li>
               </ul>
+              <a class="arrow-forward arrow-forward--tournaments" href="#">
+                <span class="visually-hidden">Вперёд</span>
+                <svg height="20" width="20">
+                  <polyline points="12,0 20,10 12,20" fill="transparent"></polyline>
+                </svg>
+              </a>
               <form class="calendar__select">
-                <select class="visually-hidden calendar__select-item calendar__select-item--top-division" name="top-division" id="top-division">
+                <select class="visually-hidden calendar__select-item calendar__select-item--tournaments" name="tournaments" id="tournaments">
                   <option value="top-division">Высший дивизион</option>
                   <option></option>
                 </select>
-                <select class="visually-hidden calendar__select-item calendar__select-item--death-group" name="death-group" id="death-group">
+                <select class="visually-hidden calendar__select-item calendar__select-item--group" name="group" id="group">
                   <option value="death-group">Группа «смерть»</option>
                   <option></option>
                 </select>
@@ -100,11 +109,14 @@
           </div>
           <div class="calendar__bottom-wrapper">
             <div class="calendar__bottom">
+              <a class="arrow-back arrow-back--games" href="#">
+                <span class="visually-hidden">Назад</span>
+                <svg height="20" width="20">
+                  <polyline points="8,0 0,10 8,20" fill="transparent"></polyline>
+                </svg>
+              </a>
               <ul class="calendar__games-list">
-                <li class="visually-hidden calendar__games-item">
-                  <a class="arrow-back" href="#"></a>
-                </li>
-                <li class="calendar__games-item">
+                <li class="calendar__games-item live">
                   <table class="calendar__games-score">
                     <tr class="calendar__games-score-row calendar__games-score-row--date-time">
                       <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
@@ -184,10 +196,29 @@
                     </tr>
                   </table>
                 </li>
-                <li class="visually-hidden calendar__games-item">
-                  <a class="arrow-forward" href="#"></a>
+                <li class="calendar__games-item">
+                  <table class="calendar__games-score">
+                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Сервис Экспресс</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">3</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
+                    </tr>
+                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
+                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Farm Gunners</td>
+                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">7</td>
+                    </tr>
+                  </table>
                 </li>
               </ul>
+              <a class="arrow-forward arrow-forward--games" href="#">
+                <span class="visually-hidden">Вперёд</span>
+                <svg height="20" width="20">
+                  <polyline points="12,0 20,10 12,20" fill="transparent"></polyline>
+                </svg>
+              </a>
               <div class="calendar__tables-results">
                 <a class="calendar__tables" href="#">Таблицы</a>
                 <a class="calendar__results" href="#">Результаты</a>
@@ -196,51 +227,78 @@
           </div>
         </section>
         <section class="slider">
-          <h2 class="visually-hidden">Дайджест актуальных новостей</h2>
-          <div class="slider__slide slider__slide--1">
-            <div class="slider__date">15 марта 2017</div>
-            <div class="slider__text">
-              <p>Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболу</p>
-            </div>
+          <div class="slider__wrapper">
+            <h2 class="visually-hidden">Дайджест актуальных новостей</h2>
+            <ul class="slider__slides">
+              <li class="slider__slide slider__slide--1">
+                <div class="slider__slide-content">
+                  <div class="slider__slide-date">
+                    <p class="slider__slide-date-p">15 марта 2017</p>
+                  </div>
+                  <div class="slider__slide-text">
+                    <p class="slider__slide-text-p">Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России</p>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__slide slider__slide--2">
+                <div class="slider__slide-content">
+                  <div class="slider__slide-date">
+                    <p class="slider__slide-date-p">15 марта 2017</p>
+                  </div>
+                  <div class="slider__slide-text">
+                    <p class="slider__slide-text-p">Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболу</p>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__slide slider__slide--3">
+                <div class="slider__slide-content">
+                  <div class="slider__slide-date">
+                    <p class="slider__slide-date-p">15 марта 2017</p>
+                  </div>
+                  <div class="slider__slide-text">
+                    <p class="slider__slide-text-p">Определено время начала матчей 18-20 туров РОСГОССТРАХ</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="slider__text-list">
+              <li class="slider__text-item slider__text-item--1">
+                <a class="slider__text-item-link">
+                  Чемпионат РФПЛ по киберфутболу: всё готово к финалу
+                </a>
+              </li>
+              <li class="slider__text-item slider__text-item--2">
+                <a class="slider__text-item-link slider__text-item-link--current">
+                  Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России
+                </a>
+              </li>
+              <li class="slider__text-item slider__text-item--3">
+                <a class="slider__text-item-link">
+                  Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
+                </a>
+              </li>
+              <li class="slider__text-item slider__text-item--4">
+                <a class="slider__text-item-link">
+                  Чемпионат РФПЛ по киберфутболу: всё готово к финалу
+                </a>
+              </li>
+              <li class="slider__text-item slider__text-item--5">
+                <a class="slider__text-item-link">
+                  Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России
+                </a>
+              </li>
+              <li class="slider__text-item slider__text-item--6">
+                <a class="slider__text-item-link">
+                  Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
+                </a>
+              </li>
+              <li class="slider__text-item slider__text-item--6">
+                <a class="slider__text-item-link">
+                  Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="slider__slide slider__slide--2">
-            <div class="slider__date">Другая дата</div>
-            <div class="slider__text">
-              <p>Другой текст</p>
-            </div>
-          </div>
-          <ul class="slider__list">
-            <li class="slider__item">
-              <p>
-                Чемпионат РФПЛ по киберфутболу: всё готово к финалу
-              </p>
-            </li>
-            <li class="slider__item slider__item--current">
-              <p>
-                Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России
-              </p>
-            </li>
-            <li class="slider__item">
-              <p>
-                Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
-              </p>
-            </li>
-            <li class="slider__item">
-              <p>
-                Чемпионат РФПЛ по киберфутболу: всё готово к финалу
-              </p>
-            </li>
-            <li class="slider__item">
-              <p>
-                Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России
-              </p>
-            </li>
-            <li class="slider__item">
-              <p>
-                Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
-              </p>
-            </li>
-          </ul>
         </section>
         <section class="news">
           <h2 class="visually-hidden">Новости</h2>
@@ -356,13 +414,13 @@
         <section class="sidebar">
           <h2 class="visually-hidden">Правая колонка с информацией</h2>
           <form class="sidebar__select">
-            <select class="sidebar__select-item sidebar__select-item--championship-1" name="championship-1" id="championship-1">
+            <select class="sidebar__select-item sidebar__select-item--championship" name="championship" id="championship">
               <option value="championship-1">Чемпионат 1</option>
             </select>
-            <select class="sidebar__select-item sidebar__select-item--top-division" name="top-division" id="top-division">
+            <select class="sidebar__select-item sidebar__select-item--division" name="division" id="division">
               <option value="top-division">Топ-дивизион</option>
             </select>
-            <select class="sidebar__select-item sidebar__select-item--A-group" name="A-group" id="A-group">
+            <select class="sidebar__select-item sidebar__select-item--group" name="group" id="group">
               <option value="A-group">Группа А</option>
             </select>
           </form>

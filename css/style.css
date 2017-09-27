@@ -181,8 +181,7 @@ img {
 
 .calendar__top {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
   width: 1216px;
   margin: 0 auto;
@@ -199,24 +198,57 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  /*outline: 1px solid white;*/
+}
+
+.arrow-back,
+.arrow-forward {
+  display: block;
+  width: 10px;
+  height: 100%;
+  margin: 0;
+  line-height: 0;
+  margin: auto 0;
+  stroke: rgba(26, 125, 171, 1);
+}
+
+.arrow-back--tournaments,
+.arrow-forward--tournaments {
+  width: 20px;
+  transform: scale(0.8);
+  /*outline: 1px solid pink;*/
+}
+
+.arrow-back--tournaments {
+  margin-left: 20px;
+}
+.arrow-forward--tournaments {
+  margin-right: 20px;
+}
+
+.arrow-back--tournaments:hover,
+.arrow-forward--tournaments:hover {
+  stroke: rgba(213, 0, 40, 0.7);
 }
 
 .calendar__tournaments-list {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 715px;
+  padding-left: 6px;
+  width: 675px;
+  overflow: hidden;
   list-style: none;
+  /*outline: 1px solid green;*/
 }
 
 .calendar__tournaments-item {
-  flex-grow: 1;
+  flex-shrink: 0;
+  flex-grow: 0;
   min-height: 32px;
   transform: skewX(-15deg);
+  /*outline: 1px solid yellow;*/
 }
 
 .calendar__tournaments-item:hover {
@@ -227,36 +259,10 @@ img {
   background-color: rgba(213, 0, 40, 0.7);
 }
 
-.calendar__tournaments-list::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 0px;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  border-radius: 0 0 50px 0;
-  box-shadow: -1px -1px 0 1px rgba(26, 125, 171, 1);
-  transform: rotate(-45deg) scale(0.5);
-}
-
-.calendar__tournaments-list::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  right: 0px;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  border-radius: 50px 0 0 0;
-  box-shadow: 1px 1px 0 1px rgba(26, 125, 171, 1);
-  transform: rotate(-45deg) scale(0.5);
-}
-
 .calendar__tournaments-item-link {
   display: block;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 22px;
+  padding-right: 21px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 15px;
   line-height: 32px;
@@ -279,34 +285,74 @@ img {
 
 .calendar__bottom {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0 auto;
   width: 1216px;
   min-height: 122px;
 }
 
+.arrow-back--games,
+.arrow-forward--games {
+  display: block;
+  width: 25px;
+  height: 100%;
+  margin: 0;
+  line-height: 0;
+  margin: auto 0;
+  stroke: #6d7c9d;
+  transform: scale(1.25);
+}
+
+.arrow-forward--games {
+  margin-right: 30px;
+}
+
+.arrow-back--games:hover,
+.arrow-forward--games:hover {
+  stroke: rgba(213, 0, 40, 0.7);
+}
+
 .calendar__games-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0;
-  padding: 0 25px;
+  padding: 0;
+  width: 1055px;
+  overflow: hidden;
   list-style: none;
+  background-color: #e8e8e8;
+}
+
+.live {
+  position: relative;
+}
+
+.live::before {
+  content: "Live";
+  position: absolute;
+  top: 18px;
+  right: 21px;
+  width: 25px;
+  height: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 8.45px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(213, 0, 40, 1);
+  border-radius: 2px;
+  color: #ffffff;
 }
 
 .calendar__games-item {
+  flex-shrink: 0;
   padding-left: 20px;
   padding-right: 12px;
   width: 205px;
-  outline: 1pd solid white;
 }
 
-.calendar__games-item:first-child,
-.calendar__games-item:last-child {
-  background-color: inherit;
-}
-
-.calendar__games-item:nth-child(odd) {
+.calendar__games-item:nth-child(2n) {
   background-color: #ffffff;
 }
 
@@ -385,4 +431,149 @@ img {
 .calendar__tables:hover,
 .calendar__results:hover {
   color: #d50028;
+}
+
+.slider {
+  min-height: 703px;
+  padding: 42px 0;
+  background-color: #044575;
+  background-image: url("../img/slider-background.png");
+  background-repeat: no-repeat;
+  background-position: left -300px;
+}
+
+.slider__wrapper {
+  display: flex;
+  width: 1216px;
+  height: 587px;
+  margin: 0 auto;
+  background-color: #f2f0ea;
+}
+
+.slider__text-list,
+.slider__slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__slides {
+  width: 910px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider__slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 42px;
+  height: 100%;
+  overflow: hidden;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.slider__slide--1 {
+  background-image: url("../img/slider__slide1-background.png");
+}
+
+.slider__slide--2 {
+  background-image: url("../img/slider__slide2-background.jpg");
+}
+
+.slider__slide--3 {
+  background-image: url("../img/slider__slide3-background.jpg");
+}
+
+.slider__slide-content {
+   position: relative;
+   width: 832px;
+   min-height: 152px;
+   background-color: rgba(0, 0, 0, 0.45);
+}
+
+.slider__slide-date {
+  position: absolute;
+  left: 5px;
+  background-color: rgba(213, 0, 40, 1);
+  height: 26px;
+  transform: skewX(-15deg);
+}
+
+.slider__slide-content::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 30px;
+  height: 25px;
+  background-color: rgba(213, 0, 40, 1);
+}
+
+.slider__slide-date-p {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+  transform: skewX(15deg);
+}
+
+.slider__slide-text-p{
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  padding-right: 31px;
+  padding-left: 31px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 31px;
+  color: #ffffff;
+  line-height: 33px;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.slider__text-list {
+  height: 100%;
+  width: 306px;
+  overflow: hidden;
+}
+
+.slider__text-item {
+  display: table;
+}
+
+.slider__text-item-link {
+  display: table-cell;
+  height: calc(587px/6);
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 31px;
+  padding-left: 31px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 17px;
+  color: #000000;
+  line-height: 19px;
+  text-align: justify;
+  vertical-align: middle;
+}
+
+.slider__text-item-link:hover {
+  background-color: rgba(26, 125, 171, 0.1);
+}
+
+.slider__text-item-link:active,
+.slider__text-item-link--current,
+.slider__text-item-link--current:hover {
+  color: #ffffff;
+  background-color: #d50028;
 }
