@@ -180,12 +180,32 @@ img {
 }
 
 .calendar__top {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   width: 1216px;
   margin: 0 auto;
   min-height: 57px;
+}
+
+.calendar__top::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 29px;
+  border: 10px solid #e8e8e8;
+  border-top-width: 0;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.svg-icon--calendar {
+  position: absolute;
+  fill: #1a7dab;
+  top: 9px;
+  left: 25px;
+  transform: scale(1.1);
 }
 
 .calendar__title {
@@ -227,7 +247,9 @@ img {
 }
 
 .arrow-back--tournaments:hover,
-.arrow-forward--tournaments:hover {
+.arrow-back--tournaments:active,
+.arrow-forward--tournaments:hover,
+.arrow-forward--tournaments:active {
   stroke: rgba(213, 0, 40, 0.7);
 }
 
@@ -256,6 +278,14 @@ img {
 }
 
 .calendar__tournaments-item:active {
+  background-color: rgba(213, 0, 40, 0.7);
+}
+
+.cursor-pointing {
+  background-color: rgba(26, 125, 171, 0.4);
+}
+
+.active {
   background-color: rgba(213, 0, 40, 0.7);
 }
 
@@ -308,6 +338,11 @@ img {
 
 .arrow-back--games:hover,
 .arrow-forward--games:hover {
+  stroke: rgba(213, 0, 40, 0.7);
+}
+
+.arrow--cursor-pointing,
+.arrow--active {
   stroke: rgba(213, 0, 40, 0.7);
 }
 
