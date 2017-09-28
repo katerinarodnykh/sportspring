@@ -611,6 +611,7 @@ img {
 
 .slider__text-item {
   display: table;
+  overflow: hidden;
 }
 
 .slider__text-item-link {
@@ -623,19 +624,24 @@ img {
   padding-left: 31px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 17px;
-  color: #000000;
   line-height: 19px;
   text-align: justify;
   vertical-align: middle;
+  color: #000000;
+  overflow: hidden;/*При display:block эти 2 свойства должны прятать текст, но не прячут,
+  пока оставлен display: table-cell*/
+  text-overflow: clip;
+  cursor: pointer;
 }
 
-.slider__text-item-link:hover {
+.slider__text-item-link:hover,
+.slider-link-pointing {
   background-color: rgba(26, 125, 171, 0.1);
 }
 
 .slider__text-item-link:active,
-.slider__text-item-link--current,
-.slider__text-item-link--current:hover {
+.slider-link-active,
+.slider-link-active:hover {
   color: #ffffff;
   background-color: #d50028;
 }
