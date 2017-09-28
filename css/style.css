@@ -55,6 +55,7 @@ img {
 
 /*Шапка*/
 .header {
+  position: relative;
   min-height: 174px;
   background-color: #10355a;
 }
@@ -69,19 +70,36 @@ img {
 
 .header__top {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 0 auto;
+  padding-left: 220px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 1216px;
   height: 117px;
 }
 
+.header::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 448px;
+  height: 174px;
+  width: 100px;
+  background-color: rgba(12, 38, 65, 0.6);
+  transform: skewX(-15deg);
+}
+
 .header__title {
-  padding: 18px 47px;
+  padding: 0;
+  margin: auto 0;
+  padding-right: 47px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 33px;
   line-height: 38.05px;
   color: #ffffff;
   font-weight: 700;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -89,30 +107,39 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: center;
-  margin: 0;
+  align-items: flex-end;
   padding: 0;
-  width: 260px;
+  padding-bottom: 12px;
+  margin: 0;
+  width: 240px;
   list-style: none;
 }
 
 .social__item {
-  margin-left: 17px;
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-left: 6px;
+}
+
+.social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .social__item--vk {
-  background-color: #4a6b8e;
+  background-image: url("../img/svg-icon--vk.svg");
+  transform: scale(0.9);
 }
 
 .social__item--instagram {
-  background-image: linear-gradient(10deg, #fdc565 2%, #ae318f 80%, #6d51c4 100%);
+  background-image: url("../img/svg-icon--instagram.svg");
+  transform: scale(0.9);
 }
 
 .social__item--youtube {
-  background-color: #ffffff;
+  background-image: url("../img/svg-icon--youtube.svg");
+  transform: scale(0.9);
 }
 
 .navigation {
@@ -218,7 +245,6 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  /*outline: 1px solid white;*/
 }
 
 .arrow-back,
@@ -236,7 +262,6 @@ img {
 .arrow-forward--tournaments {
   width: 20px;
   transform: scale(0.8);
-  /*outline: 1px solid pink;*/
 }
 
 .arrow-back--tournaments {
@@ -262,7 +287,6 @@ img {
   width: 675px;
   overflow: hidden;
   list-style: none;
-  /*outline: 1px solid green;*/
 }
 
 .calendar__tournaments-item {
@@ -270,7 +294,6 @@ img {
   flex-grow: 0;
   min-height: 32px;
   transform: skewX(-15deg);
-  /*outline: 1px solid yellow;*/
 }
 
 .calendar__tournaments-item:hover {
@@ -279,6 +302,10 @@ img {
 
 .calendar__tournaments-item:active {
   background-color: rgba(213, 0, 40, 0.7);
+}
+
+.navigation__item--request {
+  background-color: rgba(26, 125, 171, 1);
 }
 
 .cursor-pointing {
