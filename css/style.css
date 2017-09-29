@@ -299,21 +299,21 @@ img {
   width: 10px;
   height: 100%;
   margin: 0;
-  line-height: 0;
-  margin: auto 0;
   stroke: rgba(26, 125, 171, 1);
 }
 
 .arrow-back--tournaments,
 .arrow-forward--tournaments {
   width: 20px;
-  transform: scale(0.8);
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .arrow-back--tournaments {
   margin-left: 20px;
 }
 .arrow-forward--tournaments {
+  text-align: right;
   margin-right: 20px;
 }
 
@@ -397,25 +397,19 @@ img {
 .arrow-forward--games {
   display: block;
   width: 25px;
-  height: 100%;
+  padding-top: 47px;
+  padding-bottom: 47px;
   margin: 0;
-  line-height: 0;
-  margin: auto 0;
   stroke: #6d7c9d;
-  transform: scale(1.25);
 }
 
 .arrow-forward--games {
+  text-align: right;
   margin-right: 30px;
 }
 
 .arrow-back--games:hover,
 .arrow-forward--games:hover {
-  stroke: rgba(213, 0, 40, 0.7);
-}
-
-.arrow--cursor-pointing,
-.arrow--active {
   stroke: rgba(213, 0, 40, 0.7);
 }
 
@@ -692,16 +686,67 @@ img {
   background-color: #d50028;
 }
 
+.partners {
+  min-height: 232px;
+  background-color: #d3dde2;
+}
+
+.partners-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1216px;
+  margin: 0 auto;
+  padding-top: 54px;
+  padding-bottom: 43px;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  width: 1100px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.partners__item {
+  flex-shrink: 0;
+  width: 135px;
+  height: 135px;
+  margin-right: 58px;
+  background-color: #ffffff;
+}
+
+.arrow-back--partners,
+.arrow-forward--partners {
+  width: 57px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  stroke: #6d7c9d;
+}
+
+.arrow-forward--partners {
+  text-align: right;
+}
+
+.arrow-back--partners:hover,
+.arrow-back--partners:active,
+.arrow-forward--partners:hover,
+.arrow-forward--partners:active {
+  stroke: rgba(213, 0, 40, 0.7);
+}
+
 .footer {
   min-height: 145px;
   background-color: #10355a;
-  padding-top: 33px;
-  padding-bottom: 13px;
 }
 
 .footer-wrapper {
   display: flex;
   align-items: flex-end;
+  padding-top: 33px;
+  padding-bottom: 13px;
   width: 1216px;
   margin: 0 auto;
   padding-bottom: 10px;
@@ -769,4 +814,11 @@ img {
   fill: #d50028;
   position: absolute;
   top: 0px;
+}
+
+/* Акстивное систояние и сотояние по наведению у стрелы*/
+
+.arrow--cursor-pointing,
+.arrow--active {
+  stroke: rgba(213, 0, 40, 0.7);
 }
