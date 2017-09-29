@@ -43,6 +43,11 @@ img {
   height: auto;
 }
 
+.link {
+  color: #1a7dab;
+  text-decoration: underline;
+}
+
 /*Главная страница*/
 
 /*Шапка*/
@@ -64,8 +69,7 @@ img {
   width: 172px;
   height: 169px;
   background-color: #ffffff;
-  margin-right: -13px; /*для удаления отступа после inline-block*/
-  opacity: 0.99;
+  /*margin-right: -13px; /*для удаления отступа после inline-block*/
 }
 
 .header__top {
@@ -76,6 +80,8 @@ img {
   width: 1216px;
   height: 117px;
   opacity: 0.99;
+  font-size: 0;
+  line-height: 0;
 }
 
 .header__logo::after {
@@ -119,9 +125,14 @@ img {
 }
 
 .social__item {
-  width: 45px;
-  height: 45px;
-  margin-left: 6px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-left: 18px;
 }
 
 .social__link {
@@ -130,6 +141,34 @@ img {
   height: 100%;
 }
 
+.social__item--instagram {
+  background-image: linear-gradient(10deg, #fdc565 2%, #ae318f 80%, #6d51c4 100%);
+}
+
+.svg-icon--instagram{
+  fill: #ffffff;
+  vertical-align: middle;
+}
+
+.social__item--vk {
+  background-color: #4a6b8e;
+}
+
+.svg-icon--vk {
+  fill: #ffffff;
+  vertical-align: middle;
+}
+
+.social__item--youtube {
+  background-color: #ffffff;
+}
+
+.svg-icon--youtube{
+  fill: #ff4847;
+  vertical-align: middle;
+}
+
+/*Предыдущие иконки соц. сетей
 .social__item--vk {
   background-image: url("../img/svg-icon--vk.svg");
   transform: scale(0.9);
@@ -143,7 +182,7 @@ img {
 .social__item--youtube {
   background-image: url("../img/svg-icon--youtube.svg");
   transform: scale(0.9);
-}
+}*/
 
 .navigation {
   min-height: 52px;
@@ -651,4 +690,83 @@ img {
 .slider-link-active:hover {
   color: #ffffff;
   background-color: #d50028;
+}
+
+.footer {
+  min-height: 145px;
+  background-color: #10355a;
+  padding-top: 33px;
+  padding-bottom: 13px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: flex-end;
+  width: 1216px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.footer__copyright {
+  width: 700px;
+  margin-right: 165px;
+}
+
+.footer__copyright-main {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 35px;
+  text-align: left;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__copyright-sportandme {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.link--footer {
+  color: #ffffff;
+}
+
+.footer .social {
+  padding: 0;
+  padding-bottom: 3px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 55px;
+}
+
+.footer .social__item {
+  line-height: 29px;
+}
+
+.footer__login {
+  position: relative;
+  text-align: right;
+}
+
+.link--footer-login {
+  padding: 0;
+  padding-left: 27px;
+  font-family: "Ubuntu Condensed", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  vertical-align: middle;
+}
+
+.svg-icon--user {
+  fill: #d50028;
+  position: absolute;
+  top: 0px;
 }
