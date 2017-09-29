@@ -33,14 +33,6 @@ html {
   background-color: #f2f2f2;
 }
 
-.container {
-  position: relative;
-  margin: 0 auto;
-  width: 1920px;
-  background-color: #ffffff;
-  box-shadow: 2px 0px 15px -3px #000000;
-}
-
 a {
   text-decoration: none;
   color: #1a7dab;
@@ -55,45 +47,56 @@ img {
 
 /*Шапка*/
 .header {
-  position: relative;
   min-height: 174px;
   background-color: #10355a;
 }
 
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1216px;
+  margin: 0 auto;
+}
+
 .header__logo {
-  position: absolute;
-  left: 352px;
+  display: inline-block;
+  position: relative;
   width: 172px;
   height: 169px;
   background-color: #ffffff;
+  margin-right: -13px; /*для удаления отступа после inline-block*/
+  opacity: 0.99;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-left: 220px;
-  padding-top: 20px;
   padding-bottom: 20px;
   width: 1216px;
   height: 117px;
+  opacity: 0.99;
 }
 
-.header::before {
+.header__logo::after {
   content: "";
   position: absolute;
-  bottom: 5px;
-  left: 448px;
-  height: 174px;
+  z-index: -1;
+  top: 0;
+  left: 96px;
+  height: 168px;
   width: 100px;
   background-color: rgba(12, 38, 65, 0.6);
   transform: skewX(-15deg);
 }
 
 .header__title {
+  display: inline-block;
   padding: 0;
   margin: auto 0;
   padding-right: 47px;
+  padding-left: 50px;
+  padding-top: 20px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 33px;
   line-height: 38.05px;
@@ -147,15 +150,19 @@ img {
   background-color: #134c72;
 }
 
+.navigation__wrapper {
+  margin: 0 auto;
+  width: 1216px;
+}
+
 .navigation__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   padding-left: 180px;
-  width: 1216px;
-  min-height: 52px;
+  height: 52px;
   list-style:none;
 }
 
@@ -500,8 +507,8 @@ img {
   padding: 42px 0;
   background-color: #044575;
   background-image: url("../img/slider-background.png");
-  background-repeat: no-repeat;
-  background-position: left -300px;
+  background-repeat: repeat;
+  background-position: center -300px;
 }
 
 .slider__wrapper {
