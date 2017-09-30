@@ -856,7 +856,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   width: 284px;
   min-height: 317px;
   background-color: #ffffff;
@@ -866,7 +866,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  min-height: 20px;
   padding-left: 19px;
   padding-right: 15px;
 }
@@ -930,6 +929,71 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  width: 284px;
+  min-height: 317px;
+  background-color: #ffffff;
+}
+
+.video__picture {
+  position: relative;
+  display: block;
+  height: 190px;
+  width: 284px;
+  margin-bottom: 17px;
+  filter: brightness(60%);
+}
+
+.video__picture::before {
+  content: "\f04b";
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  font-family: 'FontAwesome';
+  font-size: 35px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 25px;
+  padding-left: 10px;
+  color: #ffffff;
+  background-color: rgba(194, 4, 38, 0.78);
+  border-radius: 50%;
+  filter: brightness(100%); /*Не работает, применение фильтра к video__picture-img удаляет псевдоэлемент*/
+}
+
+.video__title {
+  display: block;
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-bottom: 23px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #12151d;
+  vertical-align: middle;
+}
+
+.video__date {
+  padding-left: 19px;
+  padding-right: 15px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: left;
+  color: #5c5c5c;
+  vertical-align: middle;
 }
 
 /* Партнёры*/
