@@ -242,7 +242,7 @@ img {
   background-color: #d50028;
 }
 
-/*Раздел "календарь" на главной странице*/
+/*Календарь на главной странице*/
 
 .calendar {
   min-height: 179px;
@@ -535,6 +535,8 @@ img {
   color: #d50028;
 }
 
+/*Слайдер*/
+
 .slider {
   min-height: 703px;
   padding: 42px 0;
@@ -686,6 +688,8 @@ img {
   background-color: #d50028;
 }
 
+/*Основное содержание*/
+
 .main-container {
   display: flex;
   justify-content: space-between;
@@ -701,6 +705,24 @@ img {
   width: 910px;
   outline: 1px solid blue;
 }
+
+.button {
+  display: block;
+  padding: 4px 0;
+  margin-top: 25px;
+  width: 100%;
+  font-family: "Ubuntu Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: #579dbd;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+/*Сайдбар*/
 
 .sidebar {
   width: 260px;
@@ -736,17 +758,85 @@ img {
   outline: 1px solid green;
 }
 
+/*Новости на главной странице*/
+
 .news {
   margin-bottom: 43px;
   min-height: 644px;
-  outline: 1px solid red;
 }
 
 .news__list {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
+.news__item {
+  width: 440px;
+  min-height: 570px;
+  background-color: #ffffff;
+}
+
+.news__picture {
+  display: block;
+  height: 293px;
+  filter: brightness(80%);
+}
+
+@keyframes news__picture-animation {
+  100% {
+    transform: scale(1.05);
+    filter: brightness(100%);
+  }
+}
+
+.news__picture:hover {
+  animation-name: news__picture-animation;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.news__content {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.news__date {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: left;
+  color: #5c5c5c;
+  vertical-align: middle;
+}
+
+.news__title {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: left;
+  color: #12151d;
+  vertical-align: middle;
+}
+
+.news__text {
+  margin: 15px 0;
+}
+
+.button--news {
+  margin-top: 28px;
+}
+
+/*Фото на главной странице*/
 
 .photo {
   margin-bottom: 53px;
@@ -760,6 +850,8 @@ img {
   list-style: none;
 }
 
+/*Видео на главной странице*/
+
 .video {
   min-height: 386px;
   outline: 1px solid red;
@@ -770,6 +862,8 @@ img {
   margin: 0;
   list-style: none;
 }
+
+/* Партнёры*/
 
 .partners {
   min-height: 232px;
@@ -821,6 +915,8 @@ img {
 .arrow-forward--partners:active {
   stroke: rgba(213, 0, 40, 0.7);
 }
+
+/*Подвал*/
 
 .footer {
   min-height: 145px;
@@ -901,7 +997,7 @@ img {
   top: 0px;
 }
 
-/* Акстивное систояние и сотояние по наведению у стрелы*/
+/* Активное сoстояние и соcтояние по наведению у стрелы*/
 
 .arrow--cursor-pointing,
 .arrow--active {
