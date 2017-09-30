@@ -654,6 +654,7 @@ img {
 .slider__text-item {
   display: table;
   overflow: hidden;
+  text-overflow: clip;
 }
 
 .slider__text-item-link {
@@ -841,13 +842,81 @@ img {
 .photo {
   margin-bottom: 53px;
   min-height: 386px;
-  outline: 1px solid red;
 }
 
 .photo__list {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  width: 284px;
+  min-height: 317px;
+  background-color: #ffffff;
+}
+
+.photo__item-wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 20px;
+  padding-left: 19px;
+  padding-right: 15px;
+}
+
+.photo__picture {
+  display: block;
+  height: 190px;
+  width: 284px;
+  margin-bottom: 17px;
+}
+
+.photo__picture:hover {
+  transform: scale(1.05);
+}
+
+.photo__title {
+  display: block;
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-bottom: 23px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #12151d;
+  vertical-align: middle;
+}
+
+.photo__date {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: left;
+  color: #5c5c5c;
+  vertical-align: middle;
+}
+
+.photo__number {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #99a4b6;
+  box-shadow: 1px 1px #ffffff,
+              2px 2px #99a4b6;
 }
 
 /*Видео на главной странице*/
