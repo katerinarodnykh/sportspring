@@ -44,8 +44,13 @@ img {
 }
 
 .link {
+  padding: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 26px;
   color: #1a7dab;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 /*Главная страница*/
@@ -699,12 +704,10 @@ img {
   margin-right: auto;
   margin-top: 48px;
   margin-bottom: 38px;
-  outline: 1px solid black;
 }
 
 .main-content {
   width: 910px;
-  outline: 1px solid blue;
 }
 
 .button {
@@ -727,7 +730,6 @@ img {
 
 .sidebar {
   width: 260px;
-  outline: 1px solid blue;
 }
 
 .sidebar__select {
@@ -740,23 +742,146 @@ img {
   padding: 0;
   margin: 0;
   width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #ffffff;
 }
+
+.sidebar__table-link {
+  height: 45px;
+}
+
+.sidebar__table-cell {
+  padding: 0;
+  height: 38px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 0px;
+  vertical-align: middle;
+  border-bottom: 1px solid #dddddd;
+}
+
+.sidebar__table-title {
+  padding-left: 16px;
+  height: 44px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  color: #ffffff;
+  vertical-align: middle;
+  font-weight: bold;
+  background-color: #044575;
+}
+
+.sidebar__table-row-head .sidebar__table-cell {
+  border:0;
+  height: 31px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #4897bc;
+}
+
 
 .sidebar__table--league-table {
   min-height: 461px;
-  outline: 1px solid green;
   margin-bottom: 27px;
+}
+
+.sidebar__table-cell-0 {
+  width: 10px;
+}
+
+.sidebar__table-row-head--league-table .sidebar__table-cell-1,
+.sidebar__league-table-row .sidebar__table-cell-1 {
+  padding-left: 0px;
+  padding-right: 15px;
+}
+
+.sidebar__table-row-head--league-table .sidebar__table-cell-4,
+.sidebar__league-table-row .sidebar__table-cell-4 {
+  padding-right: 12px;
+}
+
+.sidebar__table-row-head--league-table .sidebar__table-cell-2,
+.sidebar__league-table-row .sidebar__table-cell-2 {
+  text-align: left;
 }
 
 .sidebar__table--games-schedule {
   min-height: 197px;
-  outline: 1px solid green;
   margin-bottom: 26px;
+}
+
+.sidebar__table-row-head .sidebar__table-cell-head--games-schedule {
+  padding-left: 16px;
+  text-align: left;
+}
+
+.sidebar__games-schedule-row .sidebar__table-cell {
+  padding-left: 16px;
+  padding-right: 0px;
+  text-align: left;
 }
 
 .sidebar__table--statistics {
   min-height: 309px;
-  outline: 1px solid green;
+}
+
+.sidebar__table--statistics .sidebar__table-cell{
+  padding-left: 16px;
+  padding-right: 0px;
+  text-align: left;
+}
+
+.sidebar__table-row-head--statistics {
+  margin-left: 3px;
+  padding-right: 3px;
+  min-height: 38px;
+}
+
+.sidebar__table-row-head--statistics .sidebar__table-cell {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  transform: skewX(-15deg);
+}
+
+.sidebar__table-cell-text {
+  transform: skewX(15deg);
+}
+
+.sidebar__statistics-row--3 .sidebar__table-cell,
+.sidebar__statistics-row--5 .sidebar__table-cell,
+.sidebar__statistics-row--7 .sidebar__table-cell{
+  font-size: 11px;
+  height: 15px;
+  line-height: 15px;
+  vertical-align: top;
+}
+
+.sidebar__statistics-row .sidebar__table-cell-2 {
+  height: 15px;
+  line-height: 15px;
+  vertical-align: bottom;
+}
+
+.sidebar__table-cell-img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #e8e8e8;
+}
+
+.sidebar__statistics-row--1 .sidebar__table-cell {
+  height: 29px;
 }
 
 /*Новости на главной странице*/
@@ -877,9 +1002,9 @@ img {
   margin-bottom: 17px;
 }
 
-.photo__picture:hover {
+/*.photo__picture:hover {
   transform: scale(1.05);
-}
+}*/
 
 .photo__title {
   display: block;
@@ -922,7 +1047,6 @@ img {
 
 .video {
   min-height: 386px;
-  outline: 1px solid red;
 }
 
 .video__list {
@@ -1095,6 +1219,7 @@ img {
 }
 
 .link--footer {
+  text-transform: none;
   color: #ffffff;
 }
 
