@@ -736,7 +736,7 @@ img {
 .sidebar__select {
   min-height: 158px;
   outline: 1px solid green;
-  margin-bottom: 29px;
+  margin-bottom: 34px;
 }
 
 .sidebar__table {
@@ -744,145 +744,165 @@ img {
   margin: 0;
   width: 100%;
   border-collapse: collapse;
-  text-align: center;
+  text-align: left;
   background-color: #ffffff;
-}
-
-.sidebar__table-link {
-  height: 45px;
 }
 
 .sidebar__table-cell {
   padding: 0;
-  height: 38px;
+  padding-left: 15px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 0px;
+  line-height: 37px;
   vertical-align: middle;
   border-bottom: 1px solid #dddddd;
 }
 
-.sidebar__table-title {
-  padding-left: 16px;
-  height: 44px;
+.sidebar__table .sidebar__table-cell--title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 28px;
-  text-align: left;
+  line-height: 44px;
   color: #ffffff;
-  vertical-align: middle;
   font-weight: bold;
   background-color: #044575;
+  border-bottom: 0px;
 }
 
-.sidebar__table-row-head .sidebar__table-cell {
-  border:0;
-  height: 31px;
+.sidebar__table-row--head .sidebar__table-cell {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 13px;
-  line-height: 15px;
-  text-align: center;
+  line-height: 31px;
   color: #ffffff;
   vertical-align: middle;
   background-color: #4897bc;
+  border-bottom: 0px;
 }
 
-
-.sidebar__table--league-table {
-  min-height: 461px;
-  margin-bottom: 27px;
+.sidebar__table-cell--link {
+  padding: 0;
+  text-align: center;
 }
 
-.sidebar__table-cell-0 {
-  width: 10px;
+.link--sidebar {
+  line-height: 45px;
 }
 
-.sidebar__table-row-head--league-table .sidebar__table-cell-1,
-.sidebar__league-table-row .sidebar__table-cell-1 {
+.sidebar__table--tournament {
+  margin-bottom: 21px;
+}
+
+.sidebar__table--tournament .sidebar__table-cell--number {
+  padding-left: 10px;
+}
+
+.sidebar__table--tournament .sidebar__table-cell--color {
+  padding-left: 7px;
+  width: 7px;
+}
+
+.sidebar__table--tournament .sidebar__table-cell--title {
+  padding-left: 15px;
+}
+
+.sidebar__table--tournament .sidebar__table-cell--games {
+  padding-left: 20px;
+}
+
+.sidebar__table--tournament .sidebar__table-cell--points {
   padding-left: 0px;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
-.sidebar__table-row-head--league-table .sidebar__table-cell-4,
-.sidebar__league-table-row .sidebar__table-cell-4 {
-  padding-right: 12px;
-}
-
-.sidebar__table-row-head--league-table .sidebar__table-cell-2,
-.sidebar__league-table-row .sidebar__table-cell-2 {
-  text-align: left;
-}
-
-.sidebar__table--games-schedule {
-  min-height: 197px;
+.sidebar__table--schedule {
   margin-bottom: 26px;
 }
 
-.sidebar__table-row-head .sidebar__table-cell-head--games-schedule {
-  padding-left: 16px;
-  text-align: left;
+.sidebar__table--schedule .sidebar__table-cell--match-time {
+  width: 40px;
 }
 
-.sidebar__games-schedule-row .sidebar__table-cell {
-  padding-left: 16px;
-  padding-right: 0px;
-  text-align: left;
+.sidebar__table--schedule .sidebar__table-cell--teams {
+  padding: 0;
+  padding-right: 20px;
+  text-align: center;
 }
 
-.sidebar__table--statistics {
-  min-height: 309px;
-}
-
-.sidebar__table--statistics .sidebar__table-cell{
-  padding-left: 16px;
-  padding-right: 0px;
-  text-align: left;
-}
-
-.sidebar__table-row-head--statistics {
-  margin-left: 3px;
-  padding-right: 3px;
-  min-height: 38px;
-}
-
-.sidebar__table-row-head--statistics .sidebar__table-cell {
+.sidebar__table--statistics .sidebar__statistics-cell--tabs {
   padding: 0;
   margin: 0;
+  border: 0;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 12px;
-  line-height: 12px;
   text-align: center;
+  background-color: #4897bc;
+  color: #ffffff;
+}
+
+.tabs-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.tabs-item {
+  flex-grow: 1;
   transform: skewX(-15deg);
 }
 
-.sidebar__table-cell-text {
+.tabs-item-2 {
+  border-left: 1px solid #3e8bb1;
+  border-right: 1px solid #3e8bb1;
+}
+
+.tabs-text {
   transform: skewX(15deg);
 }
 
-.sidebar__statistics-row--3 .sidebar__table-cell,
-.sidebar__statistics-row--5 .sidebar__table-cell,
-.sidebar__statistics-row--7 .sidebar__table-cell{
+.tabs-active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sidebar__table--statistics .sidebar__table-cell--team {
+  padding: 0;
   font-size: 11px;
-  height: 15px;
   line-height: 15px;
   vertical-align: top;
 }
 
-.sidebar__statistics-row .sidebar__table-cell-2 {
-  height: 15px;
+.sidebar__statistics-row--head .sidebar__table-cell{
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom: 1px solid #dddddd;
+}
+
+.sidebar__table-cell--player {
+  border: 0;
+  padding: 0;
   line-height: 15px;
   vertical-align: bottom;
 }
 
+.sidebar__table-cell--goals {
+  padding-right: 5px;
+}
+
+.sidebar__table-cell--games-number,
+.sidebar__table-cell--games-number-head {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
 .sidebar__table-cell-img {
   display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 30px;
   height: 30px;
   background-color: #e8e8e8;
-}
-
-.sidebar__statistics-row--1 .sidebar__table-cell {
-  height: 29px;
 }
 
 /*Новости на главной странице*/
