@@ -366,7 +366,7 @@ img {
 }
 
 .active {
-  background-color: rgba(213, 0, 40, 0.7);
+  background-color: rgba(213, 0, 40, 0.8);
 }
 
 .calendar__tournaments-item-link {
@@ -885,6 +885,15 @@ img {
 .sidebar__navigation-item {
   border-bottom: 1px solid #6d91ac;
   vertical-align: middle;
+}
+
+.sidebar__navigation-item:hover {
+  background-color: rgba(26, 125, 171, 0.4);
+}
+
+.active:hover,
+.sidebar__navigation-item:active {
+  background-color: rgba(213, 0, 40, 0.8);
 }
 
 .sidebar__navigation-item-link {
@@ -1451,4 +1460,90 @@ img {
 .arrow--cursor-pointing,
 .arrow--active {
   stroke: rgba(213, 0, 40, 0.7);
+}
+
+/*Внутренние страницы*/
+
+/*Название турнира и краткая информация о нём*/
+
+.tournament {
+  min-height: 108px;
+  background-color: #ffffff;
+}
+
+.tournament-wrapper {
+  width: 1216px;
+  margin: 0 auto;
+}
+
+.tournament__title {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 31px;
+  line-height: 74px;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.tournament__info {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: -4px;
+  list-style: none;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #656565;
+}
+
+.tournament__info-item {
+  padding-left: 20px;
+  padding-right: 5px;
+  margin-right: 25px;
+}
+
+.tournament__info-dates {
+  position: relative;
+}
+
+.tournament__info-dates::before {
+  content: "\f073";
+  position: absolute;
+  color: inherit;
+  bottom: 1px;
+  left: 0px;
+  font-family: "FontAwesome";
+  font-size: 15px;
+}
+
+.tournament__info-teams-number {
+  position: relative;
+}
+
+.tournament__info-teams-number::before {
+  content: "\f0c0";
+  position: absolute;
+  color: inherit;
+  bottom: 1px;
+  left: 0px;
+  font-family: "FontAwesome";
+  font-size: 15px;
+}
+
+.tournament__info-status {
+  position: relative;
+}
+
+.tournament__info-status:before {
+  content: "\f017";
+  position: absolute;
+  color: inherit;
+  left: 0px;
+  bottom: 1px;
+  font-family: "FontAwesome";
+  font-size: 17px;
 }
