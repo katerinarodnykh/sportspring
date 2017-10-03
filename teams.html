@@ -55,13 +55,13 @@
                 <li class="navigation__item navigation__item--league">
                   <a class="navigation__item-link" href="#">О лиге</a>
                 </li>
-                <li class="navigation__item navigation__item--tournaments cursor-pointing">
+                <li class="navigation__item navigation__item--tournaments">
                   <a class="navigation__item-link" href="#">Турниры</a>
                 </li>
-                <li class="navigation__item navigation__item--teams">
-                  <a class="navigation__item-link" href="teams.html">Участники</a>
+                <li class="navigation__item navigation__item--teams active">
+                  <a class="navigation__item-link" href="#">Участники</a>
                 </li>
-                <li class="navigation__item navigation__item--news active">
+                <li class="navigation__item navigation__item--news">
                   <a class="navigation__item-link" href="#">Новости</a>
                 </li>
                 <li class="navigation__item navigation__item--photo">
@@ -80,407 +80,37 @@
         <div class="header__line"></div>
       </header>
       <main>
-        <section class="calendar">
-          <h2 class="visually-hidden">Календарь матчей</h2>
-          <div class="calendar__top-wrapper">
-            <div class="calendar__top">
-              <h3 class="calendar__title">Календарь</h3>
-              <a class="arrow-back arrow-back--tournaments" href="#">
-                <span class="visually-hidden">Назад</span>
-                <svg height="16" width="7">
-                  <polyline points="7,0 0,8 7,16" fill="transparent"></polyline>
-                </svg>
-              </a>
-              <ul class="calendar__tournaments-list">
-                <li class="calendar__tournaments-item">
-                  <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (М)</a>
-                </li>
-                <li class="calendar__tournaments-item cursor-pointing">
-                  <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (Ж)</a>
-                </li>
-                <li class="calendar__tournaments-item">
-                  <a class="calendar__tournaments-item-link" href="#">Чемпионат Спб</a>
-                </li>
-                <li class="calendar__tournaments-item active">
-                  <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (М)</a>
-                </li>
-                <li class="calendar__tournaments-item">
-                  <a class="calendar__tournaments-item-link" href="#">Зимний кубок СПб (М)</a>
-                </li>
-              </ul>
-              <a class="arrow arrow-forward arrow-forward--tournaments arrow--cursor-pointing" href="#">
-                <span class="visually-hidden">Вперёд</span>
-                <svg height="16" width="7">
-                  <polyline points="0,0 7,8 0,16" fill="transparent"></polyline>
-                </svg>
-              </a>
-              <div class="calendar__selects">
-                <div class="calendar__select-item calendar__select-item--division">
-                  <div class="calendar__select-item-default">Высший дивизион</div>
-                  <ul class="calendar__select-item-options">
-                    <li class="calendar__select-item-option-1">Высший дивизион</li>
-                    <li class="calendar__select-item-option-1">Топ-дивизион 2</li>
-                    <li class="calender__select-item-option-1">Топ-дивизион 3</li>
-                  </ul>
-                </div>
-                <div class="calendar__select-item calendar__select-item--group">
-                  <div class="calendar__select-item-default">Группа «смерть»</div>
-                  <ul class="calendar__select-item-options calendar__select-item-active">
-                    <li class="calendar__select-item-option-1">Группа-А</li>
-                    <li class="calendar__select-item-option-1">Группа-А</li>
-                    <li class="calender__select-item-option-1">Группа-А</li>
-                  </ul>
-               </div>
-              </div>
-            </div>
-          </div>
-          <div class="calendar__bottom-wrapper">
-            <div class="calendar__bottom">
-              <a class="arrow arrow-back arrow-back--games" href="#">
-                <span class="visually-hidden">Назад</span>
-                <svg height="28" width="12">
-                  <polyline points="12,0 0,14 12,28" fill="transparent"></polyline>
-                </svg>
-              </a>
-              <ul class="calendar__games-list">
-                <li class="calendar__games-item live">
-                  <table class="calendar__games-score">
-                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">Сити</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">3</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Кристалл</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">7</td>
-                    </tr>
-                  </table>
-                </li>
-                <li class="calendar__games-item">
-                  <table class="calendar__games-score">
-                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Петроградец</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">7</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Nano-Protech</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">5</td>
-                    </tr>
-                  </table>
-                </li>
-                <li class="calendar__games-item">
-                  <table class="calendar__games-score">
-                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Ажио</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">3</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2">(4-5)</td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">Студия 239</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">7</td>
-                    </tr>
-                  </table>
-                </li>
-                <li class="calendar__games-item">
-                  <table class="calendar__games-score">
-                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Сервис Экспресс</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">3</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Farm Gunners</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">7</td>
-                    </tr>
-                  </table>
-                </li>
-                <li class="calendar__games-item">
-                  <table class="calendar__games-score">
-                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">SPb Lakes</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">-</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Коломяги</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">-</td>
-                    </tr>
-                  </table>
-                </li>
-                <li class="calendar__games-item">
-                  <table class="calendar__games-score">
-                    <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--data-time" colspan="2">19.08/сб./20:00</td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Сервис Экспресс</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">3</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--first-game" rowspan="2"></td>
-                    </tr>
-                    <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                      <td class="calendar__games-score-cell calendar__games-score-cell--team">Farm Gunners</td>
-                      <td class="calendar__games-score-cell calendar__games-score-cell--goals">7</td>
-                    </tr>
-                  </table>
-                </li>
-              </ul>
-              <a class="arrow arrow-forward arrow-forward--games arrow--cursor-pointing" href="#">
-                <span class="visually-hidden">Вперёд</span>
-                <svg height="28" width="12">
-                  <polyline points="0,0 12,14 0,28" fill="transparent"></polyline>
-                </svg>
-              </a>
-              <div class="calendar__tables-results">
-                <a class="calendar__tables" href="#">Таблицы</a>
-                <a class="calendar__results" href="#">Результаты</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="slider">
-          <div class="slider__wrapper">
-            <h2 class="visually-hidden">Дайджест актуальных новостей</h2>
-            <ul class="slider__slides">
-              <li class="slider__slide slider__slide--1">
-                <div class="slider__slide-content">
-                  <div class="slider__slide-date">
-                    <p class="slider__slide-date-p">15 марта 2017</p>
-                  </div>
-                  <div class="slider__slide-text">
-                    <p class="slider__slide-text-p">Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России</p>
-                  </div>
-                </div>
-              </li>
-              <li class="slider__slide slider__slide--2">
-                <div class="slider__slide-content">
-                  <div class="slider__slide-date">
-                    <p class="slider__slide-date-p">15 марта 2017</p>
-                  </div>
-                  <div class="slider__slide-text">
-                    <p class="slider__slide-text-p">Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболу</p>
-                  </div>
-                </div>
-              </li>
-              <li class="slider__slide slider__slide--3">
-                <div class="slider__slide-content">
-                  <div class="slider__slide-date">
-                    <p class="slider__slide-date-p">15 марта 2017</p>
-                  </div>
-                  <div class="slider__slide-text">
-                    <p class="slider__slide-text-p">Определено время начала матчей 18-20 туров РОСГОССТРАХ</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="slider__text-list">
-              <li class="slider__text-item slider__text-item--1">
-                <a class="slider__text-item-link">
-                  Чемпионат РФПЛ по киберфутболу: всё готово к финалу
-                </a>
-              </li>
-              <li class="slider__text-item slider__text-item--2">
-                <a class="slider__text-item-link slider-link-active">
-                  Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России
-                </a>
-              </li>
-              <li class="slider__text-item slider__text-item--3">
-                <a class="slider__text-item-link">
-                  Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
-                </a>
-              </li>
-              <li class="slider__text-item slider__text-item--4 slider-link-pointing">
-                <a class="slider__text-item-link">
-                  Чемпионат РФПЛ по киберфутболу: всё готово к финалу
-                </a>
-              </li>
-              <li class="slider__text-item slider__text-item--5">
-                <a class="slider__text-item-link">
-                  Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России
-                </a>
-              </li>
-              <li class="slider__text-item slider__text-item--6">
-                <a class="slider__text-item-link">
-                  Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
-                </a>
-              </li>
-              <li class="slider__text-item slider__text-item--6">
-                <a class="slider__text-item-link">
-                  Регистрация на второй отборочный этап Открытого Чемпионата РФПЛ по игре EA Sports FIFA началась!
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <div class="main-container">
+        <div class="main-container main-container-inner">
           <div class="main-content">
-            <section class="news">
-              <h2 class="visually-hidden">Новости</h2>
-              <ul class="news__list">
-                <li class="news__item">
-                  <a class="news__picture" href="#">
-                    <img class="news__picture-img" src="img/news-img-1.jpg" width="440" height="293" alt="">
-                  </a>
-                  <div class="news__content">
-                    <div class="news__date">28.09.2017</div>
-                    <a class="news__title" href="#">
-                      Лев Воронин: «Гандболистки сборной России достойно поступили, решив перечислить 1,5 миллиона рублей премиальных паралимпийцам»
-                    </a>
-                    <p class="news__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч. Особенно, когда встречаются друг с другом команды, жаждущие первых очков на турнире.</p>
-                  </div>
-                </li>
-                <li class="news__item">
-                  <a class="news__picture" href="#">
-                    <img class="news__picture-img" src="img/news-img-2.jpg" width="440" height="293" alt="">
-                  </a>
-                  <div class="news__content">
-                    <div class="news__date">28.09.2017</div>
-                    <a class="news__title" href="#">
-                      Лев Воронин: «Гандболистки сборной России достойно поступили.
-                    </a>
-                    <p class="news__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч.</p>
-                  </div>
-                </li>
-              </ul>
-              <a class="button button--news" href="#">Все новости</a>
-            </section>
-            <section class="photo">
-              <h2 class="visually-hidden">Фото</h2>
-              <ul class="photo__list">
-                <li class="photo__item">
-                  <div class="photo__item-wrapper-top">
-                    <a class="photo__picture">
-                      <img class="photo__picture-img" src="img/photo-video-img-1.jpg" width="284" height="190" alt="">
-                    </a>
-                    <a class="photo__title">
-                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
-                    </a>
-                  </div>
-                  <div class="photo__item-wrapper-bottom">
-                    <div class="photo__date">29.05.2017</div>
-                    <div class="photo__number">53</div>
-                  </div>
-                </li>
-                <li class="photo__item">
-                  <div class="photo__item-wrapper-top">
-                    <a class="photo__picture">
-                      <img class="photo__picture-img" src="img/photo-video-img-2.jpg" width="284" height="190" alt="">
-                    </a>
-                    <a class="photo__title">
-                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
-                    </a>
-                  </div>
-                  <div class="photo__item-wrapper-bottom">
-                    <div class="photo__date">29.05.2017</div>
-                    <div class="photo__number">53</div>
-                  </div>
-                </li>
-                <li class="photo__item">
-                  <div class="photo__item-wrapper-top">
-                    <a class="photo__picture">
-                      <img class="photo__picture-img" src="img/photo-video-img-3.jpg" width="284" height="190" alt="">
-                    </a>
-                    <a class="photo__title">
-                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
-                    </a>
-                  </div>
-                  <div class="photo__item-wrapper-bottom">
-                    <div class="photo__date">29.05.2017</div>
-                    <div class="photo__number">53</div>
-                  </div>
-                </li>
-              </ul>
-              <a class="button button--photo" href="#">Все фото</a>
-            </section>
-            <section class="video">
-              <h2 class="visually-hidden">Видео</h2>
-              <ul class="video__list">
-                <li class="video__item">
-                  <div class="video__item-wrapper">
-                    <a class="video__picture">
-                      <img class="video__picture-img" src="img/photo-video-img-1.jpg" width="284" height="190" alt="">
-                    </a>
-                    <a class="video__title">
-                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
-                    </a>
-                  </div>
-                  <div class="video__date">29.05.2017</div>
-                </li>
-                <li class="video__item">
-                  <div class="video__item-wrapper">
-                    <a class="video__picture">
-                      <img class="video__picture-img" src="img/photo-video-img-2.jpg" width="284" height="190" alt="">
-                    </a>
-                    <a class="video__title">
-                      Определено время начала матчей
-                    </a>
-                  </div>
-                  <div class="video__date">29.05.2017</div>
-                </li>
-                <li class="video__item">
-                  <div class="video__item-wrapper">
-                    <a class="video__picture">
-                      <img class="video__picture-img" src="img/photo-video-img-3.jpg" width="284" height="190" alt="">
-                    </a>
-                    <a class="video__title">
-                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
-                    </a>
-                  </div>
-                  <div class="video__date">29.05.2017</div>
-                </li>
-              </ul>
-              <a class="button button--video" href="#">Все видео</a>
-            </section>
           </div>
-          <section class="sidebar">
+          <section class="sidebar sidebar-inner">
             <h2 class="visually-hidden">Правая колонка с информацией</h2>
-            <div class="selects-list">
-              <div class="select-item select-item--championship">
-                <div class="select-item-default">
-                  <p class="select-item-default-text">Чемпионат 1</p>
-                </div>
-                <ul class="select-item-options">
-                  <li class="select-item-option-1">Чемпионат 1</li>
-                  <li class="select-item-option-1">Чемпионат 2</li>
-                  <li class="select-item-option-1">Чемпионат 3</li>
-                </ul>
-              </div>
-              <div class="select-item select-item--division">
-                <div class="select-item-default">
-                  <p class="select-item-default-text">Топ-дивизион</p>
-                </div>
-                <ul class="select-item-options select-item-active">
-                  <li class="select-item-option-1">Топ-дивизион 1</li>
-                  <li class="select-item-option-1">Топ-дивизион 2</li>
-                  <li class="select-item-option-1">Топ-дивизион 3</li>
-                </ul>
-              </div>
-              <div class="select-item select-item--group">
-                <div class="select-item-default">
-                  <p class="select-item-default-text">Группа-А</p>
-                </div>
-                <ul class="select-item-options">
-                  <li class="select-item-option-1">Группа-А</li>
-                  <li class="select-item-option-1">Группа-Б</li>
-                  <li class="select-item-option-1">Группа-В</li>
-                </ul>
-              </div>
-            </div>
+            <ul class="sidebar__navigation">
+              <li class="sidebar__navigation-item">
+                <a class="sidebar__navigation-item-link" href="#">О турнире</a>
+              </li>
+              <li class="sidebar__navigation-item">
+                <a class="sidebar__navigation-item-link" href="#">Календарь</a>
+              </li>
+              <li class="sidebar__navigation-item">
+                <a class="sidebar__navigation-item-link" href="#">Таблицы и сетки</a>
+              </li>
+              <li class="sidebar__navigation-item">
+                <a class="sidebar__navigation-item-link" href="#">Статистика</a>
+              </li>
+              <li class="sidebar__navigation-item active">
+                <a class="sidebar__navigation-item-link">Команды</a>
+              </li>
+              <li class="sidebar__navigation-item">
+                <a class="sidebar__navigation-item-link" href="#">Новости</a>
+              </li>
+              <li class="sidebar__navigation-item">
+                <a class="sidebar__navigation-item-link" href="#">Фото и видео</a>
+              </li>
+              <li class="sidebar__navigation-item">
+                <a class="sidebar__navigation-item-link" href="#">Документы</a>
+              </li>
+            </ul>
             <table class="sidebar__table sidebar__table--tournament" cellspacing="0">
               <tr class="sidebar__table-row sidebar__table-row--title sidebar__tournament-row sidebar__tournament-row--title">
                 <th class="sidebar__table-cell sidebar__table-cell--title" colspan="5">Турнирная таблица</th>
