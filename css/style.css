@@ -36,7 +36,6 @@ html {
 
 a {
   text-decoration: none;
-  color: #1a7dab;
 }
 
 img {
@@ -324,13 +323,6 @@ img {
   margin-right: 20px;
 }
 
-.arrow-back--tournaments:hover,
-.arrow-back--tournaments:active,
-.arrow-forward--tournaments:hover,
-.arrow-forward--tournaments:active {
-  stroke: rgba(213, 0, 40, 0.7);
-}
-
 .calendar__tournaments-list {
   display: flex;
   flex-wrap: nowrap;
@@ -466,11 +458,6 @@ img {
 .arrow-forward--games {
   text-align: right;
   margin-right: 30px;
-}
-
-.arrow-back--games:hover,
-.arrow-forward--games:hover {
-  stroke: rgba(213, 0, 40, 0.7);
 }
 
 .calendar__games-list {
@@ -1052,7 +1039,7 @@ img {
   vertical-align: top;
 }
 
-.sidebar__statistics-row--head .sidebar__table-cell{
+.sidebar__statistics-row--head .sidebar__table-cell {
   background-color: #ffffff;
   color: #000000;
   border-bottom: 1px solid #dddddd;
@@ -1366,13 +1353,6 @@ img {
   text-align: right;
 }
 
-.arrow-back--partners:hover,
-.arrow-back--partners:active,
-.arrow-forward--partners:hover,
-.arrow-forward--partners:active {
-  stroke: rgba(213, 0, 40, 0.7);
-}
-
 /*Подвал*/
 
 .footer {
@@ -1453,13 +1433,6 @@ img {
   fill: #d50028;
   position: absolute;
   top: 0px;
-}
-
-/* Активное сoстояние и соcтояние по наведению у стрелы*/
-
-.arrow--cursor-pointing,
-.arrow--active {
-  stroke: rgba(213, 0, 40, 0.7);
 }
 
 /*Внутренние страницы*/
@@ -1548,6 +1521,267 @@ img {
   font-size: 17px;
 }
 
+/*Страница "Турниры-стартовая"*/
+
+.text-information {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.text-information__paragraph {
+  padding: 0;
+  margin: 0;
+}
+
+.matches-overview {
+  margin-bottom: 25px;
+}
+
+.matches-overview__past-matches {
+  display: flex;
+  position: relative;
+  width: 910px;
+  height: 247px;
+}
+
+.matches-overview__title {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 15px;
+  left: 354px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 23px;
+  line-height: 52px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.arrow-back-wrapper {
+  width: 53px;
+  background-color: #f3f3f3;
+}
+
+.arrow-forward-wrapper {
+  width: 53px;
+  background-color: #ffffff;
+}
+
+.matches-overview__list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  width: 804px;
+  overflow: hidden;
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.arrow-back--matches-overview,
+.arrow-forward--matches-overview {
+  display: block;
+  width: 53px;
+  padding-top: 121px;
+  margin: 0;
+  stroke: #6d7c9d;
+}
+
+.arrow-back--matches-overview {
+  padding-left: 20px;
+}
+
+.arrow-forward--matches-overview {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.live {
+  position: relative;
+}
+
+.live::before {
+  content: "Live";
+  position: absolute;
+  top: 103px;
+  right: 15px;
+  width: 25px;
+  height: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 8.45px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(213, 0, 40, 1);
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.matches-overview__item {
+  flex-shrink: 0;
+  padding-top: 80px;
+  padding-left: 17px;
+  padding-right: 12px;
+  width: 201px;
+}
+
+.matches-overview__item:nth-child(2n) {
+  background-color: #f3f3f3;
+}
+
+.matches-overview__score {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.matches-overview__round,
+.matches-overview__date-time {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 19px;
+  color: #000000;
+  vertical-align: middle;
+}
+
+.matches-overview__date-time {
+  margin-bottom: 5px;
+}
+
+.matches-overview__score-cell--bold {
+  font-weight: 700;
+}
+
+.matches-overview__score-cell  {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #3f3f3f;
+  vertical-align: top;
+}
+
+.matches-overview__score-cell--goals {
+  text-align: right;
+}
+
+.matches-overview__score-cell--first-game {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  color: #3f3f3f;
+  max-width: 30px;
+  line-height: 40px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.matches-overview__indicators-list {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 7px;
+  bottom: 18px;
+  right: 50%;
+  margin-right: -38px;
+}
+
+.matches-overview__indicators-item {
+  width: 17px;
+  height: 7px;
+  transform: skewX(-15deg);
+  background-color: rgba(4, 69, 117, 0.3);
+  margin-right: 7px;
+}
+
+.matches-overview__indicators-item--active {
+  background-color: rgba(213, 0, 40, 1);
+}
+
+.matches-overview__future-matches {
+  display: flex;
+  position: relative;
+  width: 910px;
+  height: 247px;
+}
+
+.matches-overview__future-matches .arrow-back-wrapper {
+  background-color: #1672a0;
+}
+
+.matches-overview__future-matches .matches-overview__list {
+  background-color: #1a7dab;
+}
+
+.matches-overview__future-matches .matches-overview__item:nth-child(2n) {
+  background-color: #1672a0;
+}
+
+.matches-overview__future-matches .arrow-forward-wrapper {
+  background-color: #1a7dab;
+}
+
+.matches-overview__future-matches .matches-overview__title {
+  position: absolute;
+  top: 15px;
+  left: 370px;
+  color: #ffffff;
+}
+
+.matches-overview__future-matches .matches-overview__round,
+.matches-overview__future-matches .matches-overview__date-time,
+.matches-overview__future-matches .matches-overview__score-cell {
+  color: #ffffff;
+}
+
+.matches-overview__future-matches .arrow-back--matches-overview,
+.matches-overview__future-matches .arrow-forward--matches-overview {
+  stroke: #5a9bbc;
+}
+
+.matches-overview__future-matches  .matches-overview__indicators-item {
+  background-color: rgba(243, 243, 243, 0.3);
+}
+
+.matches-overview__future-matches .matches-overview__indicators-item--active {
+    background-color: rgba(213, 0, 40, 1);
+  }
+
+.matches-overview__date-time-wrapper {
+  transform: skewX(-15deg);
+  background-color: #044575;
+  max-width: 100px;
+  margin-left: 3px;
+}
+
+.matches-overview__date-time-wrapper .matches-overview__date-time::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0px;
+  width: 20px;
+  margin-left: -3px;
+  height: 19px;
+  background-color: #044575;
+}
+
+.matches-overview__date-time-wrapper .matches-overview__date-time {
+  position: relative;
+  transform: skewX(15deg);
+  padding: 0 10px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 /*Страница "Турниры-Команды"*/
 
 .teams__list {
@@ -1610,11 +1844,15 @@ img {
   padding-left: 18px;
   margin-bottom: 19px;
   min-height: 134px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
   background-color: #ffffff;
 }
 
 .documents__picture {
+  flex-shrink: 0;
   width: 79px;
   height: 71px;
 }
@@ -1635,4 +1873,16 @@ img {
   font-size: 13px;
   line-height: 25px;
   color: #5c5c5c;
+}
+
+/* Активное сoстояние и соcтояние по наведению у стрелы*/
+
+.arrow:hover,
+.arrow:active {
+  stroke: #d7193d;
+}
+
+.arrow--cursor-pointing,
+.arrow--active {
+  stroke: #d7193d;
 }
