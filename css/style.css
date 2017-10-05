@@ -914,6 +914,23 @@ img {
   background-color: #ffffff;
 }
 
+.sidebar__table-content {
+  width: 100%;
+}
+
+.sidebar__table .sidebar__table-title {
+  padding: 0;
+  padding-left: 15px;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 44px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #044575;
+  border-bottom: 0px;
+}
+
 .sidebar__table-cell {
   padding: 0;
   padding-left: 15px;
@@ -922,16 +939,6 @@ img {
   line-height: 37px;
   vertical-align: middle;
   border-bottom: 1px solid #dddddd;
-}
-
-.sidebar__table .sidebar__table-cell--title {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 44px;
-  color: #ffffff;
-  font-weight: bold;
-  background-color: #044575;
-  border-bottom: 0px;
 }
 
 .sidebar__table-row--head .sidebar__table-cell {
@@ -966,10 +973,6 @@ img {
   width: 7px;
 }
 
-.sidebar__table--tournament .sidebar__table-cell--title {
-  padding-left: 15px;
-}
-
 .sidebar__table--tournament .sidebar__table-cell--games {
   padding-left: 20px;
 }
@@ -993,41 +996,40 @@ img {
   text-align: center;
 }
 
-.sidebar__table--statistics .sidebar__statistics-cell--tabs {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 12px;
-  text-align: center;
+.tabs__navigation {
+  width: 100%;
   background-color: #4897bc;
-  color: #ffffff;
 }
 
-.tabs-list {
+.tabs__list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   margin-left: 5px;
   margin-right: 5px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 38px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.tabs-item {
+.tabs__item {
   flex-grow: 1;
   transform: skewX(-15deg);
 }
 
-.tabs-item-2 {
+.tabs__item-2 {
   border-left: 1px solid #3e8bb1;
   border-right: 1px solid #3e8bb1;
 }
 
-.tabs-text {
+.tabs__text {
   transform: skewX(15deg);
 }
 
-.tabs-active {
+.tabs__active {
   background-color: #ffffff;
   color: #000000;
 }
@@ -1069,6 +1071,11 @@ img {
   width: 30px;
   height: 30px;
   background-color: #e8e8e8;
+}
+
+.tabs__item-2-content,
+.tabs__item-3-content {
+  display: none;
 }
 
 /*Новости на главной странице*/
