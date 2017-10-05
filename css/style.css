@@ -69,12 +69,10 @@ img {
 }
 
 .header__logo {
-  display: inline-block;
-  position: relative;
+  position: absolute;
   width: 172px;
   height: 169px;
   background-color: #ffffff;
-  /*margin-right: -13px; /*для удаления отступа после inline-block*/
 }
 
 .header__top {
@@ -102,11 +100,12 @@ img {
 }
 
 .header__title {
-  display: inline-block;
+  /*display: inline-block;*/
   padding: 0;
+  padding-left: 221px;
   margin: auto 0;
-  padding-right: 47px;
-  padding-left: 50px;
+  /*padding-right: 47px;
+  padding-left: 50px;*/
   padding-top: 20px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 33px;
@@ -150,7 +149,7 @@ img {
   background-image: linear-gradient(10deg, #fdc565 2%, #ae318f 80%, #6d51c4 100%);
 }
 
-.svg-icon--instagram{
+.svg-icon--instagram {
   fill: #ffffff;
   vertical-align: middle;
 }
@@ -168,7 +167,7 @@ img {
   background-color: #ffffff;
 }
 
-.svg-icon--youtube{
+.svg-icon--youtube {
   fill: #ff4847;
   vertical-align: middle;
 }
@@ -1616,7 +1615,7 @@ img {
   position: relative;
 }
 
-.live::before {
+.matches-overview .live::before {
   content: "Live";
   position: absolute;
   top: 103px;
