@@ -950,8 +950,7 @@ img {
   border-bottom: 0px;
 }
 
-.sidebar__table-cell--link {
-  padding: 0;
+.link--sidebar-wrapper {
   text-align: center;
 }
 
