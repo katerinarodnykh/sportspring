@@ -777,14 +777,14 @@ img {
   width: 260px;
 }
 
-.selects-list{
+.selects-list {
   min-height: 158px;
   margin-bottom: 34px;
 }
 
 .select-item {
   position: relative;
-  width: 260px;
+  min-width: 260px;
   height: 44px;
   margin-bottom: 13px;
   background-color: #3b8eb5;
@@ -794,7 +794,7 @@ img {
   margin-bottom: 0;
 }
 
-.select-item-default {
+.select-item__default {
   width: 197px;
   height: 100%;
   background-color: #6ca8c3;
@@ -821,7 +821,7 @@ img {
   border-right-color: transparent;
 }
 
-.select-item-default-text {
+.select-item__default-text {
   padding: 0;
   margin: 0;
   height: 100%;
@@ -834,7 +834,7 @@ img {
   transform: skewX(15deg);
 }
 
-.select-item-options {
+.select-item__options {
   display: none;
   position: absolute;
   top: 44px;
@@ -855,7 +855,7 @@ img {
   color: #ffffff;
 }
 
-.select-item-active {
+.select-item__options--active {
   display: block;
 }
 
@@ -1027,7 +1027,7 @@ img {
   transform: skewX(15deg);
 }
 
-.tabs__active {
+.tabs--active {
   background-color: #ffffff;
   color: #000000;
 }
@@ -1807,7 +1807,7 @@ img {
 }
 
 .teams__item:nth-child(4n) {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .teams__logo {
@@ -1879,6 +1879,200 @@ img {
   line-height: 25px;
   color: #5c5c5c;
 }
+
+/* Страница "Календарь" */
+.schedule .tabs__navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d1d7dc;
+}
+
+.schedule .tabs__list {
+  margin-left: 6px;
+  width: 180px;
+}
+
+.schedule .tabs__item-2 {
+  border: 0;
+}
+
+.schedule .select-item,
+.schedule .select-item__options {
+  background-color: #16527e;
+}
+
+.schedule .select-item__default,
+.schedule .select-item::before {
+  background-color: #417194;
+}
+
+.schedule .tabs__list {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 45px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.schedule .tabs__content {
+  background-color: #ffffff;
+}
+
+.schedule .tabs__content-head {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  vertical-align: middle;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.schedule .tabs__content-date-or-round {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.schedule .tabs__content-checkbox {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 41px;
+  vertical-align: middle;
+}
+
+.schedule .tabs__content-matches-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.schedule .tabs__content-matches-item {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 72px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.schedule .tabs__content-matches-item:last-child {
+  border-bottom: 0;
+}
+
+.schedule .tabs__content-time-place {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  padding-right: 20px;
+}
+
+.schedule .tabs__content-time {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.schedule .tabs__content-place {
+  position: relative;
+  padding-left: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: #3f3f3f;
+}
+
+.schedule .tabs__content-place::before {
+  content:"\f041";
+  position: absolute;
+  left: 0;
+  font-family: "FontAwesome";
+  font-size: 17px;
+  color: #d50028;
+}
+
+.schedule .tabs__content-team-name {
+  width: 188px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 70px;
+  color: #000000;
+}
+
+.schedule .tabs__content-score {
+  display: block;
+  min-width: 69px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 70px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+.schedule .tabs__content-team-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5c5;
+}
+
+.tabs__content-team-img {
+  vertical-align: middle;
+  line-height: 42px;
+}
+
+.schedule .tabs__content-team-1,
+.schedule .tabs__content-team-2 {
+  display: flex;
+  align-items: center;
+}
+
+.schedule .tabs__content-team-logo--margin-left {
+  margin-left: 10px;
+}
+
+.schedule .tabs__content-team-logo--margin-right {
+  margin-right: 10px;
+}
+
+.schedule .tabs__content-team-name--right {
+  text-align: right;
+}
+
+.tabs__content-team-name--left {
+  text-align: left;
+}
+
+.schedule .tabs__content-next-date-or-round {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #ecf4f8;
+}
+
+.schedule .tabs__content-date-or-round {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tabs--active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.tabs__item-2-content,
+.tabs__item-3-content {
+  display: none;
+}
+
 
 /* Активное сoстояние и соcтояние по наведению у стрелы*/
 
