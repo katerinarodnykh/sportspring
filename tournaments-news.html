@@ -60,7 +60,7 @@
               <li class="navigation__item navigation__item--teams">
                 <a class="navigation__item-link" href="#">Участники</a>
               </li>
-              <li class="navigation__item navigation__item--news">
+              <li class="navigation__item navigation__item--news-list">
                 <a class="navigation__item-link" href="#">Новости</a>
               </li>
               <li class="navigation__item navigation__item--photo">
@@ -90,369 +90,115 @@
         </div>
       </section>
       <div class="main-container main-container--inner">
-        <div class="main-content tournaments-schedule-content">
-          <section class="schedule">
-            <h3 class="visually-hidden">Календарь по дате и по турам</h3>
-            <section class="tabs tabs--schedule">
-              <div class="tabs__navigation">
-                <ul class="tabs__list">
-                  <li class="tabs__item tabs__item-1 tabs--active">
-                    <div class="tabs__text tabs__text--by-date">По дате</div>
-                  </li>
-                  <li class="tabs__item tabs__item-2">
-                    <div class="tabs__text tabs__text--by-rounds">По турам</div>
-                  </li>
+        <div class="main-content tournaments-news-list-content">
+          <section class="news-list">
+            <h2 class="visually-hidden">Новости</h2>
+            <div class="content-navigation">
+              <span class="section-title">Новости</span>
+              <div class="select-item select-item--news-list">
+                <div class="select-item__default">
+                  <p class="select-item__default-text">Все новости</p>
+                </div>
+                <ul class="select-item__options">
+                  <li class="select-item__option-1">Не все новости</li>
+                  <li class="select-item__option-1">Не все новости</li>
+                  <li class="select-item__option-1">Не все новости</li>
                 </ul>
-                <div class="select-item select-item--group">
-                  <div class="select-item__default">
-                    <p class="select-item__default-text">Группа «А»</p>
-                  </div>
-                  <ul class="select-item__options">
-                    <li class="select-item__option-1">Группа-А</li>
-                    <li class="select-item__option-1">Группа-Б</li>
-                    <li class="select-item__option-1">Группа-В</li>
-                  </ul>
-                </div>
               </div>
-              <div class="tabs__content">
-                <div class="tabs__item-1-content">
-                  <div class="tabs__content-head">
-                    <span class="tabs__content-date">3 августа 2017, пятница</span>
-                    <label class="tabs__content-checkbox">
-                      <input type="checkbox" name="past-matches" checked>
-                      Прошедшие матчи
-                    </label>
+            </div>
+            <ul class="news-list__list">
+              <li class="news-list__item">
+                <a class="news-list__picture" href="#">
+                  <img class="news-list__picture-img" src="img\news-img-1.jpg" width="" height="" alt="">
+                </a>
+                <div class="news-list__content">
+                  <div class="news-list__date">28.09.2017</div>
+                  <div class="news-list__title-text-wrapper">
+                    <a class="news-list__title" href="#">
+                      Лев Воронин: «Гандболистки сборной России достойно поступили, решив перечислить 1,5 миллиона рублей премиальных паралимпийцам»
+                    </a>
+                    <p class="news-list__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч. Особенно, когда встречаются друг с другом команды, жаждущие первых очков на турнире.</p>
                   </div>
-                  <ul class="tabs__content-matches-list">
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Крылья Советов</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">5 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">Динамо</span>
-                      </a>
+                  <ul class="tags tags--news-list">
+                    <li class="tag__item">
+                      <a class="tag__text">Чемпионат 2018</a>
                     </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Nova Arena</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Спартак</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ФК Москва</span>
-                      </a>
+                    <li class="tag__item">
+                      <a class="tag__text">Сборная</a>
                     </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Локомотив</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ЦСКА</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Nova Arena</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Крылья Советов</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ФК Москва</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="tabs__content-next-date">
-                    <span class="tabs__content-date">4 августа 2017, суббота</span>
-                  </div>
-                  <ul class="tabs__content-matches-list">
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Крылья Советов</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">5 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">Динамо</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Спартак</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ФК Москва</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Локомотив</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ЦСКА</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Крылья Советов</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ФК Москва</span>
-                      </a>
+                    <li class="tag__item">
+                      <a class="tag__text">Зенит</a>
                     </li>
                   </ul>
                 </div>
-                <div class="tabs__item-2-content">
-                  <div class="tabs__content-head">
-                    <span class="tabs__content-round">1 тур</span>
-                    <label class="tabs__content-checkbox">
-                      <input type="checkbox" name="past-matches" checked>
-                      Прошедшие матчи
-                    </label>
+              </li>
+              <li class="news-list__item">
+                <a class="news-list__picture" href="#">
+                  <img class="news-list__picture-img" src="img\news-img-2.jpg" width="" height="" alt="">
+                </a>
+                <div class="news-list__content">
+                  <div class="news-list__date">28.09.2017</div>
+                  <div class="news-list__title-text-wrapper">
+                    <a class="news-list__title" href="#">
+                      Лев Воронин: «Гандболистки сборной России достойно поступили
+                    </a>
+                    <p class="news-list__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч. Особенно, когда встречаются друг с другом команды, жаждущие первых очков на турнире.</p>
                   </div>
-                  <ul class="tabs__content-matches-list">
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Крылья Советов</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">5 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">Динамо</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Nova Arena</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Спартак</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ФК Москва</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Локомотив</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ЦСКА</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Nova Arena</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Крылья Советов</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ФК Москва</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="tabs__content-next-round">
-                    <span class="tabs__content-round">2 тур</span>
-                  </div>
-                  <ul class="tabs__content-matches-list">
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Крылья Советов</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">5 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">Динамо</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Спартак</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ФК Москва</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Локомотив</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ЦСКА</span>
-                      </a>
-                    </li>
-                    <li class="tabs__content-matches-item">
-                      <div class="tabs__content-time-place">
-                        <span class="tabs__content-time">17:00</span>
-                        <span class="tabs__content-place">Футбольный центр «Парк Сокольники»</span>
-                      </div>
-                      <a class="tabs__content-team-1" href="#">
-                        <span class="tabs__content-team-name tabs__content-team-name--right" href="#">Крылья Советов</span>
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-left">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
-                        </div>
-                      </a>
-                      <a class="tabs__content-score" href="#">2 : 2</a>
-                      <a class="tabs__content-team-2" href="#">
-                        <div class="tabs__content-team-logo tabs__content-team-logo--margin-right">
-                          <img class="tabs__content-team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
-                        </div>
-                        <span class="tabs__content-team-name tabs__content-team-name--left">ФК Москва</span>
-                      </a>
+                  <ul class="tags tags--news-list">
+                    <li class="tag__item">
+                      <a class="tag__text">Чемпионат 2018</a>
                     </li>
                   </ul>
                 </div>
-              </div>
-            </section>
+              </li>
+              <li class="news-list__item">
+                <a class="news-list__picture" href="#">
+                  <img class="news-list__picture-img" src="img\news-img-1.jpg" width="" height="" alt="">
+                </a>
+                <div class="news-list__content">
+                  <div class="news-list__date">28.09.2017</div>
+                  <div class="news-list__title-text-wrapper">
+                    <a class="news-list__title" href="#">
+                      Лев Воронин: «Гандболистки сборной России достойно поступили, решив перечислить 1,5 миллиона рублей премиальных паралимпийцам». Гандболистки сборной России достойно поступили
+                    </a>
+                    <p class="news-list__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч. Особенно, когда встречаются друг с другом команды, жаждущие первых очков на турнире.</p>
+                  </div>
+                  <ul class="tags tags--news-list">
+                    <li class="tag__item">
+                      <a class="tag__text">Чемпионат 2018</a>
+                    </li>
+                    <li class="tag__item">
+                      <a class="tag__text">Сборная</a>
+                    </li>
+                    <li class="tag__item">
+                      <a class="tag__text">Зенит</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="news-list__item">
+                <a class="news-list__picture" href="#">
+                  <img class="news-list__picture-img" src="img\news-img-2.jpg" width="" height="" alt="">
+                </a>
+                <div class="news-list__content">
+                  <div class="news-list__date">28.09.2017</div>
+                  <div class="news-list__title-text-wrapper">
+                    <a class="news-list__title" href="#">
+                      Лев Воронин: «Гандболистки сборной России достойно поступили, решив перечислить 1,5 миллиона рублей премиальных паралимпийцам»
+                    </a>
+                    <p class="news-list__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч. Особенно, когда встречаются друг с другом команды, жаждущие первых очков на турнире.</p>
+                  </div>
+                  <ul class="tags tags--news-list">
+                    <li class="tag__item">
+                      <a class="tag__text">Чемпионат 2018</a>
+                    </li>
+                    <li class="tag__item">
+                      <a class="tag__text">Сборная</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </section>
         </div>
         <section class="sidebar sidebar--inner">
@@ -474,7 +220,7 @@
               <a class="sidebar__navigation-item-link" href="tournaments-teams.html">Команды</a>
             </li>
             <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-news.html">Новости</a>
+              <a class="sidebar__navigation-item-link" href="#">Новости</a>
             </li>
             <li class="sidebar__navigation-item">
               <a class="sidebar__navigation-item-link" href="#">Фото и видео</a>

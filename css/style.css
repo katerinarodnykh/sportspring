@@ -777,27 +777,21 @@ img {
   width: 260px;
 }
 
-.selects-list {
-  min-height: 158px;
-  margin-bottom: 34px;
-}
+/* Селекты в сайдбаре на главной странице */
+
+/* Стандартный тёмный селект, который потом встречается на многих внутренних страницах */
 
 .select-item {
   position: relative;
   min-width: 260px;
   height: 44px;
-  margin-bottom: 13px;
-  background-color: #3b8eb5;
-}
-
-.select-item--group {
-  margin-bottom: 0;
+  background-color: #16527e;
 }
 
 .select-item__default {
   width: 197px;
   height: 100%;
-  background-color: #6ca8c3;
+  background-color: #417194;
   transform: skewX(-15deg);
   margin-left: 15px;
 }
@@ -807,7 +801,7 @@ img {
   position: absolute;
   width: 25px;
   height: 44px;
-  background-color: #6ca8c3;
+  background-color: #417194;
 }
 
 .select-item::after {
@@ -859,6 +853,28 @@ img {
   display: block;
 }
 
+/* Список светлых селектов на главной странице */
+
+.selects-list {
+  min-height: 158px;
+  margin-bottom: 34px;
+}
+
+.select-item--light {
+  margin-bottom: 13px;
+  background-color: #3b8eb5;
+}
+
+.select-item--light::before {
+  background-color: #6ca8c3;
+}
+
+.select-item--light .select-item__default {
+  background-color: #6ca8c3;
+}
+
+/* Навигация в сайдбаре на внутренних страницах */
+
 .sidebar__navigation {
   padding: 0;
   margin: 0;
@@ -903,6 +919,8 @@ img {
   font-size: 15px;
   left: 15px;
 }
+
+/* Таблицы в сайдбаре */
 
 .sidebar__table {
   padding: 0;
@@ -1078,12 +1096,12 @@ img {
 
 /*Новости на главной странице*/
 
-.news {
+.news-cads {
   margin-bottom: 43px;
   min-height: 644px;
 }
 
-.news__list {
+.news-cads__list {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -1091,40 +1109,40 @@ img {
   list-style: none;
 }
 
-.news__item {
+ .news-cads__item {
   width: 440px;
   min-height: 570px;
   background-color: #ffffff;
 }
 
-.news__picture {
+.news-cads__picture {
   display: block;
   height: 293px;
   filter: brightness(80%);
 }
 
-@keyframes news__picture-animation {
+@keyframes news-cads__picture-animation {
   100% {
     transform: scale(1.05);
     filter: brightness(100%);
   }
 }
 
-.news__picture:hover {
-  animation-name: news__picture-animation;
+.news-cads__picture:hover {
+  animation-name: news-list-cads__picture-animation;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
 
-.news__content {
+.news-cads__content {
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 35px;
   padding-right: 35px;
 }
 
-.news__date {
+.news-cads__date {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -1133,7 +1151,7 @@ img {
   vertical-align: middle;
 }
 
-.news__title {
+.news-cads__title {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1146,11 +1164,11 @@ img {
   vertical-align: middle;
 }
 
-.news__text {
+.news-cads__text {
   margin: 15px 0;
 }
 
-.button--news {
+.button--news-cads {
   margin-top: 28px;
 }
 
@@ -1882,78 +1900,6 @@ img {
 
 /* Страница "Календарь, Расписание" */
 
-.schedule .select-item {
-  position: relative;
-  min-width: 260px;
-  height: 44px;
-  background-color: #16527e;
-}
-
-.schedule .select-item__default {
-  width: 197px;
-  height: 100%;
-  background-color: #417194;
-  transform: skewX(-15deg);
-  margin-left: 15px;
-}
-
-.schedule .select-item::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 44px;
-  background-color: #417194;
-}
-
-.schedule .select-item::after {
-  content: "";
-  position: absolute;
-  right: 16px;
-  top: 21px;
-  border: 5px solid #ffffff;
-  border-bottom-width: 0px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-}
-
-.schedule .select-item__default-text {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 44px;
-  text-align: left;
-  vertical-align: middle;
-  color: #ffffff;
-  transform: skewX(15deg);
-}
-
-.schedule .select-item__options {
-  display: none;
-  position: absolute;
-  top: 44px;
-  z-index: 1;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0;
-  width: 100%;
-  list-style: none;
-  background-color: inherit;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: left;
-  vertical-align: middle;
-  color: #ffffff;
-}
-
- .schedule .select-item__options--active {
-  display: block;
-}
-
 .schedule .tabs__navigation {
   display: flex;
   justify-content: space-between;
@@ -2003,12 +1949,20 @@ img {
   border-bottom: 1px solid #c5c5c5;
 }
 
-.schedule .tabs__content-date-or-round {
+.schedule .tabs__content-date,
+.schedule .tabs__content-round {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 42px;
+  line-height: 40px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.schedule .tabs__content-next-date,
+.schedule .tabs__content-next-round {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #ecf4f8;
 }
 
 .schedule .tabs__content-checkbox {
@@ -2120,20 +2074,6 @@ img {
   text-align: left;
 }
 
-.schedule .tabs__content-next-date-or-round {
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: #ecf4f8;
-}
-
-.schedule .tabs__content-date-or-round {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .schedule .tabs--active {
   background-color: #ffffff;
   color: #000000;
@@ -2143,6 +2083,112 @@ img {
 .schedule .tabs__item-3-content {
   display: none;
 }
+
+/* Страница "Турниры-Новости" */
+
+.content-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background-color: #d1d7dc;
+}
+
+.section-title {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 44px;
+  padding-left: 25px;
+  text-transform: uppercase;
+}
+
+.news-list__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.news-list__item {
+  display: flex;
+  width: 100%;
+  height: 227px;
+  margin-bottom: 23px;
+  background-color: #ffffff;
+}
+
+.news-list__picture {
+  flex-shrink: 0;
+  display: block;
+  width: 340px;
+  height: 227px;
+  filter: brightness(80%);
+}
+
+.news-list__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.news-list__date {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: left;
+  color: #5c5c5c;
+  vertical-align: middle;
+}
+
+.news-list__title-text-wrapper {
+  max-height: 125px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-list__title {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: left;
+  color: #12151d;
+  vertical-align: middle;
+}
+
+.news-list__text {
+  margin: 10px 0;
+}
+
+.tags {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tag__item {
+  margin-right: 13px;
+  border: 1px solid #1a7dab;
+}
+
+.tag__text {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 11px;
+  line-height: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1a7dab;
+}
+
 
 /* Активное сoстояние и соcтояние по наведению у стрелы*/
 
