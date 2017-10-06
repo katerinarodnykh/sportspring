@@ -1880,38 +1880,114 @@ img {
   color: #5c5c5c;
 }
 
-/* Страница "Календарь" */
+/* Страница "Календарь, Расписание" */
+
+.schedule .select-item {
+  position: relative;
+  min-width: 260px;
+  height: 44px;
+  background-color: #16527e;
+}
+
+.schedule .select-item__default {
+  width: 197px;
+  height: 100%;
+  background-color: #417194;
+  transform: skewX(-15deg);
+  margin-left: 15px;
+}
+
+.schedule .select-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 44px;
+  background-color: #417194;
+}
+
+.schedule .select-item::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 21px;
+  border: 5px solid #ffffff;
+  border-bottom-width: 0px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.schedule .select-item__default-text {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 44px;
+  text-align: left;
+  vertical-align: middle;
+  color: #ffffff;
+  transform: skewX(15deg);
+}
+
+.schedule .select-item__options {
+  display: none;
+  position: absolute;
+  top: 44px;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  background-color: inherit;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+ .schedule .select-item__options--active {
+  display: block;
+}
+
 .schedule .tabs__navigation {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   background-color: #d1d7dc;
 }
 
 .schedule .tabs__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
   margin-left: 6px;
+  margin-right: 5px;
   width: 180px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 45px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.schedule .tabs__item {
+  flex-grow: 1;
+  transform: skewX(-15deg);
 }
 
 .schedule .tabs__item-2 {
   border: 0;
 }
 
-.schedule .select-item,
-.schedule .select-item__options {
-  background-color: #16527e;
-}
-
-.schedule .select-item__default,
-.schedule .select-item::before {
-  background-color: #417194;
-}
-
-.schedule .tabs__list {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 45px;
-  color: #000000;
-  text-transform: uppercase;
+.schedule .tabs__text {
+  transform: skewX(15deg);
 }
 
 .schedule .tabs__content {
@@ -2022,11 +2098,6 @@ img {
   border: 1px solid #c5c5c5;
 }
 
-.tabs__content-team-img {
-  vertical-align: middle;
-  line-height: 42px;
-}
-
 .schedule .tabs__content-team-1,
 .schedule .tabs__content-team-2 {
   display: flex;
@@ -2063,16 +2134,15 @@ img {
   text-transform: uppercase;
 }
 
-.tabs--active {
+.schedule .tabs--active {
   background-color: #ffffff;
   color: #000000;
 }
 
-.tabs__item-2-content,
-.tabs__item-3-content {
+.schedule .tabs__item-2-content,
+.schedule .tabs__item-3-content {
   display: none;
 }
-
 
 /* Активное сoстояние и соcтояние по наведению у стрелы*/
 
