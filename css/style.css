@@ -1036,7 +1036,7 @@ img {
   transform: skewX(-15deg);
 }
 
-.tabs__item-2 {
+.tabs__item--2 {
   border-left: 1px solid #3e8bb1;
   border-right: 1px solid #3e8bb1;
 }
@@ -1089,8 +1089,8 @@ img {
   background-color: #e8e8e8;
 }
 
-.tabs__item-2-content,
-.tabs__item-3-content {
+.tabs__pane--2,
+.tabs__pane--3 {
   display: none;
 }
 
@@ -1928,7 +1928,7 @@ img {
   transform: skewX(-15deg);
 }
 
-.schedule .tabs__item-2 {
+.schedule .tabs__item--2 {
   border: 0;
 }
 
@@ -1940,7 +1940,7 @@ img {
   background-color: #ffffff;
 }
 
-.schedule .tabs__content-head {
+.schedule__head {
   display: flex;
   justify-content: space-between;
   padding-left: 25px;
@@ -1949,8 +1949,8 @@ img {
   border-bottom: 1px solid #c5c5c5;
 }
 
-.schedule .tabs__content-date,
-.schedule .tabs__content-round {
+.schedule__date,
+.schedule__round {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 17px;
   line-height: 40px;
@@ -1958,27 +1958,27 @@ img {
   text-transform: uppercase;
 }
 
-.schedule .tabs__content-next-date,
-.schedule .tabs__content-next-round {
+.schedule__next-date,
+.schedule__next-round {
   padding-left: 25px;
   padding-right: 25px;
   background-color: #ecf4f8;
 }
 
-.schedule .tabs__content-checkbox {
+.schedule__checkbox {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 15px;
   line-height: 41px;
   vertical-align: middle;
 }
 
-.schedule .tabs__content-matches-list {
+.schedule__matches-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.schedule .tabs__content-matches-item {
+.schedule__matches-item {
   display: flex;
   align-items: center;
   padding-left: 25px;
@@ -1987,25 +1987,25 @@ img {
   border-bottom: 1px solid #c5c5c5;
 }
 
-.schedule .tabs__content-matches-item:last-child {
+.schedule__matches-item:last-child {
   border-bottom: 0;
 }
 
-.schedule .tabs__content-time-place {
+.schedule__time-place {
   display: flex;
   flex-direction: column;
   width: 310px;
   padding-right: 20px;
 }
 
-.schedule .tabs__content-time {
+.schedule__time {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 19px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.schedule .tabs__content-place {
+.schedule__place {
   position: relative;
   padding-left: 18px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -2014,7 +2014,7 @@ img {
   color: #3f3f3f;
 }
 
-.schedule .tabs__content-place::before {
+.schedule__place::before {
   content:"\f041";
   position: absolute;
   left: 0;
@@ -2023,7 +2023,7 @@ img {
   color: #d50028;
 }
 
-.schedule .tabs__content-team-name {
+.schedule__team-name {
   width: 188px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 17px;
@@ -2031,7 +2031,7 @@ img {
   color: #000000;
 }
 
-.schedule .tabs__content-score {
+.schedule__score {
   display: block;
   min-width: 69px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -2042,7 +2042,7 @@ img {
   color: #000000;
 }
 
-.schedule .tabs__content-team-logo {
+.schedule__team-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2052,35 +2052,34 @@ img {
   border: 1px solid #c5c5c5;
 }
 
-.schedule .tabs__content-team-1,
-.schedule .tabs__content-team-2 {
+.schedule__team-1,
+.schedule__team-2 {
   display: flex;
   align-items: center;
 }
 
-.schedule .tabs__content-team-logo--margin-left {
+.schedule__team-logo--margin-left {
   margin-left: 10px;
 }
 
-.schedule .tabs__content-team-logo--margin-right {
+.schedule__team-logo--margin-right {
   margin-right: 10px;
 }
 
-.schedule .tabs__content-team-name--right {
+.schedule__team-name--right {
   text-align: right;
 }
 
-.tabs__content-team-name--left {
+.schedule__team-name--left {
   text-align: left;
 }
 
-.schedule .tabs--active {
+.tabs--active {
   background-color: #ffffff;
   color: #000000;
 }
 
-.schedule .tabs__item-2-content,
-.schedule .tabs__item-3-content {
+.schedule__by-round {
   display: none;
 }
 
