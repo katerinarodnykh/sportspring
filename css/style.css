@@ -1050,6 +1050,14 @@ img {
   color: #000000;
 }
 
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane--active {
+  display: block;
+}
+
 .sidebar__table--statistics .sidebar__table-cell--team {
   padding: 0;
   font-size: 11px;
@@ -1087,11 +1095,6 @@ img {
   width: 30px;
   height: 30px;
   background-color: #e8e8e8;
-}
-
-.tabs__pane--2,
-.tabs__pane--3 {
-  display: none;
 }
 
 /*Новости на главной странице*/
@@ -2079,8 +2082,12 @@ img {
   color: #000000;
 }
 
-.schedule__by-round {
+.tabs__pane {
   display: none;
+}
+
+.tabs__pane--active {
+  display: block;
 }
 
 /* Страница "Турниры-Новости" */
