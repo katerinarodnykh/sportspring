@@ -36,6 +36,7 @@ html {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 img {
@@ -1025,30 +1026,58 @@ img {
   margin-left: 5px;
   margin-right: 5px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.tabs--sidebar .tabs__list {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 12px;
   line-height: 38px;
-  text-align: center;
-  color: #ffffff;
+  text-transform: none;
 }
 
 .tabs__item {
   flex-grow: 1;
   transform: skewX(-15deg);
+  border-right: 1px solid #ffffff;
 }
 
-.tabs__item--2 {
-  border-left: 1px solid #3e8bb1;
-  border-right: 1px solid #3e8bb1;
+.tabs__item:hover {
+  background-color: rgba(26, 125, 171, 0.4);
+}
+
+.tabs__item:last-child {
+  border-right: none;
 }
 
 .tabs__text {
   transform: skewX(15deg);
 }
 
-.tabs--active {
+.tabs--active,
+.tabs--active:hover {
+  font-weight: 700;
   background-color: #ffffff;
   color: #000000;
 }
+
+.tabs--sidebar .tabs--active {
+   font-weight: normal;
+}
+
+/* Цвет разделителя
+
+.tabs--sidebar .tabs__item {
+  border-right: 1px solid #3e8bb1;
+}
+
+.tabs--sidebar .tabs__item:last-child {
+  border-right: none;
+}*/
 
 .tabs__pane {
   display: none;
@@ -1099,12 +1128,12 @@ img {
 
 /*Новости на главной странице*/
 
-.news-cads {
+.news-cards {
   margin-bottom: 43px;
   min-height: 644px;
 }
 
-.news-cads__list {
+.news-cards__list {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -1112,40 +1141,40 @@ img {
   list-style: none;
 }
 
- .news-cads__item {
+ .news-cards__item {
   width: 440px;
   min-height: 570px;
   background-color: #ffffff;
 }
 
-.news-cads__picture {
+.news-cards__picture {
   display: block;
   height: 293px;
   filter: brightness(80%);
 }
 
-@keyframes news-cads__picture-animation {
+@keyframes news-cards__picture-animation {
   100% {
     transform: scale(1.05);
     filter: brightness(100%);
   }
 }
 
-.news-cads__picture:hover {
+.news-cards__picture:hover {
   animation-name: news-list-cads__picture-animation;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
 
-.news-cads__content {
+.news-cards__content {
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 35px;
   padding-right: 35px;
 }
 
-.news-cads__date {
+.news-cards__date {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -1154,7 +1183,7 @@ img {
   vertical-align: middle;
 }
 
-.news-cads__title {
+.news-cards__title {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1167,11 +1196,11 @@ img {
   vertical-align: middle;
 }
 
-.news-cads__text {
+.news-cards__text {
   margin: 15px 0;
 }
 
-.button--news-cads {
+.button--news-cards {
   margin-top: 28px;
 }
 
@@ -2193,6 +2222,75 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   color: #1a7dab;
+}
+
+/* Страница "Статистика" */
+.table {
+  background-color: #ffffff;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 50px;
+  text-align: left;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.table__cell--number {
+  text-align: center;
+  width: 62px;
+}
+
+.table__cell--player {
+  width: 242px;
+}
+
+.table__cell--team {
+  width: 382px;
+}
+
+.table__cell--games-number,
+.table__cell--goals-penalties {
+  width: 76px;
+}
+
+.table__head .table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 38px;
+  color: #656565;
+}
+
+.table__cell--player-head,
+.table__cell--team-head {
+  text-transform: uppercase;
+}
+
+.table__cell--player,
+.table__cell--team {
+  text-align: left;
+  font-size: 18px;
+}
+
+.table__player,
+.table__team {
+  display: flex;
+  align-items: center;
+}
+
+.table__player-picture,
+.table__team-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5c5;
 }
 
 
