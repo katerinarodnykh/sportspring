@@ -638,10 +638,10 @@ img {
 }
 
 .slider__slide-content {
-   position: relative;
-   width: 832px;
-   min-height: 152px;
-   background-color: rgba(0, 0, 0, 0.45);
+  position: relative;
+  width: 832px;
+  min-height: 152px;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .slider__slide-date {
@@ -754,6 +754,10 @@ img {
 
 .main-content {
   width: 910px;
+}
+
+.main-content--without-sidebar {
+  width: 100%;
 }
 
 .button {
@@ -1930,7 +1934,7 @@ img {
   color: #5c5c5c;
 }
 
-/* Страница "Календарь, Расписание" */
+/* Страница "Турнир-Календарь, Расписание" */
 
 .schedule .tabs__navigation {
   display: flex;
@@ -2224,7 +2228,7 @@ img {
   color: #1a7dab;
 }
 
-/* Страница "Статистика" */
+/* Страница "Турнир-Статистика" */
 
 .table {
   background-color: #ffffff;
@@ -2551,7 +2555,125 @@ img {
   background-color: #ff4847;
 }
 
-/* Активное сoстояние и соcтояние по наведению у стрелы*/
+/* Страница "Турнир-таблицы и сетки" */
+
+.grids .tabs__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #d1d7dc;
+}
+
+.grids .tabs__list {
+  width: 280px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: 6px;
+  margin-right: 5px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 45px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.grids .tabs__text {
+  font-weight: 400;
+}
+
+.grids .tabs__item {
+  flex-grow: 1;
+  transform: skewX(-15deg);
+  border: 0;
+}
+
+.grids .tabs__text {
+  transform: skewX(15deg);
+}
+
+.grids .tabs__content {
+  background-color: #ffffff;
+}
+
+.grids .table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  height: 51px;
+  text-align: center;
+}
+
+.grids .table__head .table__cell {
+  line-height: 38px;
+  height: 38px;
+}
+
+.grids .table__cell--color {
+  padding: 0;
+  width: 7px;
+}
+
+.grids .table__cell--number {
+  width: 60px;
+}
+
+.grids .table__cell--team {
+  width: 223px;
+  text-align: left;
+}
+
+.grids .table__cell--score {
+  border: 1px solid #c5c5c5;
+}
+
+.grids .table__cell--team-opponent-head {
+  border: 0;
+}
+
+.grids .table__cell--score-empty {
+  background-color: #c1dce8;
+}
+
+.grids .table__cell--score:last-child {
+  border-right: 0;
+}
+
+.grids .table__row:last-child .table__cell {
+  border-bottom: 0;
+}
+
+.grids .table__row:hover {
+  background-color: rgba(213, 0, 40, 0.1);
+}
+
+.grids .table__row .table__cell--score:hover,
+.grids .table__row .table__cell--score:active {
+  background-color: rgba(213, 0, 40, 1);
+}
+
+.grids .table__row .table__cell--score:hover .table__cell--score-link,
+.grids .table__row .table__cell--score:active .table__cell--score-link {
+  color: #ffffff;
+}
+
+.grids .table__row .table__cell--score-empty:hover {
+  background-color: #c1dce8;
+}
+
+.table__row--cursor-pointing {
+  background-color: rgba(213, 0, 40, 0.1);
+}
+
+.table__cell--active,
+.table__cell--active .table__cell--score-link {
+  color: #ffffff;
+  background-color: rgba(213, 0, 40, 1);
+}
+
+/* Активное сoстояние и соcтояние по наведению у стрелы */
 
 .arrow:hover,
 .arrow:active {
