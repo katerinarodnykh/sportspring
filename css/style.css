@@ -2225,6 +2225,7 @@ img {
 }
 
 /* Страница "Статистика" */
+
 .table {
   background-color: #ffffff;
   border-collapse: collapse;
@@ -2239,21 +2240,21 @@ img {
   border-bottom: 1px solid #c5c5c5;
 }
 
-.table__cell--number {
+.statistics .table__cell--number {
   text-align: center;
   width: 62px;
 }
 
-.table__cell--player {
+.statistics .table__cell--player {
   width: 242px;
 }
 
-.table__cell--team {
+.statistics .table__cell--team {
   width: 382px;
 }
 
-.table__cell--games-number,
-.table__cell--goals-penalties {
+.statistics .table__cell--games-number,
+.statistics .table__cell--goals-penalties {
   width: 76px;
 }
 
@@ -2262,11 +2263,13 @@ img {
   font-size: 13px;
   line-height: 38px;
   color: #656565;
+  text-transform: uppercase;
 }
 
-.table__cell--player-head,
-.table__cell--team-head {
-  text-transform: uppercase;
+.table__head .table__cell--games-number-head,
+.table__head .table__cell--goals-penalties-head,
+.table__head .table__cell--average-head {
+  text-transform: none;
 }
 
 .table__cell--player,
@@ -2294,11 +2297,13 @@ img {
 }
 
 /* Страница "Турнир-команда" */
+
 .team-promo {
   display: flex;
   align-items: flex-end;
   width: 100%;
   height: 165px;
+  margin-bottom: 20px;
   background-color: #085080;
   background-image: url("../img/team-logo-background.png");
 }
@@ -2374,6 +2379,176 @@ img {
 
 .team-promo__average-height {
   padding-right: 5px;
+}
+
+.team .tabs__list {
+  width: 420px;
+  margin-left: 6px;
+}
+
+.team .tabs__item--2 {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.team .tabs__pane {
+  background-color: #ffffff;
+}
+
+.table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 50px;
+  text-align: left;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.table__head .table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 38px;
+  color: #656565;
+  text-transform: uppercase;
+}
+
+.table__cell--player {
+  text-align: left;
+  font-size: 18px;
+}
+
+.table__player {
+  display: flex;
+  align-items: center;
+}
+
+.team .table__player-name {
+  padding: 0;
+  margin: 0;
+}
+
+.team .table__player-captain {
+  color: #656565;
+}
+
+.table__player-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5c5;
+}
+
+.team .table__cell--number {
+  width: 40px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.team .table__cell--amplua {
+  width: 75px;
+  text-align: center;
+}
+
+.team .table__cell--player {
+  width: 228px;
+}
+
+.team .table__cell--birth-date {
+  width: 160px;
+}
+
+.team .table__cell--goals-penalties,
+.team .table__cell--passes,
+.team .table__cell--games-number,
+.team .table__cell--yellow-cards,
+.team .table__cell--red-cards {
+  width: 80px;
+  text-align: center;
+}
+
+.team .table__cell--red-cards {
+  width: 100px;
+  padding-right: 35px;
+}
+
+.team .table__cell--goals-penalties-head {
+  position: relative;
+}
+
+.team .table__cell--games-number-head {
+  position: relative;
+}
+
+.team .table__cell--passes-head {
+  position: relative;
+}
+
+.team .table__cell--yellow-cards-head {
+  position: relative;
+}
+
+.team .table__cell--red-cards-head {
+  position: relative;
+}
+
+.team .table__cell--goals-penalties-head::before {
+  content: "\f1e3";
+  position: absolute;
+  top: 0;
+  margin-left: -8px;
+  color: #000000;
+  font-family: "FontAwesome";
+  font-size: 15px;
+}
+
+.team .table__cell--games-number-head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 38px;
+  background-image: url("../img/svg-icon--field.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.team .table__cell--passes-head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 38px;
+  background-image: url("../img/svg-icon--boot.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.team .table__cell--yellow-cards-head::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+  left: 50%;
+  margin-left: -6px;
+  width: 12px;
+  height: 15px;
+  background-color: #ff9e47;
+}
+
+.team .table__cell--red-cards-head::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+  left: 50%;
+  margin-left: -25px;
+  width: 12px;
+  height: 15px;
+  background-color: #ff4847;
 }
 
 /* Активное сoстояние и соcтояние по наведению у стрелы*/
