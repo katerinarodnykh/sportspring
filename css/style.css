@@ -2557,6 +2557,12 @@ img {
 
 /* Страница "Турнир-таблицы и сетки" */
 
+/* Раздел "Шахматка" */
+
+.tabs--grids {
+  margin-bottom: 50px;
+}
+
 .grids .tabs__navigation {
   display: flex;
   justify-content: space-between;
@@ -2607,6 +2613,7 @@ img {
 }
 
 .grids .table__head .table__cell {
+  font-size: 13px;
   line-height: 38px;
   height: 38px;
 }
@@ -2671,6 +2678,95 @@ img {
 .table__cell--active .table__cell--score-link {
   color: #ffffff;
   background-color: rgba(213, 0, 40, 1);
+}
+
+/* Раздел "Таблица" */
+
+.grids .table--table .table__cell--games-number,
+.grids .table--table .table__cell--wins,
+.grids .table--table .table__cell--draws,
+.grids .table--table .table__cell--losses {
+  width: 40px;
+}
+
+.grids .table--table .table__cell--goals-scored_goals-missed {
+  width: 100px;
+}
+
+.grids .table--table .table__cell--points {
+  width: 80px;
+  font-weight: 700;
+}
+
+.grids .table--table .table__cell--points-head {
+  font-weight: 400;
+}
+
+.grids .table--table .table__cell--form-results {
+  padding-left: 70px;
+}
+
+.grids .table--table .table__cell--form-results-head {
+  padding-left: 80px;
+  text-align: left;
+}
+
+.form-results-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  list-style: none;
+}
+
+.grids .table--table .form-results-list {
+  width: 180px;
+  overflow: hidden;
+}
+
+.form-results-item {
+  width: 25px;
+  transform: skewX(-15deg);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.form-results-item--draw {
+  background-color: #9a9a9a;
+}
+
+.form-results-item--win {
+  background-color: #85c36f;
+}
+
+.form-results-item--loss {
+  background-color: #ff4847;
+}
+
+.form-results-link {
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  transform: skewX(15deg);
+}
+
+/* Раздел "Форма" */
+
+.grids .table--form .table__cell--form-results-head {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.grids .table--form .form-results-list {
+  width: 620px;
+  overflow: hidden;
 }
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
