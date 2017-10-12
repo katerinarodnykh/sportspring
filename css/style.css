@@ -2718,9 +2718,6 @@ img {
   margin-left: 5px;
   margin-right: 5px;
   list-style: none;
-}
-
-.grids .table--table .form-results-list {
   width: 180px;
   overflow: hidden;
 }
@@ -2767,6 +2764,162 @@ img {
 .grids .table--form .form-results-list {
   width: 620px;
   overflow: hidden;
+}
+
+/* Стриница "Турниры-Матч-История встреч" */
+
+.history-promo {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 20px;
+  background-color: #134c73;
+  background-image: url("../img/match-history-promo-background.jpg");
+  box-shadow: 0 0 0 455px rgba(0, 0, 0, 0.6) inset;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+.history-promo__date-time {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  line-height: 85px;
+}
+
+.history-promo__place {
+  position: relative;
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
+  line-height: 20px;
+}
+
+.history-promo__place::before {
+  content:"\f041";
+  position: absolute;
+  margin-left: -20px;
+  font-family: "FontAwesome";
+  font-size: 17px;
+  color: #d50028;
+}
+
+.history-promo__team-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #ffffff;
+}
+
+.history-promo__score-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 42px;
+}
+
+.history-promo__team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  padding-bottom: 7px;
+  padding-top: 10px;
+}
+
+.history-promo__team-text--left {
+  text-align: left;
+}
+
+.history-promo__team-text--right {
+  text-align: right;
+}
+
+.history-promo__team-name {
+  font-size: 27px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.history-promo__team-city {
+  padding: 0;
+  margin: 0;
+  font-size: 27px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.match-history .form-results-list--right {
+  justify-content: flex-end;
+}
+
+.history-promo__score {
+  width: 132px;
+  font-size: 43px;
+  line-height: 100px;
+}
+
+.history-promo__tournament-wrapper {
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.history-promo .form-results-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 180px;
+  overflow: hidden;
+}
+
+.history-promo .form-results-item {
+  width: 20px;
+  transform: skewX(-15deg);
+  margin-left: 3.5px;
+  margin-right: 3.5px;
+}
+
+.history-promo .form-results-item--draw {
+  background-color: #9a9a9a;
+}
+
+.history-promo .form-results-item--win {
+  background-color: #85c36f;
+}
+
+.history-promo .form-results-item--loss {
+  background-color: #ff4847;
+}
+
+.history-promo .form-results-link {
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  transform: skewX(15deg);
+}
+
+.history-promo__tournament {
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.history-promo__round-group {
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
 }
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
