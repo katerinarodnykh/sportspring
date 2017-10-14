@@ -3492,6 +3492,23 @@ img {
   /*transform: skewX(-15deg);*/
 }
 
+/* Страница "Документы" */
+
+.page-title {
+  height: 108px;
+  background-color: #ffffff;
+}
+
+.page-title__text {
+  padding: 0;
+  margin: 0 auto;
+  width: 1216px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 31px;
+  line-height: 108px;
+  font-weight: 700;
+}
+
 /* Активное сoстояние и соcтояние по наведению у стрелы */
 
 .arrow:hover,
