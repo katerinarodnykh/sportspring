@@ -2768,26 +2768,40 @@ img {
 
 /* Стриница "Турниры-Матч-История встреч" */
 
-.history-promo {
+.match-promo-unit {
+  display: none;
+}
+
+.match-promo-unit--active {
+  display: block;
+}
+
+.match-promo {
   width: 100%;
   height: 350px;
   margin-bottom: 20px;
   background-color: #134c73;
-  background-image: url("../img/match-history-promo-background.jpg");
+  background-image: url("../img/match-promo-background.jpg");
   box-shadow: 0 0 0 455px rgba(0, 0, 0, 0.6) inset;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #ffffff;
   text-align: center;
 }
 
-.history-promo__date-time {
+.match-promo__date-time {
   padding: 0;
   margin: 0;
   font-size: 32px;
   line-height: 85px;
 }
 
-.history-promo__place {
+.match-promo__place-wrapper {
+  display: flex;
+  justify-content: center;
+  outline: 1px solid white;
+}
+
+.match-promo__place {
   position: relative;
   padding: 0;
   padding-left: 20px;
@@ -2795,7 +2809,7 @@ img {
   line-height: 20px;
 }
 
-.history-promo__place::before {
+.match-promo__place::before {
   content:"\f041";
   position: absolute;
   margin-left: -20px;
@@ -2804,7 +2818,14 @@ img {
   color: #d50028;
 }
 
-.history-promo__team-logo {
+.match-promo__viewers {
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+  line-height: 20px;
+}
+
+.match-promo__team-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2815,37 +2836,38 @@ img {
   background-color: #ffffff;
 }
 
-.history-promo__score-wrapper {
+.match-promo__score-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 32px;
   margin-bottom: 42px;
 }
 
-.history-promo__team-content {
+.match-promo__team-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100px;
   padding-bottom: 7px;
   padding-top: 10px;
+  outline: 1px solid white;
 }
 
-.history-promo__team-text--left {
+.match-promo__team-text--left {
   text-align: left;
 }
 
-.history-promo__team-text--right {
+.match-promo__team-text--right {
   text-align: right;
 }
 
-.history-promo__team-name {
+.match-promo__team-name {
   font-size: 27px;
   line-height: 27px;
   color: #ffffff;
 }
 
-.history-promo__team-city {
+.match-promo__team-city {
   padding: 0;
   margin: 0;
   font-size: 27px;
@@ -2857,19 +2879,75 @@ img {
   justify-content: flex-end;
 }
 
-.history-promo__score {
-  width: 132px;
-  font-size: 43px;
-  line-height: 100px;
+.match-promo__best-player {
+  position: relative;
+  outline: 1px solid white;
 }
 
-.history-promo__tournament-wrapper {
+.match-promo__best-player--right {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.match-promo__best-player--left {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.match-promo__best-player-name {
+  padding: 0;
+  margin: 0;
+}
+
+.match-promo__best-player-text {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.match-promo__best-player::before {
+  content:"\f005";
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  font-family: "FontAwesome";
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.match-promo__score {
+  width: 132px;
+}
+
+.match-promo__score-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 43px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.match-promo__score-additional {
+  font-size: 20px;
+  line-height: 40px;
+  /*color: #656565;*/
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.match-promo__tournament-wrapper {
   display: flex;
   justify-content: center;
   line-height: 30px;
 }
 
-.history-promo .form-results-list {
+.match-promo .form-results-list {
   display: flex;
   padding: 0;
   margin: 0;
@@ -2878,26 +2956,26 @@ img {
   overflow: hidden;
 }
 
-.history-promo .form-results-item {
+.match-promo .form-results-item {
   width: 20px;
   transform: skewX(-15deg);
   margin-left: 3.5px;
   margin-right: 3.5px;
 }
 
-.history-promo .form-results-item--draw {
+.match-promo .form-results-item--draw {
   background-color: #9a9a9a;
 }
 
-.history-promo .form-results-item--win {
+.match-promo .form-results-item--win {
   background-color: #85c36f;
 }
 
-.history-promo .form-results-item--loss {
+.match-promo .form-results-item--loss {
   background-color: #ff4847;
 }
 
-.history-promo .form-results-link {
+.match-promo .form-results-link {
   display: block;
   padding-left: 5px;
   padding-right: 5px;
@@ -2910,13 +2988,13 @@ img {
   transform: skewX(15deg);
 }
 
-.history-promo__tournament {
+.match-promo__tournament {
   font-size: 16px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.history-promo__round-group {
+.match-promo__round-group {
   padding: 0;
   margin: 0;
   margin-left: 15px;
