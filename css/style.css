@@ -1059,13 +1059,19 @@ img {
 }
 
 .tabs__text {
+  display: block;
   transform: skewX(15deg);
+  color: #ffffff;
 }
 
 .tabs--active,
 .tabs--active:hover {
-  font-weight: 700;
   background-color: #ffffff;
+}
+
+.tabs--active .tabs__text,
+.tabs--active:hover  .tabs__text {
+  font-weight: 700;
   color: #000000;
 }
 
@@ -1969,6 +1975,7 @@ img {
 }
 
 .schedule .tabs__text {
+  color: #000000;
   transform: skewX(15deg);
 }
 
@@ -2586,10 +2593,6 @@ img {
   text-transform: uppercase;
 }
 
-.grids .tabs__text {
-  font-weight: 400;
-}
-
 .grids .tabs__item {
   flex-grow: 1;
   transform: skewX(-15deg);
@@ -2597,6 +2600,8 @@ img {
 }
 
 .grids .tabs__text {
+  font-weight: 400;
+  color: #000000;
   transform: skewX(15deg);
 }
 
@@ -2766,7 +2771,7 @@ img {
   overflow: hidden;
 }
 
-/* Стриница "Турниры-Матч-История встреч" */
+/* Страница "Турниры-Матч", раздел "История встреч" */
 
 .match-promo-unit {
   display: none;
@@ -2776,7 +2781,30 @@ img {
   display: block;
 }
 
-.match-promo {
+.match-promo-unit--live {
+  position: relative;
+}
+
+.match-promo-unit--live::before {
+  content: "Live";
+  position: absolute;
+  top: 18px;
+  right: 21px;
+  width: 65px;
+  height: 35px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ea0000;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.match-promo-unit {
   width: 100%;
   height: 350px;
   margin-bottom: 20px;
@@ -2788,9 +2816,18 @@ img {
   text-align: center;
 }
 
+.match-promo-unit--history {
+  background-image: url("../img/match-promo-history-background.jpg");
+}
+
 .match-promo__date-time {
   padding: 0;
   margin: 0;
+  font-size: 22px;
+  line-height: 85px;
+}
+
+.match-promo-unit--history .match-promo__date-time {
   font-size: 32px;
   line-height: 85px;
 }
@@ -2798,7 +2835,6 @@ img {
 .match-promo__place-wrapper {
   display: flex;
   justify-content: center;
-  outline: 1px solid white;
 }
 
 .match-promo__place {
@@ -2821,7 +2857,7 @@ img {
 .match-promo__viewers {
   padding: 0;
   margin: 0;
-  margin-left: 40px;
+  margin-left: 30px;
   line-height: 20px;
 }
 
@@ -2850,7 +2886,6 @@ img {
   height: 100px;
   padding-bottom: 7px;
   padding-top: 10px;
-  outline: 1px solid white;
 }
 
 .match-promo__team-text--left {
@@ -2881,42 +2916,64 @@ img {
 
 .match-promo__best-player {
   position: relative;
-  outline: 1px solid white;
 }
 
 .match-promo__best-player--right {
   text-align: right;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 .match-promo__best-player--left {
   text-align: left;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .match-promo__best-player-name {
   padding: 0;
   margin: 0;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .match-promo__best-player-text {
   padding: 0;
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
+  line-height: 17px;
 }
 
-.match-promo__best-player::before {
+.match-promo__best-player--right::before {
   content:"\f005";
   position: absolute;
+  right: 0;
   top: 50%;
   margin-top: -10px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #d50028;
   font-family: "FontAwesome";
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
   color: #ffffff;
+}
+
+.match-promo__best-player--left::before {
+  content:"\f005";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  font-family: "FontAwesome";
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #d50028;
 }
 
 .match-promo__score {
@@ -2929,14 +2986,13 @@ img {
   justify-content: center;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 43px;
-  line-height: 60px;
+  line-height: 70px;
   font-weight: 700;
 }
 
 .match-promo__score-additional {
-  font-size: 20px;
-  line-height: 40px;
-  /*color: #656565;*/
+  font-size: 25px;
+  line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -3000,7 +3056,8 @@ img {
   margin-left: 15px;
 }
 
-.match-history__top {
+.match-history__top,
+.match-protocol__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3011,7 +3068,8 @@ img {
   background-color: #ffffff;
 }
 
-.match-history__top .match-history__team-logo {
+.match-history__top .match-history__team-logo,
+.match-protocol__top .match-protocol__team-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3022,28 +3080,34 @@ img {
   border: 1px solid #c5c5c5;
 }
 
-.match-history__top .match-history__team-logo--margin-right {
+.match-history__top .match-history__team-logo--margin-right,
+.match-protocol__top .match-protocol__team-logo--margin-right {
   margin-right: 20px;
 }
 
-.match-history__top .match-history__team-logo--margin-left {
+.match-history__top .match-history__team-logo--margin-left,
+.match-protocol__top .match-protocol__team-logo--margin-left {
   margin-left: 20px;
 }
 
-.match-history__top .match-history__team-name {
+.match-history__top .match-history__team-name,
+.match-protocol__top .match-protocol__team-name {
   flex-grow: 1;
   font-size: 18px;
 }
 
-.match-history__top .match-history__team-name--left {
+.match-history__top .match-history__team-name--left,
+.match-protocol__top .match-protocol__team-name--left {
   text-align: left;
 }
 
-.match-history__top .match-history__team-name--right {
+.match-history__top .match-history__team-name--right,
+.match-protocol__top .match-protocol__team-name--right {
   text-align: right;
 }
 
-.match-history__title {
+.match-history__title,
+.match-protocol__title {
   padding-left: 20px;
   padding-right: 20px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -3218,6 +3282,218 @@ img {
   font-size: 15px;
   line-height: 15px;
   color: #3f3f3f;
+}
+
+/* Страница "Турниры-Матч", раздел "Протокол" */
+
+.match-protocol__top {
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.match-protocol__composition {
+  display: flex;
+  background-color: #ffffff;
+}
+
+.match-protocol__team {
+  padding: 0;
+  margin: 0;
+  list-style: 0;
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.match-protocol__member {
+  position: relative;
+  display: flex;
+  height: 52px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 52px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.match-protocol__member--left {
+  padding-left: 25px;
+  padding-right: 80px;
+}
+
+.match-protocol__member--right {
+  padding-right: 25px;
+  padding-left: 80px;
+  justify-content: flex-end;
+}
+
+.match-protocol__team--left {
+  text-align: left;
+  border-right: 1px solid #c5c5c5;
+}
+
+.match-protocol__team--right {
+  text-align: right;
+}
+
+.match-protocol__member-number {
+  width: 38px;
+}
+
+.match-protocol__member-amplua {
+  width: 48px;
+}
+
+.match-protocol__member-name {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.match-protocol__member-captain {
+  color: #656565;
+  text-transform: uppercase;
+}
+
+.match-protocol__referees {
+  width: 100%;
+  height: 253px;
+  padding-top: 35px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.match-protocol__referees-title {
+  padding: 0;
+  margin: 0;
+  line-height: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.match-protocol__main-referee {
+  display: flex;
+  line-height: 30px;
+}
+
+.match-protocol__referee-timekeeper {
+  display: flex;
+  line-height: 30px;
+}
+
+.match-protocol__referee-text {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  text-align: right;
+}
+
+.match-protocol__referee-first-name {
+  padding-left: 15px;
+}
+
+.match-protocol__referee-last-name {
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+
+.match-protocol__referees-rating {
+  position: relative;
+  padding-left: 25px;
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #656565;
+}
+
+.match-protocol__referees-rating::before {
+  content:"\f087";
+  position: absolute;
+  margin-left: -22px;
+  font-family: "FontAwesome";
+  font-size: 15px;
+  color: #878787;
+}
+
+.match-protocol__referees-points {
+  font-weight: 700;
+}
+
+.event-list {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+}
+
+.event-list--right {
+  right: 20px;
+}
+
+.event-list--left {
+  left: 20px;
+}
+
+.event-item {
+  margin-right: 10px;
+}
+
+/*не работает*/
+.event-item:last-child,
+.event-item:only-child {
+  margin-right: 0px;
+}
+
+.event-goal::before {
+  content:"\f1e3";
+  display: table-cell;
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.event-yellow-card {
+  display: table-cell;
+  width: 18px;
+  height: 24px;
+  border-radius: 1px;
+  background-color: #ff9e47;
+}
+
+.event-red-card {
+  display: table-cell;
+  width: 18px;
+  height: 24px;
+  border-radius: 1px;
+  background-color: #ff4847;
+}
+
+.event-own-goal {
+  position: absolute;
+}
+
+.event-own-goal::before {
+  content:"\f1e3";
+  display: table-cell;
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.event-own-goal::after {
+  content: "A";
+  position: absolute;
+  top: 0px;
+  margin-top: 10px;
+  margin-left: -9px;
+  width: 22px;
+  height: 16px;
+  font-size: 15px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+  background-color: red;
+  /*transform: skewX(-15deg);*/
 }
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
