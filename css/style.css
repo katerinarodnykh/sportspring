@@ -3509,6 +3509,152 @@ img {
   font-weight: 700;
 }
 
+/* Страница "Новость" */
+
+.news-item__picture {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 42px;
+  height: 610px;
+  background-image: url("../img/news-item-background.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.news-item__picture-content {
+  position: relative;
+  width: 832px;
+  min-height: 152px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.news-item__picture-date {
+  position: absolute;
+  left: 5px;
+  background-color: rgba(213, 0, 40, 1);
+  height: 26px;
+  transform: skewX(-15deg);
+}
+
+.news-item__picture-content::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 30px;
+  height: 25px;
+  background-color: rgba(213, 0, 40, 1);
+}
+
+.news-item__picture-date-p {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+  transform: skewX(15deg);
+}
+
+.news-item__picture-text-p {
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  padding-right: 31px;
+  padding-left: 31px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 31px;
+  color: #ffffff;
+  line-height: 33px;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tags--news-item-list {
+  padding-right: 31px;
+  padding-left: 31px;
+  padding-bottom: 20px;
+}
+
+.tags--news-item-list .tag__item {
+  border: 1px solid #ffffff;
+}
+
+.tags--news-item-list .tag__text {
+  color: #ffffff;
+}
+
+.news-item__content {
+  padding-top: 35px;
+  padding-bottom: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ffffff;
+}
+
+.news-item__text-p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.news-item__author {
+  padding: 0;
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+
+.news-item__author-name {
+  font-weight: 700;
+}
+
+.sidebar__news-title {
+  padding: 0;
+  padding-right: 17px;
+  padding-left: 17px;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 44px;
+  font-weight: 700;
+  background-color: #103356;
+}
+
+.sidebar__news-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.sidebar__news-item {
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 14px;
+  line-height: 15px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.sidebar__news-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar__news-item-text {
+  padding: 0;
+  margin: 0;
+}
+
 /* Активное сoстояние и соcтояние по наведению у стрелы */
 
 .arrow:hover,
