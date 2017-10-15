@@ -3791,7 +3791,7 @@ img {
   border: 1px solid #c5c5c5;
 }
 
-/* Страница "Учасники", раздел "игроки", подраздел "игрок" */
+/* Страница "Участники", раздел "игроки", подраздел "игрок" */
 
 .player-promo {
   display: flex;
@@ -4089,6 +4089,69 @@ img {
   text-align: center;
   font-weight: 700;
 }
+
+/* Страница "Участники", раздел "команды" */
+
+.participants-teams {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.participants-teams__item {
+  flex-shrink: 0;
+  height: 355px;
+  width: 385px;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  background-color: #f6f6f6;
+}
+
+.participants-teams__item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.participants-teams__picture {
+  height: 258px;
+  width: 385px;
+  background-color: #ffffff;
+}
+
+.participants-teams__content {
+  display: flex;
+  height: 97px;
+}
+
+.participants-teams__logo {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 97px;
+  height: 97px;
+  background-color: #ffffff;
+}
+
+.participants-teams__name {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-left: 35px;
+  padding-right: 15px;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.participants-teams__city {
+  padding-left: 5px;
+}
+
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
 
