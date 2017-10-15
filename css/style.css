@@ -4103,7 +4103,7 @@ img {
 
 .participants-teams__item {
   flex-shrink: 0;
-  height: 355px;
+  height: 354px;
   width: 385px;
   margin-right: 30px;
   margin-bottom: 25px;
@@ -4115,7 +4115,7 @@ img {
 }
 
 .participants-teams__picture {
-  height: 258px;
+  height: 257px;
   width: 385px;
   background-color: #ffffff;
 }
