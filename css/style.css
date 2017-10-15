@@ -2248,7 +2248,15 @@ img {
   font-size: 15px;
   line-height: 50px;
   text-align: left;
+}
+
+.table__row,
+.table__head {
   border-bottom: 1px solid #c5c5c5;
+}
+
+.table__row:last-child {
+  border-bottom: 0px;
 }
 
 .statistics .table__cell--number {
@@ -2410,7 +2418,15 @@ img {
   font-size: 15px;
   line-height: 50px;
   text-align: left;
+}
+
+.table__row,
+.table__head {
   border-bottom: 1px solid #c5c5c5;
+}
+
+.table__row:last-child {
+  border-bottom: 0px;
 }
 
 .table__head .table__cell {
@@ -3495,18 +3511,29 @@ img {
 /* Страница "Документы" */
 
 .page-title {
-  height: 108px;
   background-color: #ffffff;
+}
+
+.page-title__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 108px;
+  width: 1216px;
+  margin: 0 auto;
+}
+
+.page-title__navigation {
+  display: flex;
 }
 
 .page-title__text {
   padding: 0;
-  margin: 0 auto;
-  width: 1216px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 31px;
   line-height: 108px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Страница "Новость" */
@@ -3654,6 +3681,116 @@ img {
   padding: 0;
   margin: 0;
 }
+
+/* Страница "Участники-игроки" */
+
+.tabs--paticipants {
+  width: 300px;
+}
+
+.tabs--paticipants .tabs__navigation {
+  background-color: #ffffff;
+}
+
+.tabs--paticipants .tabs__text {
+  font-weight: 400;
+  color: #000000;
+}
+
+.tabs--paticipants .tabs__item:active,
+.tabs--paticipants .tabs__item:hover {
+  background-color: #e24c68;
+}
+
+.tabs--paticipants .tabs__item:active .tabs__text,
+.tabs--paticipants .tabs__item:hover .tabs__text {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.tabs--paticipants .tabs--active {
+  background-color: #e24c68;
+}
+
+.tabs--paticipants .tabs--active .tabs__text {
+  color: #ffffff;
+}
+
+.select-item--season {
+  margin-left: 50px;
+}
+
+.table {
+  background-color: #ffffff;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 50px;
+  text-align: left;
+}
+
+.table__row,
+.table__head {
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.table__row:last-child {
+  border-bottom: 0px;
+}
+
+.participants .table__cell {
+  width: 75px;
+}
+
+.participants .table__cell--number {
+  text-align: center;
+  width: 62px;
+}
+
+.participants .table__cell--player {
+  width: 420px;
+}
+
+
+.table__head .table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 38px;
+  color: #656565;
+  text-transform: uppercase;
+}
+
+.table__head .table__cell--games-number-head,
+.table__head .table__cell--goals-penalties-head,
+.table__head .table__cell--average-head {
+  text-transform: none;
+}
+
+.table__cell--player {
+  text-align: left;
+  font-size: 18px;
+}
+
+.table__player {
+  display: flex;
+  align-items: center;
+}
+
+.table__player-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5c5;
+}
+
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
 
