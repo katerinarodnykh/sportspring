@@ -3791,6 +3791,304 @@ img {
   border: 1px solid #c5c5c5;
 }
 
+/* Страница "Учасники", раздел "игроки", подраздел "игрок" */
+
+.player-promo {
+  display: flex;
+  height: 320px;
+  width: 100%;
+  margin-bottom: 32px;
+  background-color: #ffffff;
+}
+
+.player-promo__picture {
+  width: 320px;
+  height: 320px;
+  background-image: url(../img/nophoto_avatar.png);
+}
+
+.player-promo__content {
+  padding-left: 58px;
+  padding-right: 58px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 23px;
+}
+
+.player-promo__name {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 32px;
+  line-height: 85px;
+  font-weight: 700;
+}
+
+.player-promo__birthday {
+  padding: 0;
+  margin: 0;
+}
+
+.player-promo__birthday-text {
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.player-promo__birthday-date {
+  padding-left: 15px;
+  line-height: 36px;
+}
+
+.player-promo__teams {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.player-promo__teams-text {
+  font-weight: 700;
+  line-height: 36px;
+  width: 143px;
+}
+
+.player-promo__teams-name {
+  padding-left: 15px;
+  line-height: 36px
+}
+
+.player-promo__statistics {
+  padding: 0;
+  margin: 0;
+}
+
+.player-promo__statistics-text {
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.player-promo__statistics-values {
+  font-weight: 24px;
+  line-height: 25px;
+  color: #1a7dab;
+  font-weight: 700;
+}
+
+.player .content-navigation {
+  margin-bottom: 0;
+}
+
+.player .table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  height: 73px;
+  text-align: left;
+}
+
+.player .table__row,
+.player .table__head,
+.player .table__head-total,
+.player .table__team-total {
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.table__row:last-child {
+  border-bottom: 0px;
+}
+
+.player .table__head .table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 45px;
+  height: 45px;
+  width: 80px;
+  color: #656565;
+  text-transform: uppercase;
+}
+
+.player .table__head-total {
+  background-color: #4897bc;
+}
+
+.player .table__head-total .table__cell {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 45px;
+  height: 45px;
+  width: 80px;
+  color: #656565;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.player .table__team-total {
+  background-color: #ecf4f8;
+}
+
+.player .table__team-total .table__cell {
+  font-weight: 700;
+}
+
+.player .table__cell--team {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.player .table__team-name {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.player .table__team-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5c5;
+}
+
+.player .table__cell--goals-penalties,
+.player .table__cell--passes,
+.player .table__cell--games-number,
+.player .table__cell--yellow-cards,
+.player .table__cell--red-cards {
+  width: 80px;
+  text-align: center;
+}
+
+.player .table__cell--goals-penalties-head {
+  position: relative;
+}
+
+.player .table__cell--games-number-head {
+  position: relative;
+}
+
+.player .table__cell--passes-head {
+  position: relative;
+}
+
+.player .table__cell--yellow-cards-head {
+  position: relative;
+}
+
+.player .table__cell--red-cards-head {
+  position: relative;
+}
+
+.player .table__cell--goals-penalties-head::before {
+  content: "\f1e3";
+  position: absolute;
+  top: 0;
+  margin-left: -8px;
+  color: #000000;
+  font-family: "FontAwesome";
+  font-size: 15px;
+}
+
+.player .table__cell--games-number-head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 38px;
+  background-image: url("../img/svg-icon--field.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player .table__cell--passes-head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 38px;
+  background-image: url("../img/svg-icon--boot.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player .table__cell--yellow-cards-head::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+  left: 50%;
+  margin-left: -6px;
+  width: 12px;
+  height: 15px;
+  background-color: #ff9e47;
+}
+
+.player .table__cell--red-cards-head::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+  left: 50%;
+  margin-left: -6px;
+  width: 12px;
+  height: 15px;
+  background-color: #ff4847;
+}
+
+.player .table__cell--tournament,
+.player .table__cell--match {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 423px;
+}
+
+.player .table__cell--tournament {
+  border-right: 1px solid #c5c5c5;
+}
+
+.player .player__tournament {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.player .player__round-group {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #656565;
+}
+
+.player .player__match-results {
+  display: flex;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.player .player__match-time-date {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #656565;
+  text-transform: uppercase;
+}
+
+.player .player__match-score {
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  font-weight: 700;
+}
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
 
