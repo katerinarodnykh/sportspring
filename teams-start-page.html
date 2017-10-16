@@ -55,12 +55,12 @@
                 <a class="navigation__item-link" href="#">О лиге</a>
               </li>
               <li class="navigation__item navigation__item--tournaments active">
-                <a class="navigation__item-link" href="#">Турниры</a>
+                <a class="navigation__item-link">Турниры</a>
               </li>
               <li class="navigation__item navigation__item--teams">
                 <a class="navigation__item-link" href="#">Участники</a>
               </li>
-              <li class="navigation__item navigation__item--news">
+              <li class="navigation__item navigation__item--news-cards">
                 <a class="navigation__item-link" href="#">Новости</a>
               </li>
               <li class="navigation__item navigation__item--photo">
@@ -79,20 +79,10 @@
       <div class="header__line"></div>
     </header>
     <main>
-      <section class="tournament">
-        <div class="tournament-wrapper">
-          <h2 class="tournament__title">чемпионат Санкт-Петербурга 2017 по мини-футболу среди мужских команд ветеранов</h2>
-          <ul class="tournament__info">
-            <li class="tournament__info-item tournament__info-dates">30 ноября 2016 - 1 сентября 2017</li>
-            <li class="tournament__info-item tournament__info-teams-number">28 команд</li>
-            <li class="tournament__info-item tournament__info-status">Завершен</li>
-          </ul>
-        </div>
-      </section>
       <div class="main-container main-container--inner">
         <div class="main-content">
-          <section class="tournament-team">
-            <h2 class="visually-hidden">Команда</h2>
+          <section class="teams-start-page">
+            <h2 class="visually-hidden">Команда: стартовая страница</h2>
             <section class="team-promo">
               <h3 class="visually-hidden">Краткая информация о команде</h3>
               <a class="team-promo__logo" href="#">
@@ -100,291 +90,398 @@
               </a>
               <div class="team-promo__team-info">
                 <p class="team-promo__team-name">Военмех Юнайтед</p>
-                <a class="link link--team-profile" href="#">Смотреть профиль команды</a>
+                <a class="link link--team-profile" href="#">www.futsal.spb.ru</a>
               </div>
-              <div class="team-promo__players-info">
-                <p class="team-promo__players-number-text">
-                  <span class="team-promo__players-number">18</span>
-                  игроков в заявке
-                </p>
-                <p class="team-promo__average-height-text">
-                  <span class="team-promo__average-height">18,7 </span>
-                  средний рост
-                </p>
+              <div class="team-promo__results">
+                <div class="team-promo__results-form">
+                  <span class="team-promo__results-form-text">Последние матчи</span>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--draw">
+                      <a class="form-results-link" href="#">D</a>
+                    </li>
+                    <li class="form-results-item form-results-item--win">
+                      <a class="form-results-link" href="#">W</a>
+                    </li>
+                    <li class="form-results-item form-results-item--loss">
+                      <a class="form-results-link" href="#">L</a>
+                    </li>
+                    <li class="form-results-item form-results-item--loss">
+                      <a class="form-results-link" href="#">L</a>
+                    </li>
+                    <li class="form-results-item form-results-item--win">
+                      <a class="form-results-link" href="#">W</a>
+                    </li>
+                  </ul>
+                </div>
+                <select class="select select--period" name="period" id="period">
+                  <option value="all">За всё время</option>
+                  <option value="2017">2017</option>
+                </select>
+                <div class="team-promo__statistics-values">122-99-0-25 / И-В-Н-П</div>
               </div>
             </section>
-            <section class="tabs tabs--team">
-              <div class="tabs__navigation">
-                <ul class="tabs__list">
-                  <li class="tabs__item tabs__item--1 tabs--active">
-                    <div class="tabs__text">Заявка команды</div>
+            <section class="text-information">
+              <p class="text-information__paragraph"> После победы на Олимпийских играх в Рио-де-Жанейро женская сборная России по гандболу совершила красивый жест. Девушки решили собрать 1,5 миллиона рублей премиальных и перечислить российским паралимпийцам.  После победы на Олимпийских играх в Рио-де-Жанейро женская сборная России по гандболу совершила красивый жест. Девушки решили собрать 1,5 миллиона рублей премиальных и перечислить российским паралимпийцам.  После победы на Олимпийских играх в Рио-де-Жанейро женская сборная России по гандболу совершила красивый жест.  Девушки решили собрать 1,5 миллиона рублей премиальных и перечислить российским паралимпийцам.</p>
+            </section>
+            <section class="matches-overview">
+              <h2 class="visually-hidden">Календарь прошедших и будущих матчей</h2>
+              <div class="matches-overview__past-matches">
+                <h3 class="matches-overview__title">Прошедшие матчи</h3>
+                <div class="arrow-back-wrapper">
+                  <a class="arrow arrow-back arrow-back--matches-overview" href="#">
+                    <span class="visually-hidden">Назад</span>
+                    <svg height="28" width="12">
+                      <polyline points="12,0 0,14 12,28" fill="transparent"></polyline>
+                    </svg>
+                  </a>
+                </div>
+                <ul class="matches-overview__list">
+                  <li class="matches-overview__item live">
+                    <a class="matches-overview__round" href="#">Седьмой дивизион, Группа «А»</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--bold matches-overview__score-cell--team">Сити</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--bold matches-overview__score-cell--goals">3</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--first-game" rowspan="2"></td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Кристалл</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--goals">7</td>
+                        </tr>
+                      </table>
+                    </a>
                   </li>
-                  <li class="tabs__item tabs__item--2">
-                    <div class="tabs__text">Отзаявленные игроки</div>
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Кубок за 1 место</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Петроградец</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--goals">7</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--first-game" rowspan="2"></td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Nano-Protech</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--goals">5</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </li>
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Плей офф</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Ажио</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--goals">3</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--first-game" rowspan="2">(4-5)</td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--bold matches-overview__score-cell--team">Студия 239</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--bold matches-overview__score-cell--goals">7</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </li>
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Утешительный кубок за 5-9 места</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Сервис Экспресс</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--goals">3</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--first-game" rowspan="2"></td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Farm Gunners</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--goals">7</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </li>
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Седьмой дивизион, Группа «А»</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Сити</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--goals">3</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--first-game" rowspan="2"></td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Кристалл</td>
+                          <td class="matches-overview__score-cell matches-overview__score-cell--goals">7</td>
+                        </tr>
+                      </table>
+                    </a>
                   </li>
                 </ul>
-              </div>
-              <div class="tabs__content">
-                <div class="tabs__pane tabs__pane--active">
-                  <table class="table table--team" cellspacing="0">
-                    <tr class="table__head">
-                      <td class="table__cell table__cell--number table__cell--number-head">#</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua-head">Амплуа</td>
-                      <td class="table__cell table__cell--player table__cell--player-head">Игрок</td>
-                      <td class="table__cell table__cell--birth-date table__cell--birth-date-head">Дата рождения</td>
-                      <td class="table__cell table__cell--games-number table__cell--games-number-head" title="Игры"></td>
-                      <td class="table__cell table__cell--goals-penalties table__cell--goals-penalties-head" title="Голы (пенальти)"></td>
-                      <td class="table__cell table__cell--passes table__cell--passes-head" title="Передачи"></td>
-                      <td class="table__cell table__cell--yellow-cards table__cell--yellow-cards-head" title="Жёлтые карточки"></td>
-                      <td class="table__cell table__cell--red-cards table__cell--red-cards-head" title="Красные карточки"></td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">22</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Вр.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-1.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Расул Газаев
-                            <span class="table__player-captain">(К)</span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date">21.11.1983, 27 лет</td>
-                      <td class="table__cell table__cell--games-number">20</td>
-                      <td class="table__cell table__cell--goals-penalties">41(5)</td>
-                      <td class="table__cell table__cell--passes">12</td>
-                      <td class="table__cell table__cell--yellow-cards">1</td>
-                      <td class="table__cell table__cell--red-cards">7</td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">7</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Зщ.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-2.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Руслан Каримов
-                            <span class="table__player-captain"></span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date"></td>
-                      <td class="table__cell table__cell--games-number">20</td>
-                      <td class="table__cell table__cell--goals-penalties">15</td>
-                      <td class="table__cell table__cell--passes">21</td>
-                      <td class="table__cell table__cell--yellow-cards">-</td>
-                      <td class="table__cell table__cell--red-cards">5</td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">13</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Пз.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-3.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Павел Крупнов
-                            <span class="table__player-captain"></span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date">21.11.1983, 27 лет</td>
-                      <td class="table__cell table__cell--games-number">19</td>
-                      <td class="table__cell table__cell--goals-penalties">28</td>
-                      <td class="table__cell table__cell--passes">1</td>
-                      <td class="table__cell table__cell--yellow-cards">2</td>
-                      <td class="table__cell table__cell--red-cards">3</td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">11</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Нп.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-1.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Андрей Кержаков
-                            <span class="table__player-captain"></span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date">21.11.1983, 27 лет</td>
-                      <td class="table__cell table__cell--games-number">19</td>
-                      <td class="table__cell table__cell--goals-penalties">-</td>
-                      <td class="table__cell table__cell--passes">13</td>
-                      <td class="table__cell table__cell--yellow-cards">1</td>
-                      <td class="table__cell table__cell--red-cards">5</td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">15</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Нп.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-2.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Руслан Каримов
-                            <span class="table__player-captain"></span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date">21.11.1983, 27 лет</td>
-                      <td class="table__cell table__cell--games-number">18</td>
-                      <td class="table__cell table__cell--goals-penalties">15</td>
-                      <td class="table__cell table__cell--passes">0</td>
-                      <td class="table__cell table__cell--yellow-cards">1</td>
-                      <td class="table__cell table__cell--red-cards">7</td>
-                    </tr>
-                  </table>
+                <div class="arrow-forward-wrapper">
+                  <a class="arrow arrow-forward arrow-forward--matches-overview arrow--cursor-pointing" href="#">
+                    <span class="visually-hidden">Вперёд</span>
+                    <svg height="28" width="12">
+                      <polyline points="0,0 12,14 0,28" fill="transparent"></polyline>
+                    </svg>
+                  </a>
                 </div>
-                <div class="tabs__pane">
-                  <table class="table table--team" cellspacing="0">
-                    <tr class="table__head">
-                      <td class="table__cell table__cell--number table__cell--number-head">#</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua-head">Амплуа</td>
-                      <td class="table__cell table__cell--player table__cell--player-head">Игрок</td>
-                      <td class="table__cell table__cell--birth-date table__cell--birth-date-head">Дата рождения</td>
-                      <td class="table__cell table__cell--games-number table__cell--games-number-head" title="Игры"></td>
-                      <td class="table__cell table__cell--goals-penalties table__cell--goals-penalties-head" title="Голы (пенальти)"></td>
-                      <td class="table__cell table__cell--passes table__cell--passes-head" title="Передачи"></td>
-                      <td class="table__cell table__cell--yellow-cards table__cell--yellow-cards-head" title="Жёлтые карточки"></td>
-                      <td class="table__cell table__cell--red-cards table__cell--red-cards-head" title="Красные карточки"></td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">22</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Вр.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-1.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Расул Газаев
-                            <span class="table__player-captain">(К)</span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date">21.11.1983, 27 лет</td>
-                      <td class="table__cell table__cell--games-number">20</td>
-                      <td class="table__cell table__cell--goals-penalties">41(5)</td>
-                      <td class="table__cell table__cell--passes">12</td>
-                      <td class="table__cell table__cell--yellow-cards">1</td>
-                      <td class="table__cell table__cell--red-cards">7</td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">7</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Зщ.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-2.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Руслан Каримов
-                            <span class="table__player-captain"></span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date"></td>
-                      <td class="table__cell table__cell--games-number">20</td>
-                      <td class="table__cell table__cell--goals-penalties">15</td>
-                      <td class="table__cell table__cell--passes">21</td>
-                      <td class="table__cell table__cell--yellow-cards">-</td>
-                      <td class="table__cell table__cell--red-cards">5</td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">13</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Пз.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-3.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Павел Крупнов
-                            <span class="table__player-captain"></span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date">21.11.1983, 27 лет</td>
-                      <td class="table__cell table__cell--games-number">19</td>
-                      <td class="table__cell table__cell--goals-penalties">28</td>
-                      <td class="table__cell table__cell--passes">1</td>
-                      <td class="table__cell table__cell--yellow-cards">2</td>
-                      <td class="table__cell table__cell--red-cards">3</td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">11</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Нп.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-1.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Андрей Кержаков
-                            <span class="table__player-captain"></span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date">21.11.1983, 27 лет</td>
-                      <td class="table__cell table__cell--games-number">19</td>
-                      <td class="table__cell table__cell--goals-penalties">-</td>
-                      <td class="table__cell table__cell--passes">13</td>
-                      <td class="table__cell table__cell--yellow-cards">1</td>
-                      <td class="table__cell table__cell--red-cards">5</td>
-                    </tr>
-                    <tr class="table__row">
-                      <td class="table__cell table__cell--number">15</td>
-                      <td class="table__cell table__cell--amplua table__cell--amplua">Нп.</td>
-                      <td class="table__cell table__cell--player">
-                        <a class="table__player" href="#">
-                          <div class="table__player-picture">
-                            <img class="table__player-img" src="img/player-foto-small-2.png" width="" height="" alt="Фото игрока">
-                          </div>
-                          <p class="table__player-name">Руслан Каримов
-                            <span class="table__player-captain"></span>
-                          </p>
-                        </a>
-                      </td>
-                      <td class="table__cell table__cell--birth-date">21.11.1983, 27 лет</td>
-                      <td class="table__cell table__cell--games-number">18</td>
-                      <td class="table__cell table__cell--goals-penalties">15</td>
-                      <td class="table__cell table__cell--passes">0</td>
-                      <td class="table__cell table__cell--yellow-cards">1</td>
-                      <td class="table__cell table__cell--red-cards">7</td>
-                    </tr>
-                  </table>
+                <div class="matches-overview__indicators-list">
+                  <div class="matches-overview__indicators-item"></div>
+                  <div class="matches-overview__indicators-item"></div>
+                  <div class="matches-overview__indicators-item matches-overview__indicators-item--active"></div>
                 </div>
               </div>
+              <div class="matches-overview__future-matches">
+                <h3 class="matches-overview__title">Будущие матчи</h3>
+                <div class="arrow-back-wrapper">
+                  <a class="arrow arrow-back arrow-back--matches-overview" href="#">
+                    <span class="visually-hidden">Назад</span>
+                    <svg height="28" width="12">
+                      <polyline points="12,0 0,14 12,28" fill="transparent"></polyline>
+                    </svg>
+                  </a>
+                </div>
+                <ul class="matches-overview__list">
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Седьмой дивизион, Группа «А»</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time-wrapper">
+                        <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      </div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Сити</td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Кристалл</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </li>
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Кубок за 1 место</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time-wrapper">
+                        <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      </div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Петроградец</td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Nano-Protech</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </li>
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Плей офф</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time-wrapper">
+                        <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      </div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Ажио</td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Студия 239</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </li>
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Утешительный кубок за 5-9 места</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time-wrapper">
+                        <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      </div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Сервис Экспресс</td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Farm Gunners</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </li>
+                  <li class="matches-overview__item">
+                    <a class="matches-overview__round" href="#">Седьмой дивизион, Группа «А»</a>
+                    <a class="matches-overview__link" href="#">
+                      <div class="matches-overview__date-time-wrapper">
+                        <div class="matches-overview__date-time">19.08 / сб. / 20:00</div>
+                      </div>
+                      <table class="matches-overview__score">
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Сити</td>
+                        </tr>
+                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                          <td class="matches-overview__score-cell matches-overview__score-cell--team">Кристалл</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </li>
+                </ul>
+                <div class="arrow-forward-wrapper">
+                  <a class="arrow arrow-forward arrow-forward--matches-overview arrow--cursor-pointing" href="#">
+                    <span class="visually-hidden">Вперёд</span>
+                    <svg height="28" width="12">
+                      <polyline points="0,0 12,14 0,28" fill="transparent"></polyline>
+                    </svg>
+                  </a>
+                </div>
+                <div class="matches-overview__indicators-list">
+                  <div class="matches-overview__indicators-item"></div>
+                  <div class="matches-overview__indicators-item"></div>
+                  <div class="matches-overview__indicators-item matches-overview__indicators-item--active"></div>
+                </div>
+              </div>
+            </section>
+            <section class="news-cards">
+              <h2 class="visually-hidden">Новости</h2>
+              <ul class="news-cards__list">
+                <li class="news-cards__item">
+                  <a class="news-cards__picture" href="#">
+                    <img class="news-cards__picture-img" src="img/news-img-1.jpg" width="440" height="293" alt="">
+                  </a>
+                  <div class="news-cards__content">
+                    <div class="news-cards__date">28.09.2017</div>
+                    <a class="news-cards__title" href="#">
+                      Лев Воронин: «Гандболистки сборной России достойно поступили, решив перечислить 1,5 миллиона рублей премиальных паралимпийцам»
+                    </a>
+                    <p class="news-cards__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч. Особенно, когда встречаются друг с другом команды, жаждущие первых очков на турнире.</p>
+                  </div>
+                </li>
+                <li class="news-cards__item">
+                  <a class="news-cards__picture" href="#">
+                    <img class="news-cards__picture-img" src="img/news-img-2.jpg" width="440" height="293" alt="">
+                  </a>
+                  <div class="news-cards__content">
+                    <div class="news-cards__date">28.09.2017</div>
+                    <a class="news-cards__title" href="#">
+                      Лев Воронин: «Гандболистки сборной России достойно поступили.
+                    </a>
+                    <p class="news-cards__text">Редкий случай, когда игра бывает не богатой на моменты, но шквал эмоций и отчаянная борьба за мяч могут подарить болельщику достойный матч.</p>
+                  </div>
+                </li>
+              </ul>
+              <a class="button button--news-cards" href="tournaments-news.html">Все новости</a>
+            </section>
+            <section class="photo">
+              <h2 class="visually-hidden">Фото</h2>
+              <ul class="photo__list">
+                <li class="photo__item">
+                  <div class="photo__item-wrapper-top">
+                    <a class="photo__picture">
+                      <img class="photo__picture-img" src="img/photo-video-img-1.jpg" width="284" height="190" alt="">
+                    </a>
+                    <a class="photo__title">
+                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
+                    </a>
+                  </div>
+                  <div class="photo__item-wrapper-bottom">
+                    <div class="photo__date">29.05.2017</div>
+                    <div class="photo__number">53</div>
+                  </div>
+                </li>
+                <li class="photo__item">
+                  <div class="photo__item-wrapper-top">
+                    <a class="photo__picture">
+                      <img class="photo__picture-img" src="img/photo-video-img-2.jpg" width="284" height="190" alt="">
+                    </a>
+                    <a class="photo__title">
+                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
+                    </a>
+                  </div>
+                  <div class="photo__item-wrapper-bottom">
+                    <div class="photo__date">29.05.2017</div>
+                    <div class="photo__number">53</div>
+                  </div>
+                </li>
+                <li class="photo__item">
+                  <div class="photo__item-wrapper-top">
+                    <a class="photo__picture">
+                      <img class="photo__picture-img" src="img/photo-video-img-3.jpg" width="284" height="190" alt="">
+                    </a>
+                    <a class="photo__title">
+                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
+                    </a>
+                  </div>
+                  <div class="photo__item-wrapper-bottom">
+                    <div class="photo__date">29.05.2017</div>
+                    <div class="photo__number">53</div>
+                  </div>
+                </li>
+              </ul>
+              <a class="button button--photo" href="#">Все фото</a>
+            </section>
+            <section class="video">
+              <h2 class="visually-hidden">Видео</h2>
+              <ul class="video__list">
+                <li class="video__item">
+                  <div class="video__item-wrapper">
+                    <a class="video__picture">
+                      <img class="video__picture-img" src="img/photo-video-img-1.jpg" width="284" height="190" alt="">
+                    </a>
+                    <a class="video__title">
+                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
+                    </a>
+                  </div>
+                  <div class="video__date">29.05.2017</div>
+                </li>
+                <li class="video__item">
+                  <div class="video__item-wrapper">
+                    <a class="video__picture">
+                      <img class="video__picture-img" src="img/photo-video-img-2.jpg" width="284" height="190" alt="">
+                    </a>
+                    <a class="video__title">
+                      Определено время начала матчей
+                    </a>
+                  </div>
+                  <div class="video__date">29.05.2017</div>
+                </li>
+                <li class="video__item">
+                  <div class="video__item-wrapper">
+                    <a class="video__picture">
+                      <img class="video__picture-img" src="img/photo-video-img-3.jpg" width="284" height="190" alt="">
+                    </a>
+                    <a class="video__title">
+                      Определено время начала матчей 18-20 туров РОСГОССТРАХ Чемпионата России по футболy
+                    </a>
+                  </div>
+                  <div class="video__date">29.05.2017</div>
+                </li>
+              </ul>
+              <a class="button button--video" href="#">Все видео</a>
             </section>
           </section>
         </div>
         <section class="sidebar sidebar--inner">
           <h2 class="visually-hidden">Правая колонка с информацией</h2>
           <ul class="sidebar__navigation">
-            <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-start-page.html">О турнире</a>
-            </li>
-            <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-schedule.html">Календарь</a>
-            </li>
-            <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-tables-grids.html">Таблицы и сетки</a>
-            </li>
-            <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-statistics.html">Статистика</a>
-            </li>
             <li class="sidebar__navigation-item active">
-              <a class="sidebar__navigation-item-link">Команды</a>
+              <a class="sidebar__navigation-item-link">О команде</a>
             </li>
             <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-news.html">Новости</a>
+              <a class="sidebar__navigation-item-link" href="№">Команды</a>
+            </li>
+            <li class="sidebar__navigation-item">
+              <a class="sidebar__navigation-item-link" href="№">Календарь</a>
+            </li>
+            <li class="sidebar__navigation-item">
+              <a class="sidebar__navigation-item-link" href="№">Состав</a>
+            </li>
+            <li class="sidebar__navigation-item">
+              <a class="sidebar__navigation-item-link" href="t№">Новости</a>
             </li>
             <li class="sidebar__navigation-item">
               <a class="sidebar__navigation-item-link" href="#">Фото и видео</a>
-            </li>
-            <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-documents.html">Документы</a>
             </li>
           </ul>
           <div class="sidebar__table sidebar__table--tournament">

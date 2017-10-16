@@ -2317,7 +2317,7 @@ img {
 
 /* Страница "Турнир-команда" */
 
-.team-promo {
+ .tournament-team .team-promo {
   display: flex;
   align-items: flex-end;
   width: 100%;
@@ -2327,7 +2327,7 @@ img {
   background-image: url("../img/team-logo-background.png");
 }
 
-.team-promo__logo {
+.tournament-team .team-promo__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2336,7 +2336,7 @@ img {
   background-color: #ffffff;
 }
 
-.team-promo__team-info {
+.tournament-team .team-promo__team-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2347,7 +2347,7 @@ img {
   padding-bottom: 15px;
 }
 
-.team-promo__team-name {
+.tournament-team .team-promo__team-name {
   padding: 0;
   margin: 0;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -2357,7 +2357,7 @@ img {
   text-transform: uppercase;
 }
 
-.link--team-profile {
+.tournament-team .link--team-profile {
   display: block;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
@@ -2367,8 +2367,8 @@ img {
   text-transform: none;
 }
 
-.team-promo__players-number-text,
-.team-promo__average-height-text {
+.tournament-team .team-promo__players-number-text,
+.tournament-team .team-promo__average-height-text {
   padding: 0;
   margin: 0;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -2377,39 +2377,39 @@ img {
   color: #ffffff;
 }
 
-.team-promo__players-number-text {
+.tournament-team .team-promo__players-number-text {
   text-indent: 10px;
 }
 
-.team-promo__average-height-text {
+.tournament-team .team-promo__average-height-text {
   padding-bottom: 15px;
   padding-right: 5px;
 }
 
-.team-promo__players-number,
-.team-promo__average-height {
+.tournament-team .team-promo__players-number,
+.tournament-team .team-promo__average-height {
   font-size: 19px;
   font-weight: 700;
 }
 
-.team-promo__players-number {
+.tournament-team .team-promo__players-number {
   padding-right: 8px;
 }
 
-.team-promo__average-height {
+.tournament-team .team-promo__average-height {
   padding-right: 5px;
 }
 
-.team .tabs__list {
+.tournament-team .tabs__list {
   width: 420px;
   margin-left: 6px;
 }
 
-.team .tabs__item--2 {
+.tournament-team .tabs__item--2 {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.team .tabs__pane {
+.tournament-team .tabs__pane {
   background-color: #ffffff;
 }
 
@@ -2447,12 +2447,12 @@ img {
   align-items: center;
 }
 
-.team .table__player-name {
+.tournament-team .table__player-name {
   padding: 0;
   margin: 0;
 }
 
-.team .table__player-captain {
+.tournament-team .table__player-captain {
   color: #656565;
 }
 
@@ -2467,60 +2467,60 @@ img {
   border: 1px solid #c5c5c5;
 }
 
-.team .table__cell--number {
+.tournament-team .table__cell--number {
   width: 40px;
   padding-left: 20px;
   text-align: center;
 }
 
-.team .table__cell--amplua {
+.tournament-team .table__cell--amplua {
   width: 75px;
   text-align: center;
 }
 
-.team .table__cell--player {
+.tournament-team .table__cell--player {
   width: 228px;
 }
 
-.team .table__cell--birth-date {
+.tournament-team .table__cell--birth-date {
   width: 160px;
 }
 
-.team .table__cell--goals-penalties,
-.team .table__cell--passes,
-.team .table__cell--games-number,
-.team .table__cell--yellow-cards,
-.team .table__cell--red-cards {
+.tournament-team .table__cell--goals-penalties,
+.tournament-team .table__cell--passes,
+.tournament-team .table__cell--games-number,
+.tournament-team .table__cell--yellow-cards,
+.tournament-team .table__cell--red-cards {
   width: 80px;
   text-align: center;
 }
 
-.team .table__cell--red-cards {
+.tournament-team .table__cell--red-cards {
   width: 100px;
   padding-right: 35px;
 }
 
-.team .table__cell--goals-penalties-head {
+.tournament-team .table__cell--goals-penalties-head {
   position: relative;
 }
 
-.team .table__cell--games-number-head {
+.tournament-team .table__cell--games-number-head {
   position: relative;
 }
 
-.team .table__cell--passes-head {
+.tournament-team .table__cell--passes-head {
   position: relative;
 }
 
-.team .table__cell--yellow-cards-head {
+.tournament-team .table__cell--yellow-cards-head {
   position: relative;
 }
 
-.team .table__cell--red-cards-head {
+.tournament-team .table__cell--red-cards-head {
   position: relative;
 }
 
-.team .table__cell--goals-penalties-head::before {
+.tournament-team .table__cell--goals-penalties-head::before {
   content: "\f1e3";
   position: absolute;
   top: 0;
@@ -2530,7 +2530,7 @@ img {
   font-size: 15px;
 }
 
-.team .table__cell--games-number-head::before {
+.tournament-team .table__cell--games-number-head::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2542,7 +2542,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.team .table__cell--passes-head::before {
+.tournament-team .table__cell--passes-head::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2554,7 +2554,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.team .table__cell--yellow-cards-head::before {
+.tournament-team .table__cell--yellow-cards-head::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -2566,7 +2566,7 @@ img {
   background-color: #ff9e47;
 }
 
-.team .table__cell--red-cards-head::before {
+.tournament-team .table__cell--red-cards-head::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -4152,6 +4152,111 @@ img {
   padding-left: 5px;
 }
 
+/* Страница "Команда-стартовая страница" */
+
+.team-promo {
+  display: flex;
+  width: 100%;
+  height: 165px;
+  margin-bottom: 20px;
+  background-color: rgba(232, 232, 232, 0.5);
+  background-image: url("../img/teams-start-page-promo-background.png");
+}
+
+.team-promo__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 165px;
+  background-color: #ffffff;
+}
+
+.team-promo__team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 550px;
+  height: 165px;
+  padding-top: 30px;
+  padding-left: 59px;
+  padding-bottom: 30px;
+}
+
+.team-promo__team-name {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 26px;
+  color: #808080;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.link--team-profile {
+  display: block;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #1a7dab;
+  text-transform: none;
+}
+
+.team-promo__results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 27px;
+}
+
+.team-promo__results-form {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  text-align: center;
+}
+
+.teams-start-page .form-results-list {
+  margin: 0;
+  margin-left: 20px;
+  justify-content: flex-end;
+}
+
+.team-promo__results-form-text {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  color: #656565;
+}
+
+.team-promo__statistics-values {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.select--period {
+  width: 95px;
+  border-color: #ffffff;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-indent: 2px;
+  text-align: right;
+  background-image: url("../img/select-arrow-blue.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: "";
+  -ms-appearance: none;
+  appearance: none!important;
+}
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
 
