@@ -1017,6 +1017,12 @@ img {
   text-align: center;
 }
 
+.sidebar__table-row--active,
+.sidebar__table-row:active {
+  font-weight: 700;
+  background-color: #f7ccd4;
+}
+
 .tabs__navigation {
   width: 100%;
   background-color: #4897bc;
@@ -4285,6 +4291,159 @@ img {
   text-align: center;
   margin: 0;
 }
+
+/* Страница "Команда-состав" */
+
+.teams-composition-photo {
+  width: 910px;
+  height: 608px;
+  margin-bottom: 22px;
+}
+
+.tabs--teams-composition .tabs__list {
+  width: 370px;
+  margin-left: 6px;
+}
+
+.tabs--teams-composition .tabs__item {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.composition-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+  padding-right: 30px;
+  margin: 0;
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.composition-list__item {
+  height: 327px;
+  width: 191px;
+  margin-right: 29px;
+  margin-bottom: 25px;
+}
+
+.composition-list__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.composition-list__player-photo {
+  width: 191px;
+  height: 191px;
+}
+
+.composition-list__player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 20px;
+  height: 136px;
+  background-color: #e8e8e8;
+}
+
+.composition-list__player-name {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.composition-list__player-first-name,
+.composition-list__player-last-name {
+  display: block;
+}
+
+.composition-list__player-amplua {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.composition-list__player-birthday {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  color: #656565;
+}
+
+.composition-list__player-age {
+  margin-left: 5px;
+}
+
+.composition-list__item--hidden {
+  background-color: #044575;
+  color: #ffffff;
+}
+
+.composition-list__player-statistics {
+  position: relative;
+  height: 191px;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 20px;
+}
+
+.composition-list__player-statistics::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 151px;
+  height: 1px;
+  background-color: #1a7dab;
+}
+
+.composition-list__player-games,
+.composition-list__player-goals {
+  padding: 0;
+  margin: 0;
+}
+
+.composition-list__player-games {
+  margin-bottom: 5px;
+}
+
+.composition-list__player-games-text,
+.composition-list__player-goals-text {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  margin-left: 5px;
+}
+
+.composition-list__player-games-number,
+.composition-list__player-goals-number {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 39px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.composition-list__item--hidden .composition-list__player-info {
+  background-color: #044575;
+  color: #ffffff;
+}
+
+.composition-list__item--hidden .composition-list__player-birthday {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
 
