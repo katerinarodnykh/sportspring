@@ -1942,6 +1942,10 @@ img {
 
 /* Страница "Турнир-Календарь, Расписание" */
 
+.schedule__unit {
+  background-color: #ffffff;
+}
+
 .schedule .tabs__navigation {
   display: flex;
   justify-content: space-between;
@@ -1992,8 +1996,7 @@ img {
   border-bottom: 1px solid #c5c5c5;
 }
 
-.schedule__date,
-.schedule__round {
+.schedule__head-text {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 17px;
   line-height: 40px;
@@ -2001,11 +2004,11 @@ img {
   text-transform: uppercase;
 }
 
-.schedule__next-date,
-.schedule__next-round {
+.schedule__head--middle {
   padding-left: 25px;
   padding-right: 25px;
   background-color: #ecf4f8;
+  border-bottom: 0;
 }
 
 .schedule__checkbox {
@@ -2079,10 +2082,22 @@ img {
   min-width: 69px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 70px;
+  text-align: center;
+}
+
+.schedule__score-main {
+  font-size: 17px;
+  line-height: 25px;
   font-weight: 700;
   text-align: center;
   color: #000000;
+}
+
+.schedule__score-additional {
+  color: #656565;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
 }
 
 .schedule__team-logo {
@@ -4221,7 +4236,7 @@ img {
   text-align: center;
 }
 
-.teams-start-page .form-results-list {
+.team-promo .form-results-list {
   margin: 0;
   margin-left: 20px;
   justify-content: flex-end;
@@ -4257,6 +4272,18 @@ img {
   text-overflow: "";
   -ms-appearance: none;
   appearance: none!important;
+}
+
+/* Страница "Команда-календарь" */
+
+.teams-schedule .content-navigation {
+  margin-bottom: 0;
+}
+
+.teams-schedule .schedule__unit .form-results-list {
+  width: 45px;
+  text-align: center;
+  margin: 0;
 }
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */

@@ -55,12 +55,12 @@
                 <a class="navigation__item-link" href="#">О лиге</a>
               </li>
               <li class="navigation__item navigation__item--tournaments active">
-                <a class="navigation__item-link" href="#">Турниры</a>
+                <a class="navigation__item-link">Турниры</a>
               </li>
               <li class="navigation__item navigation__item--teams">
                 <a class="navigation__item-link" href="#">Участники</a>
               </li>
-              <li class="navigation__item navigation__item--news">
+              <li class="navigation__item navigation__item--news-cards">
                 <a class="navigation__item-link" href="#">Новости</a>
               </li>
               <li class="navigation__item navigation__item--photo">
@@ -79,436 +79,314 @@
       <div class="header__line"></div>
     </header>
     <main>
-      <section class="tournament">
-        <div class="tournament-wrapper">
-          <h2 class="tournament__title">чемпионат Санкт-Петербурга 2017 по мини-футболу среди мужских команд ветеранов</h2>
-          <ul class="tournament__info">
-            <li class="tournament__info-item tournament__info-dates">30 ноября 2016 - 1 сентября 2017</li>
-            <li class="tournament__info-item tournament__info-teams-number">28 команд</li>
-            <li class="tournament__info-item tournament__info-status">Завершен</li>
-          </ul>
-        </div>
-      </section>
       <div class="main-container main-container--inner">
         <div class="main-content">
-          <section class="schedule">
-            <h3 class="visually-hidden">Календарь по дате и по турам</h3>
-            <section class="tabs tabs--schedule">
-              <div class="tabs__navigation">
-                <ul class="tabs__list">
-                  <li class="tabs__item tabs__item-1 tabs--active">
-                    <div class="tabs__text tabs__text--by-date">По дате</div>
-                  </li>
-                  <li class="tabs__item tabs__item-2">
-                    <div class="tabs__text tabs__text--by-rounds">По турам</div>
-                  </li>
-                </ul>
-                <div class="select-item select-item--group">
-                  <div class="select-item__default">
-                    <p class="select-item__default-text">Группа «А»</p>
-                  </div>
-                  <ul class="select-item__options">
-                    <li class="select-item__option-1">Группа-А</li>
-                    <li class="select-item__option-1">Группа-Б</li>
-                    <li class="select-item__option-1">Группа-В</li>
+          <section class="teams-schedule">
+            <h2 class="visually-hidden">Команда: календарь</h2>
+            <section class="team-promo">
+              <h3 class="visually-hidden">Краткая информация о команде</h3>
+              <a class="team-promo__logo" href="#">
+                <img class="team-promo__img" src="img/team-logo-9.png" width="" height="" alt="Логотип команды">
+              </a>
+              <div class="team-promo__team-info">
+                <p class="team-promo__team-name">Военмех Юнайтед</p>
+                <a class="link link--team-profile" href="#">www.futsal.spb.ru</a>
+              </div>
+              <div class="team-promo__results">
+                <div class="team-promo__results-form">
+                  <span class="team-promo__results-form-text">Последние матчи</span>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--draw">
+                      <a class="form-results-link" href="#">D</a>
+                    </li>
+                    <li class="form-results-item form-results-item--win">
+                      <a class="form-results-link" href="#">W</a>
+                    </li>
+                    <li class="form-results-item form-results-item--loss">
+                      <a class="form-results-link" href="#">L</a>
+                    </li>
+                    <li class="form-results-item form-results-item--loss">
+                      <a class="form-results-link" href="#">L</a>
+                    </li>
+                    <li class="form-results-item form-results-item--win">
+                      <a class="form-results-link" href="#">W</a>
+                    </li>
                   </ul>
                 </div>
-              </div>
-              <div class="tabs__content">
-                <div class="tabs__pane tabs__pane--active">
-                  <div class="schedule__unit">
-                    <div class="schedule__head">
-                      <span class="schedule__head-text">3 августа 2017, пятница</span>
-                      <label class="schedule__checkbox">
-                        <input type="checkbox" name="past-matches" checked>
-                        Прошедшие матчи
-                      </label>
-                    </div>
-                    <ul class="schedule__matches-list">
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">
-                          <div class="schedule__score-main">5 : 2</div>
-                          <div class="schedule__score-additional"></div>
-                        </a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">Динамо</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Nova Arena</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Спартак</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">
-                          <div class="schedule__score-main">2 : 2</div>
-                          <div class="schedule__score-additional"></div>
-                        </a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Локомотив</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">
-                          <div class="schedule__score-main">2 : 2</div>
-                          <div class="schedule__score-additional"></div>
-                        </a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ЦСКА</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Nova Arena</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">
-                          <div class="schedule__score-main">2 : 2</div>
-                          <div class="schedule__score-additional"></div>
-                        </a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="schedule__head schedule__head--middle">
-                      <span class="schedule__head-text">4 августа 2017, суббота</span>
-                    </div>
-                    <ul class="schedule__matches-list">
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">
-                          <div class="schedule__score-main">5 : 2</div>
-                          <div class="schedule__score-additional"></div>
-                        </a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">Динамо</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Спартак</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">
-                          <div class="schedule__score-main">2 : 2</div>
-                          <div class="schedule__score-additional"></div>
-                        </a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Локомотив</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">
-                          <div class="schedule__score-main">2 : 2</div>
-                          <div class="schedule__score-additional"></div>
-                        </a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ЦСКА</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">
-                          <div class="schedule__score-main">2 : 2</div>
-                          <div class="schedule__score-additional"></div>
-                        </a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="tabs__pane">
-                  <div class="schedule__unit">
-                    <div class="schedule__head">
-                      <span class="schedule__head-text">1 тур</span>
-                      <label class="schedule__checkbox">
-                        <input type="checkbox" name="past-matches" checked>
-                        Прошедшие матчи
-                      </label>
-                    </div>
-                    <ul class="schedule__matches-list">
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">5 : 2</a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">Динамо</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Nova Arena</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Спартак</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">2 : 2</a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Локомотив</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">2 : 2</a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ЦСКА</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Nova Arena</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">2 : 2</a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="schedule__head schedule__head--middle">
-                      <span class=".schedule__head-text">2 тур</span>
-                    </div>
-                    <ul class="schedule__matches-list">
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">5 : 2</a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">Динамо</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Спартак</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">2 : 2</a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Локомотив</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">2 : 2</a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ЦСКА</span>
-                        </a>
-                      </li>
-                      <li class="schedule__matches-item">
-                        <div class="schedule__time-place">
-                          <span class="schedule__time">17:00</span>
-                          <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
-                        </div>
-                        <a class="schedule__team-1" href="#">
-                          <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
-                          <div class="schedule__team-logo schedule__team-logo--margin-left">
-                            <img class="schedule__team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
-                          </div>
-                        </a>
-                        <a class="schedule__score" href="#">2 : 2</a>
-                        <a class="schedule__team-2" href="#">
-                          <div class="schedule__team-logo schedule__team-logo--margin-right">
-                            <img class="schedule__team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
-                          </div>
-                          <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <select class="select select--period" name="period" id="period">
+                  <option value="all">За всё время</option>
+                  <option value="2017">2017</option>
+                </select>
+                <div class="team-promo__statistics-values">122-99-0-25 / И-В-Н-П</div>
               </div>
             </section>
+            <div class="content-navigation">
+              <span class="section-title">Календарь</span>
+              <div class="select-item select-item--season">
+                <div class="select-item__default">
+                  <p class="select-item__default-text">Сезон 2017-18</p>
+                </div>
+                <ul class="select-item__options">
+                  <li class="select-item__option-1">Сезон 2018-19</li>
+                  <li class="select-item__option-1">Сезон 2018-19</li>
+                  <li class="select-item__option-1">Сезон 2018-19</li>
+                </ul>
+              </div>
+            </div>
+            <div class="schedule__unit">
+              <div class="schedule__head">
+                <span class="schedule__head-text">Кубок лиги, группа A</span>
+                <label class="schedule__checkbox">
+                  <input type="checkbox" name="past-matches" checked>
+                  Прошедшие матчи
+                </label>
+              </div>
+              <ul class="schedule__matches-list">
+                <li class="schedule__matches-item">
+                  <div class="schedule__time-place">
+                    <span class="schedule__time">4 Февр/ ПТ / 17:30</span>
+                    <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
+                  </div>
+                  <a class="schedule__team-1" href="#">
+                    <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
+                    <div class="schedule__team-logo schedule__team-logo--margin-left">
+                      <img class="schedule__team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
+                    </div>
+                  </a>
+                  <a class="schedule__score" href="#">
+                    <div class="schedule__score-main">5 : 2</div>
+                    <div class="schedule__score-additional"></div>
+                  </a>
+                  <a class="schedule__team-2" href="#">
+                    <div class="schedule__team-logo schedule__team-logo--margin-right">
+                      <img class="schedule__team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
+                    </div>
+                    <span class="schedule__team-name schedule__team-name--left">Динамо</span>
+                  </a>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--loss">
+                      <a class="form-results-link" href="#">L</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="schedule__matches-item">
+                  <div class="schedule__time-place">
+                    <span class="schedule__time">4 Февр / ПТ / 17:30</span>
+                    <span class="schedule__place">Nova Arena</span>
+                  </div>
+                  <a class="schedule__team-1" href="#">
+                    <span class="schedule__team-name schedule__team-name--right" href="#">Спартак</span>
+                    <div class="schedule__team-logo schedule__team-logo--margin-left">
+                      <img class="schedule__team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
+                    </div>
+                  </a>
+                  <a class="schedule__score" href="#">
+                    <div class="schedule__score-main">2 : 2</div>
+                    <div class="schedule__score-additional">(6-7)</div>
+                  </a>
+                  <a class="schedule__team-2" href="#">
+                    <div class="schedule__team-logo schedule__team-logo--margin-right">
+                      <img class="schedule__team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
+                    </div>
+                    <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
+                  </a>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--win">
+                      <a class="form-results-link" href="#">W</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="schedule__matches-item">
+                  <div class="schedule__time-place">
+                    <span class="schedule__time">4 Февр/ ПТ / 17:30</span>
+                    <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
+                  </div>
+                  <a class="schedule__team-1" href="#">
+                    <span class="schedule__team-name schedule__team-name--right" href="#">Локомотив</span>
+                    <div class="schedule__team-logo schedule__team-logo--margin-left">
+                      <img class="schedule__team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
+                    </div>
+                  </a>
+                  <a class="schedule__score" href="#">
+                    <div class="schedule__score-main">2 : 2</div>
+                    <div class="schedule__score-additional">(Дв)</div>
+                  </a>
+                  <a class="schedule__team-2" href="#">
+                    <div class="schedule__team-logo schedule__team-logo--margin-right">
+                      <img class="schedule__team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
+                    </div>
+                    <span class="schedule__team-name schedule__team-name--left">ЦСКА</span>
+                  </a>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--draw">
+                      <a class="form-results-link" href="#">D</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="schedule__matches-item">
+                  <div class="schedule__time-place">
+                    <span class="schedule__time">4 Февр/ ПТ / 17:30</span>
+                    <span class="schedule__place">Nova Arena</span>
+                  </div>
+                  <a class="schedule__team-1" href="#">
+                    <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
+                    <div class="schedule__team-logo schedule__team-logo--margin-left">
+                      <img class="schedule__team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
+                    </div>
+                  </a>
+                  <a class="schedule__score" href="#">
+                    <div class="schedule__score-main">2 : 2</div>
+                    <div class="schedule__score-additional"></div>
+                  </a>
+                  <a class="schedule__team-2" href="#">
+                    <div class="schedule__team-logo schedule__team-logo--margin-right">
+                      <img class="schedule__team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
+                    </div>
+                    <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
+                  </a>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--loss">
+                      <a class="form-results-link" href="#">L</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="schedule__head schedule__head--middle">
+                <span class="schedule__head-text">Кубок ветеранов, группа A</span>
+              </div>
+              <ul class="schedule__matches-list">
+                <li class="schedule__matches-item">
+                  <div class="schedule__time-place">
+                    <span class="schedule__time">4 Февр/ ПТ / 17:30</span>
+                    <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
+                  </div>
+                  <a class="schedule__team-1" href="#">
+                    <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
+                    <div class="schedule__team-logo schedule__team-logo--margin-left">
+                      <img class="schedule__team-img" src="img/team-logo-small-1.png" width="" heidht="" alt="">
+                    </div>
+                  </a>
+                  <a class="schedule__score" href="#">
+                    <div class="schedule__score-main">5 : 2</div>
+                    <div class="schedule__score-additional"></div>
+                  </a>
+                  <a class="schedule__team-2" href="#">
+                    <div class="schedule__team-logo schedule__team-logo--margin-right">
+                      <img class="schedule__team-img" src="img/team-logo-small-2.png" width="" heidht="" alt="">
+                    </div>
+                    <span class="schedule__team-name schedule__team-name--left">Динамо</span>
+                  </a>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--win">
+                      <a class="form-results-link" href="#">W</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="schedule__matches-item">
+                  <div class="schedule__time-place">
+                    <span class="schedule__time">4 Февр/ ПТ / 17:30</span>
+                    <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
+                  </div>
+                  <a class="schedule__team-1" href="#">
+                    <span class="schedule__team-name schedule__team-name--right" href="#">Спартак</span>
+                    <div class="schedule__team-logo schedule__team-logo--margin-left">
+                      <img class="schedule__team-img" src="img/team-logo-small-3.png" width="" heidht="" alt="">
+                    </div>
+                  </a>
+                  <a class="schedule__score" href="#">
+                    <div class="schedule__score-main">2 : 2</div>
+                    <div class="schedule__score-additional"></div>
+                  </a>
+                  <a class="schedule__team-2" href="#">
+                    <div class="schedule__team-logo schedule__team-logo--margin-right">
+                      <img class="schedule__team-img" src="img/team-logo-small-4.png" width="" heidht="" alt="">
+                    </div>
+                    <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
+                  </a>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--loss">
+                      <a class="form-results-link" href="#">L</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="schedule__matches-item">
+                  <div class="schedule__time-place">
+                    <span class="schedule__time">4 Февр/ ПТ / 17:30</span>
+                    <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
+                  </div>
+                  <a class="schedule__team-1" href="#">
+                    <span class="schedule__team-name schedule__team-name--right" href="#">Локомотив</span>
+                    <div class="schedule__team-logo schedule__team-logo--margin-left">
+                      <img class="schedule__team-img" src="img/team-logo-small-5.png" width="" heidht="" alt="">
+                    </div>
+                  </a>
+                  <a class="schedule__score" href="#">
+                    <div class="schedule__score-main">2 : 2</div>
+                    <div class="schedule__score-additional"></div>
+                  </a>
+                  <a class="schedule__team-2" href="#">
+                    <div class="schedule__team-logo schedule__team-logo--margin-right">
+                      <img class="schedule__team-img" src="img/team-logo-small-6.png" width="" heidht="" alt="">
+                    </div>
+                    <span class="schedule__team-name schedule__team-name--left">ЦСКА</span>
+                  </a>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--win">
+                      <a class="form-results-link" href="#">W</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="schedule__matches-item">
+                  <div class="schedule__time-place">
+                    <span class="schedule__time">4 Февр/ ПТ / 17:30</span>
+                    <span class="schedule__place">Футбольный центр «Парк Сокольники»</span>
+                  </div>
+                  <a class="schedule__team-1" href="#">
+                    <span class="schedule__team-name schedule__team-name--right" href="#">Крылья Советов</span>
+                    <div class="schedule__team-logo schedule__team-logo--margin-left">
+                      <img class="schedule__team-img" src="img/team-logo-small-7.png" width="" heidht="" alt="">
+                    </div>
+                  </a>
+                  <a class="schedule__score" href="#">
+                    <div class="schedule__score-main">2 : 2</div>
+                    <div class="schedule__score-additional"></div>
+                  </a>
+                  <a class="schedule__team-2" href="#">
+                    <div class="schedule__team-logo schedule__team-logo--margin-right">
+                      <img class="schedule__team-img" src="img/team-logo-small-8.png" width="" heidht="" alt="">
+                    </div>
+                    <span class="schedule__team-name schedule__team-name--left">ФК Москва</span>
+                  </a>
+                  <ul class="form-results-list" href="#">
+                    <li class="form-results-item form-results-item--draw">
+                      <a class="form-results-link" href="#">D</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
         <section class="sidebar sidebar--inner">
           <h2 class="visually-hidden">Правая колонка с информацией</h2>
           <ul class="sidebar__navigation">
             <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-start-page.html">О турнире</a>
+              <a class="sidebar__navigation-item-link">О команде</a>
+            </li>
+            <li class="sidebar__navigation-item">
+              <a class="sidebar__navigation-item-link" href="#">Команды</a>
             </li>
             <li class="sidebar__navigation-item active">
               <a class="sidebar__navigation-item-link">Календарь</a>
             </li>
             <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-tables-grids.html">Таблицы и сетки</a>
+              <a class="sidebar__navigation-item-link" href="#">Состав</a>
             </li>
             <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-statistics.html">Статистика</a>
-            </li>
-            <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-teams.html">Команды</a>
-            </li>
-            <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-news.html">Новости</a>
+              <a class="sidebar__navigation-item-link" href="#">Новости</a>
             </li>
             <li class="sidebar__navigation-item">
               <a class="sidebar__navigation-item-link" href="#">Фото и видео</a>
-            </li>
-            <li class="sidebar__navigation-item">
-              <a class="sidebar__navigation-item-link" href="tournaments-documents.html">Документы</a>
             </li>
           </ul>
           <div class="sidebar__table sidebar__table--tournament">
@@ -605,7 +483,7 @@
               </tr>
             </table>
             <div class="link--sidebar-wrapper">
-              <a class="link link--sidebar link--schedule">Все расписание</a>
+              <a class="link link--sidebar link--schedule" href="tournaments-schedule.html">Все расписание</a>
             </div>
           </div>
           <div class="sidebar__table sidebar__table--statistics">
