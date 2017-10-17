@@ -211,6 +211,8 @@ img {
 }
 
 .navigation__item {
+  position: relative;
+  z-index: 1;
   min-width: 130px;
   border-right: 2px solid rgba(26, 125, 171, 0.4);
   text-align: center;
@@ -240,6 +242,58 @@ img {
 
 .navigation__item--request .navigation__item-link {
   padding-right: 30px;
+}
+
+/* Выпадающее меню в основной навигации */
+
+.drop-menu {
+  position: absolute;
+  z-index: 100;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+  list-style: none;
+  width: 238px;
+  background-color: #1a7dab;
+  min-width: 130px;
+  border-right: 0;
+  text-align: left;
+  transform: skewX(15deg);
+}
+
+.drop-menu__item:hover,
+.drop-menu__item:hover:active {
+  background-color: #176791;
+}
+
+.drop-menu__item--cursor-pointing {
+  background-color: #176791;
+}
+
+.drop-menu__item-link {
+  display: block;
+  padding-left: 40px;
+  width: 100%;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 46px;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.drop-menu--tournaments {
+  display: none;
+  left: 52px;
+}
+
+.navigation__item--tournaments:hover .drop-menu--tournaments {
+  display: block;
+}
+
+.drop-menu--cursor-pointing {
+  display: block;
 }
 
 .header__line {
