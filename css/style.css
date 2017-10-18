@@ -3772,9 +3772,7 @@ img {
   padding-left: 405px;
 }
 
-.vertical-timeline__first-time,
-.vertical-timeline__second-time,
-.vertical-timeline__additional-time {
+.vertical-timeline__time {
   position: relative;
 }
 
@@ -3784,8 +3782,7 @@ img {
   padding-bottom: 20px;
 }
 
-.vertical-timeline__first-time::after,
- .vertical-timeline__second-time::after {
+.vertical-timeline__time::after {
   content: "";
   position: absolute;
   margin-left: -25px;
@@ -3794,8 +3791,7 @@ img {
   background-color: #dddddd;
 }
 
-.vertical-timeline__first-time::before,
-.vertical-timeline__second-time::before {
+.vertical-timeline__time::before {
   content: "";
   position: absolute;
   margin-right: -25px;
@@ -3806,7 +3802,7 @@ img {
   background-color: #dddddd;
 }
 
-.vertical-timeline__additional-time::after,
+.vertical-timeline__time--last::after,
 .vertical-timeline__penalty-shoot-out::after {
   content: "";
   position: absolute;
@@ -3913,11 +3909,11 @@ img {
   background-color: #999999;
 }
 
-.vertical-timeline__first-time .vertical-timeline__event-item:first-child .vertical-timeline__event-minute::before {
+.vertical-timeline__time--first .vertical-timeline__event-item:first-child .vertical-timeline__event-minute::before {
   display: none;
 }
 
-.vertical-timeline__additional-time .vertical-timeline__event-item:last-child .vertical-timeline__event-minute::after {
+.vertical-timeline__time--last .vertical-timeline__event-item:last-child .vertical-timeline__event-minute::after {
   display: none;
 }
 
