@@ -2051,6 +2051,11 @@ img {
   padding-left: 25px;
   padding-right: 25px;
   vertical-align: middle;
+  background-color: #ecf4f8;
+}
+
+.schedule__unit:first-child .schedule__head {
+  background-color: #ffffff;
   border-bottom: 1px solid #c5c5c5;
 }
 
@@ -2060,13 +2065,6 @@ img {
   line-height: 40px;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.schedule__head--middle {
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: #ecf4f8;
-  border-bottom: 0;
 }
 
 .schedule__checkbox {
@@ -2098,7 +2096,7 @@ img {
 .schedule__time-place {
   display: flex;
   flex-direction: column;
-  width: 310px;
+  width: 255px;
   padding-right: 20px;
 }
 
@@ -2171,6 +2169,7 @@ img {
 .schedule__team-1,
 .schedule__team-2 {
   display: flex;
+  width: 250px;
   align-items: center;
 }
 
@@ -2819,6 +2818,7 @@ img {
 
 .form-results-item {
   width: 25px;
+  text-align: center;
   transform: skewX(-15deg);
   margin-left: 5px;
   margin-right: 5px;
@@ -4837,12 +4837,6 @@ img {
 
 .teams-schedule .content-navigation {
   margin-bottom: 0;
-}
-
-.teams-schedule .schedule__unit .form-results-list {
-  width: 45px;
-  text-align: center;
-  margin: 0;
 }
 
 /* Страница "Команда-состав" */
