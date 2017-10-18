@@ -2207,12 +2207,13 @@ img {
 
 .content-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 15px;
   background-color: #d1d7dc;
 }
 
 .section-title {
+  flex-grow: 1;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 15px;
   line-height: 44px;
