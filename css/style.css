@@ -4991,6 +4991,60 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* Страница "Партнёры" */
+
+.partners-inner__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.partners-inner__item {
+  width: 205px;
+  min-height: 300px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.partners-inner__link {
+  display: block;
+}
+
+.partners-inner__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.partners-inner__logo {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 206px;
+  height: 206px;
+  background-color: #ffffff;
+}
+
+.partners-inner__name-wrapper {
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 94px;
+  background-color: #f6f6f6;
+}
+
+.partners-inner__name {
+  display: block;
+  height: 64px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  overflow: hidden;
+}
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
 
