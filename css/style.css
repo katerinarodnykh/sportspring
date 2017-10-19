@@ -5019,11 +5019,11 @@ img {
 }
 
 .partners-inner__logo {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  width: 206px;
-  height: 206px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  height: 205px;
   background-color: #ffffff;
 }
 
@@ -5032,7 +5032,7 @@ img {
   padding-right: 23px;
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 94px;
+  height: 95px;
   background-color: #f6f6f6;
 }
 
@@ -5044,6 +5044,68 @@ img {
   line-height: 21px;
   color: #000000;
   overflow: hidden;
+}
+
+/* Страница "Руководство" */
+
+.management__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.management__item {
+  width: 205px;
+  min-height: 320px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.management__link {
+  display: block;
+}
+
+.management__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.management__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  height: 205px;
+  background-color: #ffffff;
+}
+
+.management__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 115px;
+  background-color: #f6f6f6;
+}
+
+.management__name-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.management__position {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* Активное сoстояние и соcтояние по наведению у стрелы */
