@@ -1284,7 +1284,7 @@ img {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .photo__item {
@@ -1293,8 +1293,16 @@ img {
   justify-content: space-between;
   padding-bottom: 17px;
   width: 284px;
-  min-height: 317px;
+  margin-right: 29px;
+  margin-bottom: 30px;
+  min-height: 220px;
   background-color: #ffffff;
+}
+
+/* Добавить на главную страницу класс для главной margin-bottom:0 у .photo__item */
+
+.photo__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .photo__item-wrapper-bottom {
@@ -1364,7 +1372,7 @@ img {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .video__item {
@@ -1373,9 +1381,17 @@ img {
   justify-content: space-between;
   padding-bottom: 17px;
   width: 284px;
-  min-height: 317px;
+  margin-right: 29px;
+  margin-bottom: 30px;
+  min-height: 220px;
   background-color: #ffffff;
 }
+
+.video__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* Добавить на главную страницу класс для главной margin-bottom:0 у .video__item */
 
 .video__picture {
   position: relative;
