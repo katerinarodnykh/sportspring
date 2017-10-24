@@ -729,10 +729,11 @@ img {
   transform: skewX(15deg);
 }
 
-.slider__slide-text-p{
+.slider__slide-text-p {
+  display: block;
   margin: 0;
   padding-top: 45px;
-  padding-bottom: 20px;
+  padding-bottom: 45px;
   padding-right: 31px;
   padding-left: 31px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -753,12 +754,12 @@ img {
 .slider__text-item {
   display: table;
   overflow: hidden;
-  text-overflow: clip;
 }
 
 .slider__text-item-link {
   display: table-cell;
   height: calc(587px/6);
+  width: 306px;
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -770,10 +771,6 @@ img {
   text-align: justify;
   vertical-align: middle;
   color: #000000;
-  overflow: hidden;/*При display:block эти 2 свойства должны прятать текст, но не прячут,
-  пока оставлен display: table-cell*/
-  text-overflow: clip;
-  cursor: pointer;
 }
 
 .slider__text-item-link:hover,
