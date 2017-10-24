@@ -41,7 +41,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .link {
@@ -93,20 +92,17 @@ img {
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 96px;
-  height: 168px;
+  left: 95px;
+  height: 169px;
   width: 100px;
   background-color: rgba(12, 38, 65, 0.6);
   transform: skewX(-15deg);
 }
 
 .header__title {
-  /*display: inline-block;*/
   padding: 0;
   padding-left: 221px;
   margin: auto 0;
-  /*padding-right: 47px;
-  padding-left: 50px;*/
   padding-top: 20px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 33px;
