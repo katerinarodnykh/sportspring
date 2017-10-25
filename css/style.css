@@ -2976,6 +2976,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100px;
+  width: 289px;
   padding-bottom: 7px;
   padding-top: 10px;
 }
@@ -3538,7 +3539,7 @@ img {
 }
 
 .event-list--right {
-  right: 20px;
+  right: 10px;
 }
 
 .event-list--left {
@@ -3547,11 +3548,6 @@ img {
 
 .event-item {
   margin-right: 10px;
-}
-
-.match-protocol .event-item:last-child,
-.match-protocol .event-item:only-child {
-  margin-right: 0px;
 }
 
 .event-item--goal::before {
@@ -3563,8 +3559,6 @@ img {
 
 .event-item--yellow-card {
   display: table-cell;
-  margin-left: 10px;
-  margin-right: 20px;
   width: 18px;
   height: 24px;
   border-radius: 1px;
@@ -3573,8 +3567,6 @@ img {
 
 .event-item--red-card {
   display: table-cell;
-  margin-left: 10px;
-  margin-right: 20px;
   width: 18px;
   height: 24px;
   border-radius: 1px;
@@ -3606,6 +3598,24 @@ img {
   text-align: center;
   background-color: #ff4847;
   /*transform: skewX(-15deg);*/
+}
+
+.event-item--assist {
+  position: relative;
+  width: 30px;
+}
+
+.event-item--assist::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/svg-icon--boot-match.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Страница Матч, раздел "События" */
