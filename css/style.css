@@ -1114,8 +1114,12 @@ img {
 
 .tabs__text {
   display: block;
-  transform: skewX(15deg);
   color: #ffffff;
+}
+
+.tabs__text--container {
+  display: inline-block;
+  transform: skewX(15deg);
 }
 
 .tabs--active,
@@ -1125,12 +1129,7 @@ img {
 
 .tabs--active .tabs__text,
 .tabs--active:hover  .tabs__text {
-  font-weight: 700;
   color: #000000;
-}
-
-.tabs--sidebar .tabs--active {
-   font-weight: normal;
 }
 
 /* Цвет разделителя
