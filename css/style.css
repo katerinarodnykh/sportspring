@@ -401,11 +401,18 @@ img {
   background-color: rgba(26, 125, 171, 1);
 }
 
-.cursor-pointing {
+.navigation__item--cursor-pointing,
+.calendar__tournaments-item--cursor-pointing,
+.sidebar__navigation-item--cursor-pointing {
   background-color: rgba(26, 125, 171, 0.4);
 }
 
-.active {
+.navigation__item--active,
+.calendar__tournaments-item--active,
+.sidebar__navigation-item--active,
+.navigation__item--active:hover,
+.calendar__tournaments-item--active:hover,
+.sidebar__navigation-item--active:hover {
   background-color: rgba(213, 0, 40, 0.8);
 }
 
@@ -940,7 +947,6 @@ img {
   background-color: rgba(26, 125, 171, 0.4);
 }
 
-.active:hover,
 .sidebar__navigation-item:active {
   background-color: rgba(213, 0, 40, 0.8);
 }
