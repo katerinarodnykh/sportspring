@@ -2038,18 +2038,12 @@ img {
   text-transform: uppercase;
 }
 
-.schedule .tabs__item {
-  flex-grow: 1;
-  transform: skewX(-15deg);
-}
-
 .schedule .tabs__item--2 {
   border: 0;
 }
 
 .schedule .tabs__text {
   color: #000000;
-  transform: skewX(15deg);
 }
 
 .schedule .tabs__content {
@@ -2694,15 +2688,11 @@ img {
 }
 
 .grids .tabs__item {
-  flex-grow: 1;
-  transform: skewX(-15deg);
   border: 0;
 }
 
 .grids .tabs__text {
-  font-weight: 400;
   color: #000000;
-  transform: skewX(15deg);
 }
 
 .grids .tabs__content {
