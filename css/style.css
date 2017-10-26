@@ -4254,10 +4254,6 @@ img {
 }
 
 .sidebar__news-item {
-  padding-right: 17px;
-  padding-left: 17px;
-  padding-top: 13px;
-  padding-bottom: 13px;
   font-size: 14px;
   line-height: 15px;
   border-bottom: 1px solid #c5c5c5;
@@ -4268,8 +4264,11 @@ img {
 }
 
 .sidebar__news-item-text {
-  padding: 0;
-  margin: 0;
+  display: block;
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 /* Страница "Участники-игроки" */
