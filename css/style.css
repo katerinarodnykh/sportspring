@@ -200,19 +200,24 @@ img {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  padding-left: 180px;
-  padding-right: 3px;
+  margin-left: 180px;
+  margin-right: 7px;
   height: 52px;
-  list-style:none;
+  list-style: none;
 }
 
 .navigation__item {
+  flex-grow: 1;
   position: relative;
   z-index: 1;
-  min-width: 130px;
   border-right: 2px solid rgba(26, 125, 171, 0.4);
   text-align: center;
   transform: skewX(-15deg);
+}
+
+.navigation__item-container {
+  display: inline-block;
+  transform: skewX(15deg);
 }
 
 .navigation__item:hover {
@@ -225,7 +230,6 @@ img {
 
 .navigation__item-link {
   display: block;
-  padding: 0px 29px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 20px;
   line-height: 52px;
@@ -233,11 +237,6 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  transform: skewX(15deg);
-}
-
-.navigation__item--request .navigation__item-link {
-  padding-right: 30px;
 }
 
 /* Выпадающее меню в основной навигации */
@@ -366,6 +365,7 @@ img {
 .arrow-back--tournaments {
   margin-left: 20px;
 }
+
 .arrow-forward--tournaments {
   text-align: right;
   margin-right: 20px;
@@ -377,6 +377,7 @@ img {
   margin: 0;
   padding: 0;
   padding-left: 6px;
+  margin-right: 6px;
   width: 675px;
   overflow: hidden;
   list-style: none;
@@ -384,8 +385,7 @@ img {
 
 .calendar__tournaments-item {
   flex-shrink: 0;
-  flex-grow: 0;
-  min-height: 32px;
+  flex-grow: 1;
   transform: skewX(-15deg);
 }
 
@@ -395,6 +395,11 @@ img {
 
 .calendar__tournaments-item:active {
   background-color: rgba(213, 0, 40, 0.7);
+}
+
+.calendar__tournaments-item-container {
+  display: inline-block;
+  transform: skewX(15deg);
 }
 
 .navigation__item--request {
@@ -427,7 +432,6 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  transform: skewX(15deg);
 }
 
 .calendar__selects {
