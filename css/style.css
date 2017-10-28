@@ -2953,6 +2953,7 @@ img {
 }
 
 .match-promo__team-logo {
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2961,6 +2962,7 @@ img {
   margin-left: 25px;
   margin-right: 25px;
   background-color: #ffffff;
+  border: 1px solid #c5c5c5;
 }
 
 .match-promo__score-wrapper {
@@ -2975,7 +2977,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100px;
-  width: 289px;
+  width: 240px;
   padding-bottom: 7px;
   padding-top: 10px;
 }
@@ -3069,7 +3071,7 @@ img {
 }
 
 .match-promo__score {
-  width: 132px;
+  width: 130px;
 }
 
 .match-promo__score-main {
