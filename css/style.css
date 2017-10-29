@@ -2121,6 +2121,10 @@ img {
 .schedule__place {
   position: relative;
   padding-left: 18px;
+  width: 235px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 15px;
   line-height: 28px;
