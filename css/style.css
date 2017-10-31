@@ -2538,10 +2538,14 @@ img {
 .tournament-team .table__player-name {
   padding: 0;
   margin: 0;
+  max-width: 200px;
+  line-height: 18px;
 }
 
 .tournament-team .table__player-captain {
   color: #656565;
+  padding-left: 5px;
+  text-transform: uppercase;
 }
 
 .table__player-picture {
@@ -2567,11 +2571,11 @@ img {
 }
 
 .tournament-team .table__cell--player {
-  width: 228px;
+  width: 300px;
 }
 
 .tournament-team .table__cell--birth-date {
-  width: 160px;
+  width: 130px;
 }
 
 .tournament-team .table__cell--goals-penalties,
@@ -2579,12 +2583,12 @@ img {
 .tournament-team .table__cell--games-number,
 .tournament-team .table__cell--yellow-cards,
 .tournament-team .table__cell--red-cards {
-  width: 80px;
+  width: 70px;
   text-align: center;
 }
 
 .tournament-team .table__cell--red-cards {
-  width: 100px;
+  width: 85px;
   padding-right: 35px;
 }
 
@@ -2623,7 +2627,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80px;
+  width: 70px;
   height: 38px;
   background-image: url("../img/svg-icon--field.svg");
   background-position: center;
@@ -2635,7 +2639,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80px;
+  width: 70px;
   height: 38px;
   background-image: url("../img/svg-icon--boot.svg");
   background-position: center;
