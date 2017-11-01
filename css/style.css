@@ -716,7 +716,7 @@ img {
   left: 0px;
   top: 0px;
   width: 30px;
-  height: 25px;
+  height: 26px;
   background-color: rgba(213, 0, 40, 1);
 }
 
@@ -762,6 +762,17 @@ img {
   overflow: hidden;
 }
 
+.slider__text-item--active::before,
+.slider__text-item:active::before {
+  content: "";
+  position: absolute;
+  margin-left: -25px;
+  border: 97px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 25px solid #d50028;
+  border-left: 0px solid transparent;
+}
+
 .slider__text-item-link {
   display: table-cell;
   height: calc(587px/6);
@@ -777,18 +788,27 @@ img {
   text-align: justify;
   vertical-align: middle;
   color: #000000;
+  border-bottom: 1px solid #dddddd;
 }
 
-.slider__text-item-link:hover,
-.slider-link-pointing {
+.slider__text-item:last-child .slider__text-item-link {
+  border-bottom: 0px;
+}
+
+.slider__text-item:hover,
+.slider__text-item--pointing {
   background-color: rgba(26, 125, 171, 0.1);
 }
 
-.slider__text-item-link:active,
-.slider-link-active,
-.slider-link-active:hover {
-  color: #ffffff;
+.slider__text-item:active,
+.slider__text-item--active,
+.slider__text-item--active:hover {
   background-color: #d50028;
+}
+
+.slider__text-item:active .slider__text-item-link,
+.slider__text-item--active .slider__text-item-link {
+  color: #ffffff;
 }
 
 /*Основное содержание*/
