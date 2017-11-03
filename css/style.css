@@ -1028,6 +1028,7 @@ img {
 }
 
 .sidebar__table-cell {
+  max-width: 0;
   padding: 0;
   padding-left: 15px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -1047,6 +1048,10 @@ img {
   border-bottom: 0px;
 }
 
+.sidebar__table-row--head .sidebar__table-cell--abbr {
+  text-decoration: none;
+}
+
 .link--sidebar-wrapper {
   text-align: center;
 }
@@ -1061,6 +1066,8 @@ img {
 
 .sidebar__table--tournament .sidebar__table-cell--number {
   padding-left: 10px;
+  font-size: 14px;
+  width: 40px;
 }
 
 .sidebar__table--tournament .sidebar__table-cell--color {
@@ -1069,12 +1076,28 @@ img {
 }
 
 .sidebar__table--tournament .sidebar__table-cell--games {
-  padding-left: 20px;
+  padding-left: 0px;
+  width: 25px;
+  text-align: center;
+  font-size: 13px;
 }
 
 .sidebar__table--tournament .sidebar__table-cell--points {
   padding-left: 0px;
+  padding-right: 15px;
+  width: 40px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.sidebar__table--tournament .sidebar__table-cell--team {
+  width: 148px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 0px;
   padding-right: 10px;
+  font-size: 14px;
 }
 
 .sidebar__table--schedule {
@@ -1083,16 +1106,42 @@ img {
 
 .sidebar__table--schedule .sidebar__table-cell--match-time {
   width: 40px;
-}
-
-.sidebar__table--schedule .sidebar__table-cell--teams {
-  padding: 0;
-  padding-right: 20px;
+  font-size: 13px;
   text-align: center;
 }
 
-.sidebar__table-row--active,
-.sidebar__table-row:active {
+.sidebar__table--schedule .sidebar__table--team-1 {
+  width: 90px;
+  padding: 0;
+  padding-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: right;
+  font-size: 13px;
+}
+
+.sidebar__table--schedule .sidebar__table--team-2 {
+  width: 90px;
+  padding: 0;
+  padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-size: 13px;
+}
+
+.sidebar__table--schedule .sidebar__table--score {
+  width: 40px;
+  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.sidebar__table-row--active {
   font-weight: 700;
   background-color: #f7ccd4;
 }
@@ -1176,44 +1225,75 @@ img {
   display: block;
 }
 
-.sidebar__table--statistics .sidebar__table-cell--team {
-  padding: 0;
-  font-size: 11px;
-  line-height: 15px;
-  vertical-align: top;
-}
-
 .sidebar__statistics-row--head .sidebar__table-cell {
   background-color: #ffffff;
   color: #000000;
   border-bottom: 1px solid #dddddd;
 }
 
-.sidebar__table-cell--player {
+.sidebar__table--statistics .sidebar__table-cell--photo {
+ padding-left: 15px;
+}
+
+.sidebar__table--statistics .sidebar__table-cell--photo-img {
+  display: block;
+  margin-left: 0;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #e8e8e8;
+  border: 1px solid #c5c5c5;
+}
+
+.sidebar__table--statistics .sidebar__table-cell--player {
+  width: 140px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   border: 0;
   padding: 0;
-  line-height: 15px;
+  padding-right: 10px;
+  line-height: 18px;
   vertical-align: bottom;
 }
 
-.sidebar__table-cell--goals {
-  padding-right: 5px;
+.sidebar__table--statistics .sidebar__table-cell--variable-1,
+.sidebar__table--statistics .sidebar__table-cell--variable-1-head {
+  width: 25px;
+  padding: 0;
+  text-align: center;
 }
 
-.sidebar__table-cell--games-number,
-.sidebar__table-cell--games-number-head {
-  padding-left: 0;
+.sidebar__table--statistics .sidebar__table-cell--variable-2,
+.sidebar__table--statistics .sidebar__table-cell--variable-2-head {
+  width: 40px;
+  padding: 0;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.sidebar__table--statistics .sidebar__table-cell--team {
+  width: 140px;
+  padding: 0;
+  font-size: 11px;
+  line-height: 15px;
+  vertical-align: top;
   padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.sidebar__table-cell-img {
+/*.sidebar__table-cell-img {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 30px;
   height: 30px;
   background-color: #e8e8e8;
-}
+}*/
 
 /*Новости на главной странице*/
 
