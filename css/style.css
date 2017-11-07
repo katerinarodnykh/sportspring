@@ -3536,12 +3536,11 @@ img {
 
 .match-protocol__member--left {
   padding-left: 25px;
-  padding-right: 80px;
 }
 
 .match-protocol__member--right {
   padding-right: 25px;
-  padding-left: 80px;
+  padding-left: 10px;
   justify-content: flex-end;
 }
 
@@ -3555,22 +3554,52 @@ img {
 }
 
 .match-protocol__member-number {
+  flex-shrink: 0;
   width: 38px;
 }
 
 .match-protocol__member-amplua {
+  flex-shrink: 0;
   width: 48px;
 }
 
 .match-protocol__member-name {
   padding: 0;
   margin: 0;
+  flex-grow: 1;
+  max-width: 330px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 18px;
+}
+
+.match-protocol__member--right .match-protocol__member-name {
+  padding-left: 5px;
+}
+
+.match-protocol__member--left .match-protocol__member-name {
+  padding-right: 5px;
 }
 
 .match-protocol__member-captain {
   color: #656565;
   text-transform: uppercase;
+}
+
+.match-protocol__member-captain-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.match-protocol__member--left .match-protocol__member-captain {
+  padding-right: 20px;
+}
+
+.match-protocol__member--right .match-protocol__member-captain {
+  padding-left: 20px;
 }
 
 .match-protocol__referees {
@@ -3647,6 +3676,10 @@ img {
   margin: 0;
   list-style: none;
   position: absolute;
+}
+
+.match-protocol__member .event-list {
+  position: static;
 }
 
 .event-list--right {
@@ -4088,6 +4121,7 @@ img {
 
 .vertical-timeline__event-info--left .vertical-timeline__event-wrapper {
   padding-right: 20px;
+  padding-left: 10px;
 }
 
 .vertical-timeline__event-info--left .event-item {
@@ -4100,6 +4134,7 @@ img {
 
 .vertical-timeline__event-info--right .vertical-timeline__event-wrapper {
   padding-left: 20px;
+  padding-right: 10px;
 }
 
 .vertical-timeline__event-info--right .event-item {
@@ -4109,6 +4144,7 @@ img {
 .vertical-timeline__event-author {
   padding: 0;
   margin: 0;
+  overflow: hidden;
   font-size: 18px;
 }
 
