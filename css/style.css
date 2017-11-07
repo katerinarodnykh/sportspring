@@ -3693,22 +3693,23 @@ img {
   display: table-cell;
   font-family: "FontAwesome";
   font-size: 20px;
+  line-height: 35px;
 }
 
 .event-item--own-goal::after {
-  content: "A";
+  content: "";
   position: absolute;
-  top: 0px;
-  margin-top: 10px;
-  margin-left: -9px;
+  top: 0;
+  margin-top: 1px;
+  right: -12px;
   width: 22px;
   height: 16px;
-  font-size: 15px;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: center;
-  background-color: #ff4847;
-  /*transform: skewX(-15deg);*/
+  background-image: url("../img/event-autogoal.png");
+  background-position: center;
+}
+
+.vertical-timeline__event-info--left .event-item--own-goal::after {
+  right: 3px;
 }
 
 .event-item--assist {
@@ -3727,6 +3728,34 @@ img {
   background-image: url("../img/svg-icon--boot-match.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.event-item--penalty {
+  position: relative;
+}
+
+.event-item--penalty::before {
+  content:"\f1e3";
+  display: table-cell;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.event-item--penalty::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  margin-top: 1px;
+  right: -12px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/event-penalty.png");
+  background-position: center;
+}
+
+.vertical-timeline__event-info--left .event-item--penalty::after {
+  right: 3px;
 }
 
 /* Страница Матч, раздел "События" */
@@ -4094,7 +4123,7 @@ img {
   margin: 0;
 }
 
-.match-events .event-item--own-goal::before {
+.event-item--own-goal::before {
   content:"\f1e3";
   display: table-cell;
   font-family: "FontAwesome";
@@ -4102,20 +4131,20 @@ img {
   line-height: 35px;
 }
 
-.match-events .event-item--own-goal::after {
-  content: "A";
+.event-item--own-goal::after {
+  content: "";
   position: absolute;
-  top: 0px;
-  margin-top: 2px;
-  margin-left: -10px;
+  top: 0;
+  margin-top: 1px;
+  right: -12px;
   width: 22px;
   height: 16px;
-  font-size: 15px;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: center;
-  background-color: #ff4847;
-  /*transform: skewX(-15deg);*/
+  background-image: url("../img/event-autogoal.png");
+  background-position: center;
+}
+
+.vertical-timeline__event-info--left .event-item--own-goal::after {
+  right: 3px;
 }
 
 .match-events .event-item--goal-miss-left,
@@ -4181,33 +4210,6 @@ img {
   height: 24px;
   border-radius: 1px;
   background-color: #ff4847;
-}
-
-.match-events .event-item--penalty {
-  position: relative;
-}
-
-.match-events .event-item--penalty::before {
-  content:"\f1e3";
-  display: table-cell;
-  font-family: "FontAwesome";
-  font-size: 20px;
-  line-height: 35px;
-}
-
-.match-events .event-item--penalty::after {
-  content: "П";
-  position: absolute;
-  top: 0px;
-  margin-top: 2px;
-  margin-left: -10px;
-  width: 22px;
-  height: 16px;
-  font-size: 15px;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: center;
-  background-color: #1a7dab;
 }
 
 /* Страница "Документы" */
@@ -4442,16 +4444,31 @@ img {
 }
 
 .participants .table__cell {
-  width: 75px;
+  width: 80px;
+  text-align: center;
 }
 
 .participants .table__cell--number {
   text-align: center;
-  width: 62px;
+  width: 67px;
 }
 
 .participants .table__cell--player {
-  width: 420px;
+  max-width: 420px;
+  text-align: left;
+}
+
+.participants .table__player-name {
+  display: block;
+  width: 373px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.participants .table__cell--average:last-child {
+  width: 89px;
+  padding-right: 50px;
 }
 
 .table__head .table__cell {
