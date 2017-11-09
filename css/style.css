@@ -2058,12 +2058,15 @@ img {
   padding-left: 23px;
   padding-right: 23px;
   padding-top: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   height: 77px;
   background-color: #f6f6f6;
 }
 
 .teams__name-link {
+  display: block;
+  height: 52px;
+  overflow: hidden;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 22px;
   line-height: 25px;
@@ -3604,8 +3607,8 @@ img {
 
 .match-protocol__referees {
   width: 100%;
-  height: 253px;
   padding-top: 35px;
+  padding-bottom: 35px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 18px;
   text-align: center;
