@@ -5120,11 +5120,13 @@ img {
 }
 
 .composition-list__item-flip-container {
-  perspective: 1000;
+  -webkit-perspective: 1000;
+          perspective: 1000;
 }
 
 .composition-list__item-flip-container:hover .composition-list__item-flipper {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .composition-list__item-flip-container,
@@ -5135,14 +5137,18 @@ img {
 }
 
 .composition-list__item-flipper {
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
   transition: 0.6s;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   position: relative;
 }
 
 .composition-list__item-font,
 .composition-list__item-back {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -5153,7 +5159,8 @@ img {
 }
 
 .composition-list__item-back {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .composition-list__player-statistics {
