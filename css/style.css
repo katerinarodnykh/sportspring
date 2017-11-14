@@ -2065,7 +2065,7 @@ img {
 
 .teams__name-link {
   display: block;
-  height: 52px;
+  height: 50px;
   overflow: hidden;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 22px;
@@ -4186,35 +4186,36 @@ img {
   right: 3px;
 }
 
-.match-events .event-item--goal-miss-left,
-.match-events .event-item--goal-miss-right {
+.event-item--penalty-missed,
+.match-events .event-item--penalty-missed-left,
+.match-events .event-item--penalty-missed-right {
   position: relative;
 }
 
-.match-events .event-item--goal-miss-left::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  left: 50%;
-  margin-left: -10px;
-  width: 2px;
-  height: 20px;
-  background-color: red;
-  transform: skewX(-40deg);
+.event-item--penalty-missed::before {
+  content:"\f1e3";
+  display: table-cell;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  line-height: 35px;
 }
 
-.match-events .event-item--goal-miss-right::after {
+.event-item--penalty-missed::after {
   content: "";
   position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  left: 50%;
-  margin-left: 5px;
-  width: 2px;
-  height: 20px;
-  background-color: red;
-  transform: skewX(-40deg);
+  top: 0;
+  margin-top: 1px;
+  right: -12px;
+  width: 36px;
+  height: 28px;
+  background-image: url("../img/event-goal-miss.png");
+  background-position: center;
+}
+
+.event-item--penalty-missed-left::after {
+  top: 0;
+  margin-top: 1px;
+  right: 3px;
 }
 
  .vertical-timeline .event-item--goal::before {
