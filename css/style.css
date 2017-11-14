@@ -5056,7 +5056,7 @@ img {
   margin-bottom: 25px;
 }
 
-.composition-list__item:nth-child(4n) {
+.composition-list__item:nth-child(4n+1) {
   margin-right: 0px;
 }
 
@@ -5089,14 +5089,22 @@ img {
 .composition-list__player-first-name,
 .composition-list__player-last-name {
   display: block;
+  width: 151px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .composition-list__player-amplua {
   padding: 0;
   margin: 0;
+  margin-top: 7px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 15px;
+  width: 151px;
+  height: 30px;
+  overflow: hidden;
 }
 
 .composition-list__player-birthday {
@@ -5112,9 +5120,48 @@ img {
   margin-left: 5px;
 }
 
-.composition-list__item--hidden {
-  background-color: #044575;
-  color: #ffffff;
+.composition-list__item-flip-container {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+}
+
+.composition-list__item-flip-container:hover .composition-list__item-flipper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.composition-list__item-flip-container,
+.composition-list__item-font,
+.composition-list__item-back {
+  width: 191px;
+  height: 327px;
+}
+
+.composition-list__item-flipper {
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+
+.composition-list__item-font,
+.composition-list__item-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.composition-list__item-font {
+  z-index: 2;
+}
+
+.composition-list__item-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .composition-list__player-statistics {
@@ -5125,6 +5172,7 @@ img {
   padding-bottom: 15px;
   padding-right: 15px;
   padding-left: 20px;
+  background-color: #044575;
 }
 
 .composition-list__player-statistics::after {
@@ -5163,12 +5211,12 @@ img {
   text-transform: uppercase;
 }
 
-.composition-list__item--hidden .composition-list__player-info {
+.composition-list__item-back .composition-list__player-info {
   background-color: #044575;
   color: #ffffff;
 }
 
-.composition-list__item--hidden .composition-list__player-birthday {
+.composition-list__item-back .composition-list__player-birthday {
   color: rgba(255, 255, 255, 0.5);
 }
 
