@@ -241,9 +241,14 @@ img {
 
 /* Выпадающее меню в основной навигации */
 
+.drop-menu-wrapper {
+  transform: skewX(15deg);
+}
+
 .drop-menu {
   position: absolute;
   z-index: 100;
+  left: -2px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -251,7 +256,6 @@ img {
   background-color: #1a7dab;
   border-right: 0;
   text-align: left;
-  transform: skewX(15deg);
 }
 
 .drop-menu__item:hover,
@@ -280,7 +284,6 @@ img {
 
 .drop-menu--tournaments {
   display: none;
-  left: 47px;
 }
 
 .navigation__item--tournaments:hover .drop-menu--tournaments {
