@@ -2206,6 +2206,18 @@ img {
   border: 1px solid #999999;
 }
 
+.schedule__checkbox:checked + .checkbox-indicator::after{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  background-image:url("../img/checkbox-on.svg");
+  background-repeat:no-repeat;
+  background-position:0 0;
+}
+
 .schedule__matches-list {
   padding: 0;
   margin: 0;
