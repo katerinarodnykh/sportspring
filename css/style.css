@@ -2185,10 +2185,25 @@ img {
 }
 
 .schedule__checkbox {
+  position: relative;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 15px;
   line-height: 41px;
   vertical-align: middle;
+}
+
+.schedule__checkbox-input {
+  display: none;
+}
+
+.checkbox-indicator {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999999;
 }
 
 .schedule__matches-list {
