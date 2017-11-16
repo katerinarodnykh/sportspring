@@ -2206,16 +2206,38 @@ img {
   border: 1px solid #999999;
 }
 
-.schedule__checkbox:checked + .checkbox-indicator::after{
+.schedule__checkbox-input:checked + .checkbox-indicator::after {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 0;
-  left: 0;
-  background-image:url("../img/checkbox-on.svg");
+  top: 50%;
+  margin-top: -5px;
+  left: 50%;
+  margin-left: -6px;
+  background-image:url("../img/checkbox-on.png");
   background-repeat:no-repeat;
   background-position:0 0;
+}
+
+/* Стили для disabled !checked И disabled checked, на Label повесить доп. класс schedule__checkbox--disabled*/
+
+.schedule__checkbox-input:disabled + .checkbox-indicator {
+  border: 1px solid #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+.schedule__checkbox-input:checked:disabled + .checkbox-indicator {
+  border: 1px solid #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+.schedule__checkbox-input:checked:disabled + .checkbox-indicator::after {
+  box-shadow: 0 0 0 15px rgba(232, 232, 232, 0.5) inset;
+}
+
+.schedule__checkbox--disabled {
+  color: #999999;
 }
 
 .schedule__matches-list {
