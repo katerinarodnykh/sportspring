@@ -4587,6 +4587,10 @@ img {
   align-items: center;
 }
 
+.table--player {
+  margin-bottom: 30px;
+}
+
 .table__player-picture {
   display: flex;
   justify-content: center;
@@ -4895,6 +4899,101 @@ img {
   padding-right: 12px;
   text-align: center;
   font-weight: 700;
+}
+
+.table--player-transfer {
+  border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.table--player-transfer .table__title {
+  background-color: #d1d7dc;
+  text-align: left;
+  font-size: 15px;
+  line-height: 44px;
+  padding-left: 25px;
+  text-transform: uppercase;
+}
+
+.player .table--player-transfer .table__cell--head {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 45px;
+  height: 45px;
+  background-color: #4897bc;
+  color: #ffffff;
+}
+
+.player .table--player-transfer .table__cell--number-head {
+  text-align: center;
+}
+
+.table--player-transfer .table__cell {
+  font-size: 18px;
+}
+
+.player .table--player-transfer .table__cell--number {
+  width: 100px;
+  text-align: center;
+}
+
+.table--player-transfer .table__cell--out {
+  width: 375px;
+}
+
+.table--player-transfer .table__cell--arrow {
+  padding-left: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.table--player-transfer .table__cell--arrow::before{
+  content:"\f178";
+  font-family: "FontAwesome";
+  font-size: 45px;
+  line-height: 45px;
+  color: #4897bc;
+}
+
+.table--player-transfer .table__cell--arrow-head::before {
+  display: none;
+}
+
+.table--player-transfer .table__cell--in {
+  width: 375px;
+}
+
+.table--player-transfer .table__cell--date {
+  width: 166px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+}
+
+.place-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5c5;
+}
+
+.place-name {
+  display: block;
+  width: 320px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 45px;
 }
 
 /* Страница "Участники", раздел "команды" */
