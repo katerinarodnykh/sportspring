@@ -5619,21 +5619,23 @@ img {
 .stadiums-item {
   display: flex;
   width: 100%;
-  height: 442px;
+  height: 467px;
   margin-bottom: 25px;
 }
 
 .stadiums-item__wrapper {
-  height: 442px;
+  width: 100%;
+  height: 467px;
 }
 
 .stadiums-item__picture {
-  width: 330px;
-  height: 221px;
+  flex-shrink: 0;
+  width: 700px;
+  height: 467px;
 }
 
 .stadiums-item__content {
-  height: 221px;
+  height: 210px;
   padding-top: 25px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -5684,8 +5686,7 @@ img {
 }
 
 .stadiums-item__map {
-  height: 442px;
-  width: 580px;
+  height: 258px;
   background-image: url("../img/map.jpg");
 }
 
